@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 import {
   Form,
   FormControl,
@@ -44,6 +45,7 @@ const formSchema = z.object({
 type ContactFormValues = z.infer<typeof formSchema>;
 
 export default function Contact() {
+  const { t } = useTranslation();
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
   const { ref: infoRef, isVisible: infoVisible } = useScrollAnimation();
   const { ref: formRef, isVisible: formVisible } = useScrollAnimation();
@@ -67,14 +69,14 @@ export default function Contact() {
     try {
       await apiRequest("POST", "/api/contact", data);
       toast({
-        title: "Mensaje enviado",
-        description: "Nos pondremos en contacto contigo pronto",
+        title: t("contact.success"),
+        description: t("contact.success"),
       });
       form.reset();
     } catch (error) {
       toast({
         title: "Error",
-        description: "No pudimos enviar tu mensaje. Por favor intenta nuevamente.",
+        description: t("contact.error"),
         variant: "destructive",
       });
     }
@@ -90,11 +92,10 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Contáctanos</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">{t("contact.title")}</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Estamos aquí para responder tus preguntas y ayudarte con tus necesidades contables y
-            fiscales.
+            {t("contact.subtitle")}
           </p>
         </motion.div>
 
@@ -106,7 +107,7 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
           >
             <div className="bg-accent rounded-lg p-8 h-full">
-              <h3 className="text-2xl font-heading font-semibold mb-6">Información de Contacto</h3>
+              <h3 className="text-2xl font-heading font-semibold mb-6">{t("contact.locations.title")}</h3>
 
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -114,11 +115,11 @@ export default function Contact() {
                     <MapPin className="text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-medium mb-1">Dirección</h4>
+                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.address")}</h4>
                     <p className="text-gray-600">
-                      Av. Corrientes 1234, Piso 5, Oficina 501
+                      {t("contact.locations.montevideo.address")}
                       <br />
-                      Ciudad Autónoma de Buenos Aires, Argentina
+                      {t("contact.locations.montevideo.city")}
                     </p>
                   </div>
                 </div>
@@ -236,7 +237,7 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-heading font-semibold mb-6">Envíanos un Mensaje</h3>
+              <h3 className="text-2xl font-heading font-semibold mb-6">{t("contact.send")}</h3>
 
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
