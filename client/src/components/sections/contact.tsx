@@ -129,9 +129,8 @@ export default function Contact() {
                     <Phone className="text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-medium mb-1">Teléfono</h4>
-                    <p className="text-gray-600">+54 11 4567-8901</p>
-                    <p className="text-gray-600">+54 11 4567-8902</p>
+                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.phone")}</h4>
+                    <p className="text-gray-600">{t("contact.locations.montevideo.phone")}</p>
                   </div>
                 </div>
 
@@ -140,9 +139,8 @@ export default function Contact() {
                     <Mail className="text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-medium mb-1">Email</h4>
-                    <p className="text-gray-600">info@solutumsa.com</p>
-                    <p className="text-gray-600">atencion@solutumsa.com</p>
+                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.email")}</h4>
+                    <p className="text-gray-600">{t("contact.locations.montevideo.email")}</p>
                   </div>
                 </div>
 
@@ -151,15 +149,14 @@ export default function Contact() {
                     <Clock className="text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-heading font-medium mb-1">Horario de Atención</h4>
-                    <p className="text-gray-600">Lunes a Viernes: 9:00 - 18:00</p>
-                    <p className="text-gray-600">Sábados: 9:00 - 13:00</p>
+                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.hours")}</h4>
+                    <p className="text-gray-600">{t("contact.locations.montevideo.hours")}</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h4 className="font-heading font-medium mb-3">Síguenos</h4>
+                <h4 className="font-heading font-medium mb-3">{t("contact.follow")}</h4>
                 <div className="flex space-x-4">
                   <a
                     href="#"
@@ -247,9 +244,9 @@ export default function Contact() {
                       name="nombre"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Nombre *</FormLabel>
+                          <FormLabel>{t("contact.form.name")} *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Ingresa tu nombre" {...field} />
+                            <Input placeholder={t("contact.form.namePlaceholder")} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -261,9 +258,9 @@ export default function Contact() {
                       name="apellido"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Apellido *</FormLabel>
+                          <FormLabel>{t("contact.form.lastName")} *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Ingresa tu apellido" {...field} />
+                            <Input placeholder={t("contact.form.lastNamePlaceholder")} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -279,7 +276,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Email *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Ingresa tu email" {...field} />
+                            <Input placeholder={t("contact.form.emailPlaceholder")} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -291,9 +288,9 @@ export default function Contact() {
                       name="telefono"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Teléfono</FormLabel>
+                          <FormLabel>{t("contact.form.phone")}</FormLabel>
                           <FormControl>
-                            <Input placeholder="Ingresa tu teléfono" {...field} />
+                            <Input placeholder={t("contact.form.phonePlaceholder")} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -306,9 +303,9 @@ export default function Contact() {
                     name="empresa"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Empresa</FormLabel>
+                        <FormLabel>{t("contact.form.company")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Nombre de tu empresa" {...field} />
+                          <Input placeholder={t("contact.form.companyPlaceholder")} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -320,24 +317,24 @@ export default function Contact() {
                     name="servicio"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Servicio de Interés</FormLabel>
+                        <FormLabel>{t("contact.form.service")}</FormLabel>
                         <Select
                           onValueChange={field.onChange}
                           defaultValue={field.value}
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Seleccione un servicio" />
+                              <SelectValue placeholder={t("contact.form.servicePlaceholder")} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="ninguno">Seleccione un servicio</SelectItem>
-                            <SelectItem value="contable">Servicio Contable</SelectItem>
-                            <SelectItem value="fiscal">Asesoría Fiscal</SelectItem>
-                            <SelectItem value="consultoria">Consultoría Empresarial</SelectItem>
-                            <SelectItem value="nomina">Gestión de Nómina</SelectItem>
-                            <SelectItem value="auditoria">Auditoría Interna</SelectItem>
-                            <SelectItem value="financiera">Planificación Financiera</SelectItem>
+                            <SelectItem value="ninguno">{t("contact.form.servicePlaceholder")}</SelectItem>
+                            <SelectItem value="contable">{t("services.accounting.title")}</SelectItem>
+                            <SelectItem value="fiscal">{t("services.tax.title")}</SelectItem>
+                            <SelectItem value="consultoria">{t("services.consulting.title")}</SelectItem>
+                            <SelectItem value="nomina">{t("services.payroll.title")}</SelectItem>
+                            <SelectItem value="auditoria">{t("services.audit.title")}</SelectItem>
+                            <SelectItem value="financiera">{t("services.financial.title")}</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />
