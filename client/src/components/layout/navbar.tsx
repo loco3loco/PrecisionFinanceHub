@@ -1,12 +1,23 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Link, useLocation } from "wouter";
+import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
 const menuItems = [
   { name: "Inicio", href: "#inicio" },
-  { name: "Servicios", href: "#servicios" },
+  {
+    name: "Servicios",
+    href: "#servicios",
+    submenu: [
+      { name: "Contabilidad Corporativa", href: "/servicios/contabilidad-corporativa" },
+      { name: "Asesoría Fiscal", href: "/servicios/asesoria-fiscal" },
+      { name: "Consultoría Empresarial", href: "/servicios/consultoria-empresarial" },
+      { name: "Auditoría Financiera", href: "/servicios/auditoria-financiera" },
+      { name: "Gestión de Nómina", href: "/servicios/gestion-nomina" },
+      { name: "Tecnología Contable", href: "/servicios/tecnologia-contable" }
+    ]
+  },
   { name: "Nosotros", href: "#nosotros" },
   { name: "Testimonios", href: "#testimonios" },
   { name: "Contacto", href: "#contacto" },
@@ -15,32 +26,50 @@ const menuItems = [
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [location] = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleServices = () => setServicesOpen(!servicesOpen);
+  const toggleMobileServices = () => setMobileServicesOpen(!mobileServicesOpen);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as Node;
+      const navbar = document.getElementById('navbar-menu');
+      if (navbar && !navbar.contains(target)) {
+        setServicesOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-white/90 py-4"
+        isScrolled 
+          ? "bg-white/95 backdrop-blur-sm shadow-lg py-2" 
+          : "bg-white/80 backdrop-blur-sm py-4"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center cursor-pointer">
-              <div className="w-12 h-12 relative overflow-hidden">
+          <Link href="/">
+            <div className="flex items-center cursor-pointer group">
+              <div className="w-12 h-12 relative overflow-hidden transition-all duration-300 group-hover:scale-105">
                 <svg
                   viewBox="0 0 100 100"
                   className="w-full h-full text-primary"
@@ -53,27 +82,70 @@ export default function Navbar() {
                   <path d="M30,20 L70,20 L70,10 L30,10 Z" />
                 </svg>
               </div>
-              <span className="ml-2 text-xl font-heading font-bold text-primary">
+              <span className="ml-2 text-xl font-heading font-bold text-primary group-hover:text-primary/80 transition-colors">
                 Solutumsa
               </span>
-          </div>
+            </div>
+          </Link>
 
-          <nav className="hidden md:flex space-x-8">
-            {menuItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="font-heading font-medium hover:text-secondary transition-colors"
-              >
-                {item.name}
-              </a>
-            ))}
+          <nav id="navbar-menu" className="hidden md:flex space-x-8 items-center">
+            {menuItems.map((item) => {
+              if (item.submenu) {
+                return (
+                  <div key={item.name} className="relative">
+                    <button 
+                      className="flex items-center font-heading font-medium hover:text-primary transition-colors py-2 focus:outline-none"
+                      onClick={toggleServices}
+                      onMouseEnter={() => setServicesOpen(true)}
+                    >
+                      {item.name}
+                      <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    
+                    <AnimatePresence>
+                      {servicesOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 5 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute left-0 mt-1 w-72 py-2 bg-white rounded-md shadow-xl z-20"
+                          onMouseLeave={() => setServicesOpen(false)}
+                        >
+                          {item.submenu.map((subItem) => (
+                            <Link 
+                              key={subItem.name} 
+                              href={subItem.href}
+                              onClick={() => setServicesOpen(false)}
+                            >
+                              <div className="px-4 py-3 text-sm hover:bg-gray-50 cursor-pointer transition-colors">
+                                {subItem.name}
+                              </div>
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              }
+              
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="font-heading font-medium hover:text-primary transition-colors py-2"
+                >
+                  {item.name}
+                </a>
+              );
+            })}
           </nav>
 
           <div className="flex items-center space-x-4">
             <Button
               variant="secondary"
-              className="bg-secondary hover:bg-primary text-white transition-all duration-300"
+              className="bg-primary text-white hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg"
               size="sm"
               asChild
             >
@@ -82,10 +154,11 @@ export default function Navbar() {
                 <span className="hidden sm:inline">WhatsApp</span>
               </a>
             </Button>
+            
             <button
-              className="md:hidden text-primary focus:outline-none"
+              className="md:hidden text-primary focus:outline-none hover:text-primary/80 transition-colors"
               onClick={toggleMenu}
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -102,17 +175,60 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-white px-4 py-3 shadow-lg"
           >
-            <div className="flex flex-col space-y-3">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="font-heading font-medium py-2 hover:text-secondary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
+            <div className="flex flex-col space-y-1">
+              {menuItems.map((item) => {
+                if (item.submenu) {
+                  return (
+                    <div key={item.name} className="py-2">
+                      <button
+                        className="flex items-center w-full text-left font-heading font-medium py-2 hover:text-primary transition-colors"
+                        onClick={toggleMobileServices}
+                      >
+                        {item.name}
+                        <ChevronDown className={`ml-auto h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      
+                      <AnimatePresence>
+                        {mobileServicesOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="pl-4 mt-1 border-l-2 border-gray-100"
+                          >
+                            {item.submenu.map((subItem) => (
+                              <Link 
+                                key={subItem.name} 
+                                href={subItem.href}
+                                onClick={() => {
+                                  setMobileServicesOpen(false);
+                                  setIsMenuOpen(false);
+                                }}
+                              >
+                                <div className="py-2 text-sm hover:text-primary cursor-pointer transition-colors">
+                                  {subItem.name}
+                                </div>
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                }
+                
+                return (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="font-heading font-medium py-3 hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                );
+              })}
             </div>
           </motion.div>
         )}
