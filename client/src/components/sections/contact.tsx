@@ -347,10 +347,10 @@ export default function Contact() {
                     name="mensaje"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Mensaje *</FormLabel>
+                        <FormLabel>{t("contact.form.message")} *</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="Escribe tu mensaje aquí..."
+                            placeholder={t("contact.form.messagePlaceholder")}
                             rows={4}
                             {...field}
                           />
@@ -373,8 +373,7 @@ export default function Contact() {
                         </FormControl>
                         <div className="space-y-1 leading-none">
                           <FormLabel>
-                            Acepto la política de privacidad y el tratamiento de mis datos para
-                            recibir respuesta a mi consulta. *
+                            {t("contact.form.privacy")} *
                           </FormLabel>
                           <FormMessage />
                         </div>
@@ -387,7 +386,7 @@ export default function Contact() {
                     className="w-full bg-primary text-white hover:bg-secondary transition-colors duration-300"
                     disabled={form.formState.isSubmitting}
                   >
-                    {form.formState.isSubmitting ? "Enviando..." : "Enviar Mensaje"}
+                    {form.formState.isSubmitting ? t("contact.form.sending") : t("contact.form.submit")}
                   </Button>
                 </form>
               </Form>

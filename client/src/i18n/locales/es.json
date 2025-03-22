@@ -14,7 +14,25 @@
     "business_consulting": "Consultoría Empresarial",
     "financial_audit": "Auditoría Financiera",
     "payroll_management": "Gestión de Nómina",
-    "accounting_tech": "Tecnología Contable"
+    "accounting_tech": "Tecnología Contable",
+    "accounting": {
+      "title": "Servicios Contables"
+    },
+    "tax": {
+      "title": "Asesoría Fiscal"
+    },
+    "consulting": {
+      "title": "Consultoría Empresarial"
+    },
+    "payroll": {
+      "title": "Gestión de Nómina"
+    },
+    "audit": {
+      "title": "Auditoría Interna"
+    },
+    "financial": {
+      "title": "Planificación Financiera"
+    }
   },
   "about": {
     "title": "Sobre Nosotros",
@@ -31,30 +49,51 @@
   "contact": {
     "title": "Contacto",
     "subtitle": "Estamos aquí para ayudarle. Contáctenos hoy mismo.",
-    "name": "Nombre",
-    "lastname": "Apellido",
-    "email": "Correo electrónico",
-    "phone": "Teléfono",
-    "company": "Empresa",
-    "service": "Servicio",
-    "message": "Mensaje",
     "send": "Enviar mensaje",
     "success": "Mensaje enviado con éxito",
     "error": "Hubo un error al enviar el mensaje",
+    "follow": "Síguenos",
     "locations": {
       "title": "Nuestras Oficinas",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Email",
+      "hours": "Horario de Atención",
       "montevideo": {
         "name": "MONTEVIDEO",
         "address": "Paraguay 1380 Entrepiso, 11100 Montevideo, Uruguay",
         "phone": "Tel: 2908 95 95",
-        "schedule": "Lunes a Viernes 10:00-17:00"
+        "email": "info@solutumsa.com",
+        "hours": "Lunes a Viernes 10:00-17:00",
+        "city": "Montevideo, Uruguay"
       },
       "atlantida": {
         "name": "ATLÁNTIDA",
         "address": "Calle 26 esq, C. 3, 15200 Atlántida, Departamento de Canelones",
         "phone": "Tel: 4371 64 96",
-        "schedule": "Lunes a Viernes 10:00-17:00"
+        "email": "atlantida@solutumsa.com",
+        "hours": "Lunes a Viernes 10:00-17:00",
+        "city": "Atlántida, Canelones"
       }
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Ingresa tu nombre",
+      "lastName": "Apellido",
+      "lastNamePlaceholder": "Ingresa tu apellido",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Ingresa tu email",
+      "phone": "Teléfono",
+      "phonePlaceholder": "Ingresa tu teléfono",
+      "company": "Empresa",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "service": "Servicio de Interés",
+      "servicePlaceholder": "Seleccione un servicio",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí...",
+      "privacy": "Acepto la política de privacidad y el tratamiento de mis datos para recibir respuesta a mi consulta.",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando..."
     }
   },
   "footer": {
