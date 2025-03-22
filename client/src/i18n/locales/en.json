@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer comprehensive accounting and advisory solutions for your business",
+    "corporate_accounting": "Corporate Accounting",
+    "tax_advisory": "Tax Advisory",
+    "business_consulting": "Business Consulting",
+    "financial_audit": "Financial Audit",
+    "payroll_management": "Payroll Management",
+    "accounting_tech": "Accounting Technology"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Accounting and consulting experts with over 32 years of experience",
+    "experience_years": "32 years of experience",
+    "client_companies": "+100 companies trust us",
+    "employees_managed": "+700 employees in dependency relationship"
+  },
+  "cta": {
+    "title": "Need professional advice?",
+    "subtitle": "Contact us today for a personalized consultation",
+    "button": "Contact now"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We're here to help. Get in touch with us today.",
+    "name": "Name",
+    "lastname": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "service": "Service",
+    "message": "Message",
+    "send": "Send message",
+    "success": "Message sent successfully",
+    "error": "There was an error sending your message",
+    "locations": {
+      "title": "Our Offices",
+      "montevideo": {
+        "name": "MONTEVIDEO",
+        "address": "Paraguay 1380 Entrepiso, 11100 Montevideo, Uruguay",
+        "phone": "Tel: 2908 95 95",
+        "schedule": "Monday to Friday 10:00-17:00"
+      },
+      "atlantida": {
+        "name": "ATLÁNTIDA",
+        "address": "Calle 26 esq, C. 3, 15200 Atlántida, Departamento de Canelones",
+        "phone": "Tel: 4371 64 96",
+        "schedule": "Monday to Friday 10:00-17:00"
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  },
+  "common": {
+    "language": "Language",
+    "read_more": "Read more",
+    "contact_us": "Contact us",
+    "whatsapp": "WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "title": "Accounting solutions for your business",
+      "subtitle": "We offer professional accounting and tax advisory services to help your business grow and thrive",
+      "cta": "Learn more"
+    },
+    "stats": {
+      "companies": "+100 Companies",
+      "companies_subtitle": "Trust us every day.",
+      "years": "+32 Years",
+      "years_subtitle": "Of experience, providing service that exceeds expectations.",
+      "employees": "+700 Employees",
+      "employees_subtitle": "Are in a dependency relationship with the companies we advise."
+    }
+  }
+}

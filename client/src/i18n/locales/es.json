@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "testimonials": "Testimonios",
+    "contact": "Contacto"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos soluciones integrales de contabilidad y asesoría para su empresa",
+    "corporate_accounting": "Contabilidad Corporativa",
+    "tax_advisory": "Asesoría Fiscal",
+    "business_consulting": "Consultoría Empresarial",
+    "financial_audit": "Auditoría Financiera",
+    "payroll_management": "Gestión de Nómina",
+    "accounting_tech": "Tecnología Contable"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Expertos en contabilidad y consultoría con más de 32 años de experiencia",
+    "experience_years": "32 años de experiencia",
+    "client_companies": "+100 empresas confían en nosotros",
+    "employees_managed": "+700 colaboradores en relación de dependencia"
+  },
+  "cta": {
+    "title": "¿Necesita asesoramiento profesional?",
+    "subtitle": "Contáctenos hoy para una consulta personalizada",
+    "button": "Contactar ahora"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Estamos aquí para ayudarle. Contáctenos hoy mismo.",
+    "name": "Nombre",
+    "lastname": "Apellido",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "company": "Empresa",
+    "service": "Servicio",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "success": "Mensaje enviado con éxito",
+    "error": "Hubo un error al enviar el mensaje",
+    "locations": {
+      "title": "Nuestras Oficinas",
+      "montevideo": {
+        "name": "MONTEVIDEO",
+        "address": "Paraguay 1380 Entrepiso, 11100 Montevideo, Uruguay",
+        "phone": "Tel: 2908 95 95",
+        "schedule": "Lunes a Viernes 10:00-17:00"
+      },
+      "atlantida": {
+        "name": "ATLÁNTIDA",
+        "address": "Calle 26 esq, C. 3, 15200 Atlántida, Departamento de Canelones",
+        "phone": "Tel: 4371 64 96",
+        "schedule": "Lunes a Viernes 10:00-17:00"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de privacidad",
+    "terms": "Términos y condiciones"
+  },
+  "common": {
+    "language": "Idioma",
+    "read_more": "Leer más",
+    "contact_us": "Contáctenos",
+    "whatsapp": "WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "title": "Soluciones contables para su empresa",
+      "subtitle": "Ofrecemos servicios profesionales de contabilidad y asesoría fiscal para ayudar a su empresa a crecer y prosperar",
+      "cta": "Conocer más"
+    },
+    "stats": {
+      "companies": "+100 Empresas",
+      "companies_subtitle": "Confian en nosotros todos los días.",
+      "years": "+32 Años",
+      "years_subtitle": "De trayectoria, brindando un servicio que supera espectativas.",
+      "employees": "+700 Colaboradores",
+      "employees_subtitle": "Tienen relación de dependencia en las empresas que asesoramos."
+    }
+  }
+}
