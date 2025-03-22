@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight, Check } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
   const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation();
   const { ref: cardRef, isVisible: cardVisible } = useScrollAnimation();
@@ -50,11 +52,10 @@ export default function HeroSection() {
           className="md:w-1/2 mb-10 md:mb-0 md:pr-10"
         >
           <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight mb-6">
-            SOCIOS ESTRATÉGICOS EN EL CRECIMIENTO DE TU EMPRESA
+            {t("home.hero.title")}
           </h1>
           <p className="text-lg mb-8 opacity-90">
-            Más que un estudio contable, somos más de 50 años de trayectoria a tu servicio.
-            Asegurando cada paso a nuestro alcance para que todo salga mejor de lo esperado.
+            {t("home.hero.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Button
@@ -63,7 +64,7 @@ export default function HeroSection() {
             >
               <a href="#contacto">
                 <Calendar className="mr-2 h-4 w-4" />
-                Agenda una Reunión Virtual
+                {t("contact.title")}
               </a>
             </Button>
             <Button
@@ -73,7 +74,7 @@ export default function HeroSection() {
             >
               <a href="#servicios">
                 <ArrowRight className="mr-2 h-4 w-4" />
-                Explorar Servicios
+                {t("home.hero.cta")}
               </a>
             </Button>
           </div>

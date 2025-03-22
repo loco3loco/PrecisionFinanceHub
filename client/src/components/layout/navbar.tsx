@@ -3,27 +3,23 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 
-const menuItems = [
-  { name: "Inicio", href: "#inicio" },
-  {
-    name: "Servicios",
-    href: "#servicios",
-    submenu: [
-      { name: "Contabilidad Corporativa", href: "/servicios/contabilidad-corporativa" },
-      { name: "Asesoría Fiscal", href: "/servicios/asesoria-fiscal" },
-      { name: "Consultoría Empresarial", href: "/servicios/consultoria-empresarial" },
-      { name: "Auditoría Financiera", href: "/servicios/auditoria-financiera" },
-      { name: "Gestión de Nómina", href: "/servicios/gestion-nomina" },
-      { name: "Tecnología Contable", href: "/servicios/tecnologia-contable" }
-    ]
-  },
-  { name: "Nosotros", href: "#nosotros" },
-  { name: "Testimonios", href: "#testimonios" },
-  { name: "Contacto", href: "#contacto" },
-];
+// Definición de tipos para nuestros menús
+type SubMenuItem = {
+  name: string;
+  href: string;
+};
+
+type MenuItem = {
+  name: string;
+  href: string;
+  submenu?: SubMenuItem[];
+};
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -33,6 +29,26 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleServices = () => setServicesOpen(!servicesOpen);
   const toggleMobileServices = () => setMobileServicesOpen(!mobileServicesOpen);
+
+  // Creamos el array de menú de forma dinámica usando las traducciones
+  const menuItems = [
+    { name: t("nav.home"), href: "#inicio" },
+    {
+      name: t("nav.services"),
+      href: "#servicios",
+      submenu: [
+        { name: t("services.corporate_accounting"), href: "/servicios/contabilidad-corporativa" },
+        { name: t("services.tax_advisory"), href: "/servicios/asesoria-fiscal" },
+        { name: t("services.business_consulting"), href: "/servicios/consultoria-empresarial" },
+        { name: t("services.financial_audit"), href: "/servicios/auditoria-financiera" },
+        { name: t("services.payroll_management"), href: "/servicios/gestion-nomina" },
+        { name: t("services.accounting_tech"), href: "/servicios/tecnologia-contable" }
+      ]
+    },
+    { name: t("nav.about"), href: "#nosotros" },
+    { name: t("nav.testimonials"), href: "#testimonios" },
+    { name: t("nav.contact"), href: "#contacto" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -143,6 +159,8 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+            
             <Button
               variant="secondary"
               className="bg-primary text-white hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg"
@@ -151,7 +169,7 @@ export default function Navbar() {
             >
               <a href="https://wa.me/5491112345678">
                 <MessageCircle className="mr-2 h-4 w-4" />
-                <span className="hidden sm:inline">WhatsApp</span>
+                <span className="hidden sm:inline">{t("common.whatsapp")}</span>
               </a>
             </Button>
             
@@ -175,6 +193,9 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-white px-4 py-3 shadow-lg"
           >
+            <div className="flex justify-end mb-2">
+              <LanguageSwitcher />
+            </div>
             <div className="flex flex-col space-y-1">
               {menuItems.map((item) => {
                 if (item.submenu) {
