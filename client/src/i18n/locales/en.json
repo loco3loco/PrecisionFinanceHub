@@ -121,5 +121,12 @@
       "employees": "+700 Employees",
       "employees_subtitle": "Are in a dependency relationship with the companies we advise."
     }
+  },
+  "validation": {
+    "name_required": "Name is required",
+    "lastname_required": "Last name is required",
+    "email_invalid": "Please enter a valid email",
+    "message_min_length": "Message must be at least 10 characters",
+    "privacy_policy_required": "You must accept the privacy policy"
   }
 }

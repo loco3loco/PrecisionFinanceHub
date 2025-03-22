@@ -29,20 +29,20 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 // Form schema with validation
-const formSchema = z.object({
-  nombre: z.string().min(2, { message: "El nombre es requerido" }),
-  apellido: z.string().min(2, { message: "El apellido es requerido" }),
-  email: z.string().email({ message: "Ingrese un email válido" }),
+const getFormSchema = (t: any) => z.object({
+  nombre: z.string().min(2, { message: t("validation.name_required") }),
+  apellido: z.string().min(2, { message: t("validation.lastname_required") }),
+  email: z.string().email({ message: t("validation.email_invalid") }),
   telefono: z.string().optional(),
   empresa: z.string().optional(),
   servicio: z.string().optional(),
-  mensaje: z.string().min(10, { message: "El mensaje debe tener al menos 10 caracteres" }),
+  mensaje: z.string().min(10, { message: t("validation.message_min_length") }),
   aceptar_politica: z.boolean().refine(val => val === true, {
-    message: "Debe aceptar la política de privacidad",
+    message: t("validation.privacy_policy_required"),
   }),
 });
 
-type ContactFormValues = z.infer<typeof formSchema>;
+type ContactFormValues = z.infer<ReturnType<typeof getFormSchema>>;
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -50,6 +50,8 @@ export default function Contact() {
   const { ref: infoRef, isVisible: infoVisible } = useScrollAnimation();
   const { ref: formRef, isVisible: formVisible } = useScrollAnimation();
   const { toast } = useToast();
+  
+  const formSchema = getFormSchema(t);
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(formSchema),
@@ -274,7 +276,7 @@ export default function Contact() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email *</FormLabel>
+                          <FormLabel>{t("contact.form.email")} *</FormLabel>
                           <FormControl>
                             <Input placeholder={t("contact.form.emailPlaceholder")} {...field} />
                           </FormControl>

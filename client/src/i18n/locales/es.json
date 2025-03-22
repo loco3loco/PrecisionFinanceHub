@@ -121,5 +121,12 @@
       "employees": "+700 Colaboradores",
       "employees_subtitle": "Tienen relación de dependencia en las empresas que asesoramos."
     }
+  },
+  "validation": {
+    "name_required": "El nombre es requerido",
+    "lastname_required": "El apellido es requerido",
+    "email_invalid": "Por favor, ingrese un email válido",
+    "message_min_length": "El mensaje debe tener al menos 10 caracteres",
+    "privacy_policy_required": "Debe aceptar la política de privacidad"
   }
 }
