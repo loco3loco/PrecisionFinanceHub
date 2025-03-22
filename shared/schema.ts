@@ -27,6 +27,7 @@ export const contactMessages = pgTable("contact_messages", {
   empresa: text("empresa"),
   servicio: text("servicio"),
   mensaje: text("mensaje").notNull(),
+  aceptar_politica: boolean("aceptar_politica").default(false).notNull(),
   created_at: timestamp("created_at").defaultNow().notNull(),
 });
 
@@ -38,6 +39,7 @@ export const insertContactMessageSchema = createInsertSchema(contactMessages).pi
   empresa: true,
   servicio: true,
   mensaje: true,
+  aceptar_politica: true,
 });
 
 export type InsertContactMessage = z.infer<typeof insertContactMessageSchema>;

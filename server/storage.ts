@@ -3,6 +3,8 @@ import {
   contactMessages, type ContactMessage, type InsertContactMessage,
   newsletterSubscriptions, type NewsletterSubscription, type InsertNewsletterSubscription
 } from "@shared/schema";
+import { db } from "./db";
+import { eq } from "drizzle-orm";
 
 // modify the interface with any CRUD methods
 // you might need
@@ -19,6 +21,72 @@ export interface IStorage {
   // Newsletter subscription methods
   createNewsletterSubscription(subscription: InsertNewsletterSubscription): Promise<NewsletterSubscription>;
   getNewsletterSubscriptions(): Promise<NewsletterSubscription[]>;
+}
+
+export class DatabaseStorage implements IStorage {
+  async getUser(id: number): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user || undefined;
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user || undefined;
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const [user] = await db
+      .insert(users)
+      .values(insertUser)
+      .returning();
+    return user;
+  }
+  
+  // Contact message methods
+  async createContactMessage(message: InsertContactMessage): Promise<ContactMessage> {
+    // Handle optional fields
+    const messageToInsert = {
+      ...message,
+      telefono: message.telefono || null,
+      empresa: message.empresa || null,
+      servicio: message.servicio || null
+    };
+    
+    const [contactMessage] = await db
+      .insert(contactMessages)
+      .values(messageToInsert)
+      .returning();
+    
+    return contactMessage;
+  }
+  
+  async getContactMessages(): Promise<ContactMessage[]> {
+    return await db.select().from(contactMessages).orderBy(contactMessages.created_at);
+  }
+  
+  // Newsletter subscription methods
+  async createNewsletterSubscription(subscription: InsertNewsletterSubscription): Promise<NewsletterSubscription> {
+    // Check for duplicate emails
+    const existingSubscriptions = await db
+      .select()
+      .from(newsletterSubscriptions)
+      .where(eq(newsletterSubscriptions.email, subscription.email));
+    
+    if (existingSubscriptions.length > 0) {
+      throw new Error("Email is already subscribed. Error: unique constraint");
+    }
+    
+    const [newSubscription] = await db
+      .insert(newsletterSubscriptions)
+      .values(subscription)
+      .returning();
+    
+    return newSubscription;
+  }
+  
+  async getNewsletterSubscriptions(): Promise<NewsletterSubscription[]> {
+    return await db.select().from(newsletterSubscriptions).orderBy(newsletterSubscriptions.created_at);
+  }
 }
 
 export class MemStorage implements IStorage {
@@ -102,4 +170,5 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+// Cambiamos a usar la implementación de base de datos en vez de memoria
+export const storage = new DatabaseStorage();
