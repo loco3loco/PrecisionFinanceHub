@@ -2,8 +2,8 @@ import { CalculatorIcon, FileText, Lightbulb, Users, Search, PieChart } from "lu
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Check } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
+// Define service data structure
 interface ServiceProps {
   title: string;
   description: string;
@@ -11,113 +11,163 @@ interface ServiceProps {
   icon: React.ReactNode;
   features: string[];
   delay: number;
-  href: string;
+  href: string; // Added href property
 }
 
+// Service Card Component
 const ServiceCard = ({ title, description, image, icon, features, delay, href }: ServiceProps) => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <motion.div
+    <motion.a // Changed to <motion.a>
+      href={`/servicios/${href}`} // Added href attribute
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.5, delay }}
-      className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
+      className="service-card bg-white rounded-lg overflow-hidden shadow-md block" // Added block
     >
-      <a href={href} className="block">
-        <div className="flex items-center mb-4">
-          <div className="mr-4 text-primary">{icon}</div>
-          <h3 className="text-xl font-heading font-semibold">{title}</h3>
+      <div className="h-48 overflow-hidden relative">
+        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-primary/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+          <span className="text-white font-medium">Ver más detalles</span>
         </div>
+      </div>
+      <div className="p-6">
+        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+          {icon}
+        </div>
+        <h3 className="text-xl font-heading font-semibold mb-3">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
-        <ul className="space-y-2">
+        <ul className="mb-4 space-y-2">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center text-gray-600">
-              <Check className="w-4 h-4 mr-2 text-primary" />
+            <li key={index} className="flex items-center text-sm">
+              <Check className="text-secondary mr-2 h-4 w-4" />
               {feature}
             </li>
           ))}
         </ul>
-      </a>
-    </motion.div>
+        {/*Removed Solicitar información link as it's redundant with the clickable card*/}
+      </div>
+    </motion.a>
   );
 };
 
 export default function Services() {
   const { ref, isVisible } = useScrollAnimation();
-  const { t } = useTranslation();
 
+  // Services data
   const services: ServiceProps[] = [
     {
-      title: t("services.accounting.title"),
-      description: "Comprehensive accounting services for your business",
-      image: "/services/accounting.jpg",
-      icon: <CalculatorIcon className="w-6 h-6" />,
-      features: ["Bookkeeping", "Financial Statements", "Tax Preparation"],
+      title: "Servicio Contable",
+      description:
+        "Mantenemos tus libros contables al día, cumpliendo con todas las normativas vigentes y generando informes precisos para la toma de decisiones.",
+      image:
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      icon: <CalculatorIcon className="text-primary" />,
+      features: [
+        "Registros contables actualizados",
+        "Balances mensuales y anuales",
+        "Conciliaciones bancarias",
+      ],
       delay: 0.1,
-      href: "/services/accounting"
+      href: "contable" // Added href
     },
     {
-      title: t("services.tax.title"),
-      description: "Expert tax advisory services",
-      image: "/services/tax.jpg",
-      icon: <FileText className="w-6 h-6" />,
-      features: ["Tax Planning", "Compliance", "Advisory"],
+      title: "Asesoría Fiscal",
+      description:
+        "Optimizamos tu carga tributaria dentro del marco legal, asegurando el cumplimiento de todas tus obligaciones fiscales.",
+      image:
+        "https://images.unsplash.com/photo-1586486855514-8c633cc6fd29?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      icon: <FileText className="text-primary" />,
+      features: [
+        "Declaraciones de impuestos",
+        "Planificación fiscal estratégica",
+        "Representación ante autoridades fiscales",
+      ],
       delay: 0.2,
-      href: "/services/tax"
+      href: "fiscal" // Added href
     },
     {
-      title: t("services.consulting.title"),
-      description: "Strategic business consulting",
-      image: "/services/consulting.jpg",
-      icon: <Lightbulb className="w-6 h-6" />,
-      features: ["Strategy", "Growth Planning", "Risk Management"],
+      title: "Consultoría Empresarial",
+      description:
+        "Asesoramos en la toma de decisiones estratégicas y en la implementación de mejores prácticas para optimizar la rentabilidad de tu negocio.",
+      image:
+        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      icon: <Lightbulb className="text-primary" />,
+      features: [
+        "Análisis financiero y de costos",
+        "Proyecciones y presupuestos",
+        "Optimización de procesos internos",
+      ],
       delay: 0.3,
-      href: "/services/consulting"
+      href: "consultoria" // Added href
     },
     {
-      title: t("services.payroll.title"),
-      description: "Complete payroll management",
-      image: "/services/payroll.jpg",
-      icon: <Users className="w-6 h-6" />,
-      features: ["Payroll Processing", "Tax Filings", "Benefits"],
+      title: "Gestión de Nómina",
+      description:
+        "Administramos la nómina de tu empresa, garantizando el cumplimiento de las obligaciones laborales y optimizando los procesos.",
+      image:
+        "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      icon: <Users className="text-primary" />,
+      features: [
+        "Cálculo de salarios y retenciones",
+        "Gestión de beneficios sociales",
+        "Cumplimiento de normativas laborales",
+      ],
       delay: 0.4,
-      href: "/services/payroll"
+      href: "nomina" // Added href
     },
     {
-      title: t("services.audit.title"),
-      description: "Comprehensive audit services",
-      image: "/services/audit.jpg",
-      icon: <Search className="w-6 h-6" />,
-      features: ["Internal Audit", "Compliance", "Risk Assessment"],
+      title: "Auditoría Interna",
+      description:
+        "Realizamos auditorías para identificar áreas de mejora, evaluar los controles internos y asegurar la integridad de la información financiera.",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      icon: <Search className="text-primary" />,
+      features: [
+        "Revisión de estados financieros",
+        "Evaluación de riesgos",
+        "Recomendaciones de mejora",
+      ],
       delay: 0.5,
-      href: "/services/audit"
+      href: "auditoria" // Added href
     },
     {
-      title: t("services.financial.title"),
-      description: "Financial planning and analysis",
-      image: "/services/financial.jpg",
-      icon: <PieChart className="w-6 h-6" />,
-      features: ["Financial Planning", "Analysis", "Reporting"],
+      title: "Planificación Financiera",
+      description:
+        "Desarrollamos estrategias financieras personalizadas para maximizar el crecimiento y la rentabilidad de tu empresa.",
+      image:
+        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      icon: <PieChart className="text-primary" />,
+      features: [
+        "Proyecciones financieras",
+        "Análisis de inversiones",
+        "Estrategias de financiamiento",
+      ],
       delay: 0.6,
-      href: "/services/financial"
-    }
+      href: "planificacion" // Added href
+    },
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-gray-50">
+    <section id="servicios" className="py-20 bg-gradient-to-b from-white to-accent">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-4xl font-heading font-bold mb-4">{t("services.title")}</h2>
-          <p className="text-xl text-gray-600">{t("services.subtitle")}</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Nuestros Servicios</h2>
+          <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Ofrecemos soluciones integrales para la gestión contable, fiscal y financiera de tu
+            empresa, adaptadas a tus necesidades específicas.
+          </p>
         </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
