@@ -11,19 +11,21 @@ interface ServiceProps {
   icon: React.ReactNode;
   features: string[];
   delay: number;
+  href: string; // Added href property
 }
 
 // Service Card Component
-const ServiceCard = ({ title, description, image, icon, features, delay }: ServiceProps) => {
+const ServiceCard = ({ title, description, image, icon, features, delay, href }: ServiceProps) => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <motion.div
+    <motion.a // Changed to <motion.a>
+      href={`/servicios/${href}`} // Added href attribute
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.5, delay }}
-      className="service-card bg-white rounded-lg overflow-hidden shadow-md"
+      className="service-card bg-white rounded-lg overflow-hidden shadow-md block" // Added block
     >
       <div className="h-48 overflow-hidden relative">
         <img src={image} alt={title} className="w-full h-full object-cover" />
@@ -45,14 +47,9 @@ const ServiceCard = ({ title, description, image, icon, features, delay }: Servi
             </li>
           ))}
         </ul>
-        <a
-          href="#contacto"
-          className="inline-block text-primary font-medium hover:text-secondary transition-colors"
-        >
-          Solicitar información <span aria-hidden="true">→</span>
-        </a>
+        {/*Removed Solicitar información link as it's redundant with the clickable card*/}
       </div>
-    </motion.div>
+    </motion.a>
   );
 };
 
@@ -74,6 +71,7 @@ export default function Services() {
         "Conciliaciones bancarias",
       ],
       delay: 0.1,
+      href: "contable" // Added href
     },
     {
       title: "Asesoría Fiscal",
@@ -88,6 +86,7 @@ export default function Services() {
         "Representación ante autoridades fiscales",
       ],
       delay: 0.2,
+      href: "fiscal" // Added href
     },
     {
       title: "Consultoría Empresarial",
@@ -102,6 +101,7 @@ export default function Services() {
         "Optimización de procesos internos",
       ],
       delay: 0.3,
+      href: "consultoria" // Added href
     },
     {
       title: "Gestión de Nómina",
@@ -116,6 +116,7 @@ export default function Services() {
         "Cumplimiento de normativas laborales",
       ],
       delay: 0.4,
+      href: "nomina" // Added href
     },
     {
       title: "Auditoría Interna",
@@ -130,6 +131,7 @@ export default function Services() {
         "Recomendaciones de mejora",
       ],
       delay: 0.5,
+      href: "auditoria" // Added href
     },
     {
       title: "Planificación Financiera",
@@ -144,6 +146,7 @@ export default function Services() {
         "Estrategias de financiamiento",
       ],
       delay: 0.6,
+      href: "planificacion" // Added href
     },
   ];
 

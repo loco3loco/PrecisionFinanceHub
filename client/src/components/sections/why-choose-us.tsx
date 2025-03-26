@@ -71,8 +71,26 @@ export default function WhyChooseUs() {
     },
   ];
 
+  const stats = [
+    {
+      title: "Confianza garantizada",
+      description: "Satisfacción del cliente al 98%",
+      icon: Shield
+    },
+    {
+      title: "+100 empresas",
+      description: "Confían en nuestros servicios",
+      icon: Building
+    },
+    {
+      title: "+800 colaboradores",
+      description: "Gestionados con excelencia y dedicación",
+      icon: Users
+    }
+  ];
+
   return (
-    <section className="pt-20 pb-16 bg-white">
+    <section className="pt-20 pb-16 bg-white relative z-10">
       <div className="container mx-auto px-4">
         <motion.div
           ref={titleRef}
