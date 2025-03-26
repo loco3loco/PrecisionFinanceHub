@@ -85,14 +85,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-white">
+    <section id="contacto" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.div
           ref={titleRef}
           initial={{ opacity: 0, y: 20 }}
           animate={titleVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">{t("contact.title")}</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
@@ -101,168 +101,78 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <motion.div
-            ref={infoRef}
-            initial={{ opacity: 0, y: 20 }}
-            animate={infoVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="bg-accent rounded-lg p-8 h-full">
-              <h3 className="text-2xl font-heading font-semibold mb-6">{t("contact.locations.title")}</h3>
-
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <MapPin className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.address")}</h4>
-                    <p className="text-gray-600">
-                      18 de Julio número 841 apto 301
-                      <br />
-                      Montevideo, Uruguay
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Phone className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.phone")}</h4>
-                    <p className="text-gray-600">29089595</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Mail className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.email")}</h4>
-                    <p className="text-gray-600">{t("contact.locations.montevideo.email")}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Clock className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.hours")}</h4>
-                    <p className="text-gray-600">9:00 - 17:00</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <MapPin className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-medium mb-1">Atlantida</h4>
-                    <p className="text-gray-600">
-                      Calle 26 esq Calle 3
-                      <br />
-                      Atlantida, Canelones, Uruguay
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Phone className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.phone")}</h4>
-                    <p className="text-gray-600">43716496</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Clock className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-medium mb-1">{t("contact.locations.hours")}</h4>
-                    <p className="text-gray-600">9:00 - 17:00</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </motion.div>
-
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           <motion.div
             ref={formRef}
             initial={{ opacity: 0, y: 20 }}
             animate={formVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            className="lg:col-span-1 bg-white p-8 rounded-xl shadow-md"
           >
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-heading font-semibold mb-6">{t("contact.send")}</h3>
-
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="nombre"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{t("contact.form.name")} *</FormLabel>
-                          <FormControl>
-                            <Input placeholder={t("contact.form.namePlaceholder")} {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="apellido"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{t("contact.form.lastName")} *</FormLabel>
-                          <FormControl>
-                            <Input placeholder={t("contact.form.lastNamePlaceholder")} {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{t("contact.form.email")} *</FormLabel>
-                          <FormControl>
-                            <Input placeholder={t("contact.form.emailPlaceholder")} {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="telefono"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{t("contact.form.phone")}</FormLabel>
-                          <FormControl>
-                            <Input placeholder={t("contact.form.phonePlaceholder")} {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
-
+            <h3 className="text-xl font-bold mb-4 border-b pb-2 border-primary/20">{t("contact.send")}</h3>
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <div>
+                  <FormField
+                    control={form.control}
+                    name="nombre"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{t("contact.form.name")} *</FormLabel>
+                        <FormControl>
+                          <Input placeholder={t("contact.form.namePlaceholder")} {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div>
+                  <FormField
+                    control={form.control}
+                    name="apellido"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{t("contact.form.lastName")} *</FormLabel>
+                        <FormControl>
+                          <Input placeholder={t("contact.form.lastNamePlaceholder")} {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div>
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{t("contact.form.email")} *</FormLabel>
+                        <FormControl>
+                          <Input placeholder={t("contact.form.emailPlaceholder")} {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div>
+                  <FormField
+                    control={form.control}
+                    name="telefono"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{t("contact.form.phone")}</FormLabel>
+                        <FormControl>
+                          <Input placeholder={t("contact.form.phonePlaceholder")} {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div>
                   <FormField
                     control={form.control}
                     name="empresa"
@@ -276,7 +186,8 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
-
+                </div>
+                <div>
                   <FormField
                     control={form.control}
                     name="servicio"
@@ -306,7 +217,8 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
-
+                </div>
+                <div>
                   <FormField
                     control={form.control}
                     name="mensaje"
@@ -324,7 +236,8 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
-
+                </div>
+                <div>
                   <FormField
                     control={form.control}
                     name="aceptar_politica"
@@ -345,16 +258,106 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
+                </div>
+                <Button
+                  type="submit"
+                  className="w-full py-3 px-4 bg-primary text-white font-medium rounded-md hover:bg-secondary transition duration-300"
+                  disabled={form.formState.isSubmitting}
+                >
+                  {form.formState.isSubmitting ? t("contact.form.sending") : t("contact.form.submit")}
+                </Button>
+              </form>
+            </Form>
+          </motion.div>
 
-                  <Button
-                    type="submit"
-                    className="w-full bg-primary text-white hover:bg-secondary transition-colors duration-300"
-                    disabled={form.formState.isSubmitting}
-                  >
-                    {form.formState.isSubmitting ? t("contact.form.sending") : t("contact.form.submit")}
-                  </Button>
-                </form>
-              </Form>
+          <motion.div
+            ref={infoRef}
+            initial={{ opacity: 0, y: 20 }}
+            animate={infoVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
+            className="lg:col-span-2"
+          >
+            <h3 className="text-xl font-bold mb-6 text-center">{t("contact.locations.title")}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-xl shadow-md transition-transform hover:translate-y-[-5px] duration-300">
+                <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 mx-auto">
+                  <MapPin className="text-primary" />
+                </div>
+                <h4 className="text-lg font-bold text-center mb-3">{t("contact.locations.montevideo.title")}</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <MapPin className="text-primary mr-3 mt-0.5" />
+                    <div>
+                      <h5 className="font-medium">{t("contact.locations.address")}</h5>
+                      <p className="text-gray-600">
+                        18 de Julio número 841 apto 301
+                        <br />
+                        Montevideo, Uruguay
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Phone className="text-primary mr-3 mt-0.5" />
+                    <div>
+                      <h5 className="font-medium">{t("contact.locations.phone")}</h5>
+                      <p className="text-gray-600">29089595</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Mail className="text-primary mr-3 mt-0.5" />
+                    <div>
+                      <h5 className="font-medium">{t("contact.locations.email")}</h5>
+                      <p className="text-gray-600">{t("contact.locations.montevideo.email")}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-md transition-transform hover:translate-y-[-5px] duration-300">
+                <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 mx-auto">
+                  <MapPin className="text-primary" />
+                </div>
+                <h4 className="text-lg font-bold text-center mb-3">{t("contact.locations.atlantida.title")}</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <MapPin className="text-primary mr-3 mt-0.5" />
+                    <div>
+                      <h5 className="font-medium">{t("contact.locations.address")}</h5>
+                      <p className="text-gray-600">
+                        Calle 26 esq Calle 3
+                        <br />
+                        Atlantida, Canelones, Uruguay
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Phone className="text-primary mr-3 mt-0.5" />
+                    <div>
+                      <h5 className="font-medium">{t("contact.locations.phone")}</h5>
+                      <p className="text-gray-600">43716496</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 bg-white p-6 rounded-xl shadow-md">
+              <div className="flex items-center mb-4">
+                <Clock className="text-primary mr-2 mt-0.5" />
+                <h4 className="text-lg font-semibold">{t("contact.locations.hours")}</h4>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div className="p-3 bg-primary/5 rounded-lg">
+                  <p className="font-medium">{t("contact.days.weekdays")}</p>
+                  <p className="text-gray-600">9:00 - 17:00</p>
+                </div>
+                <div className="p-3 bg-primary/5 rounded-lg">
+                  <p className="font-medium">{t("contact.days.saturday")}</p>
+                  <p className="text-gray-600">9:00 - 13:00</p>
+                </div>
+                <div className="p-3 bg-primary/5 rounded-lg">
+                  <p className="font-medium">{t("contact.days.sunday")}</p>
+                  <p className="text-gray-600">{t("contact.closed")}</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
