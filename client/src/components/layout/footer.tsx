@@ -48,7 +48,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"> {/* Changed to lg:grid-cols-3 */}
           {/* Logo and Description */}
           <div>
             <div className="flex items-center mb-6">
@@ -77,24 +77,24 @@ export default function Footer() {
             <h3 className="text-lg font-heading font-semibold mb-6">Enlaces Rápidos</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#inicio" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/" className="text-white/80 hover:text-white transition-colors">
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#servicios" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/servicios" className="text-white/80 hover:text-white transition-colors">
                   Servicios
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#nosotros" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/nosotros" className="text-white/80 hover:text-white transition-colors">
                   Nosotros
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contacto" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/contacto" className="text-white/80 hover:text-white transition-colors">
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -104,70 +104,36 @@ export default function Footer() {
             <h3 className="text-lg font-heading font-semibold mb-6">Servicios</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/servicios/contabilidad-corporativa" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/servicios/contabilidad-corporativa" className="text-white/80 hover:text-white transition-colors">
                   Servicio Contable
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/servicios/asesoria-fiscal" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/servicios/asesoria-fiscal" className="text-white/80 hover:text-white transition-colors">
                   Asesoría Fiscal
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/servicios/consultoria-empresarial" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/servicios/consultoria-empresarial" className="text-white/80 hover:text-white transition-colors">
                   Consultoría Empresarial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/servicios/gestion-nomina" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/servicios/gestion-nomina" className="text-white/80 hover:text-white transition-colors">
                   Gestión de Nómina
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/servicios/auditoria-financiera" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/servicios/auditoria-financiera" className="text-white/80 hover:text-white transition-colors">
                   Auditoría Interna
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#contacto" className="text-white/80 hover:text-white transition-colors">
+                <Link href="/#contacto" className="text-white/80 hover:text-white transition-colors">
                   Planificación Financiera
-                </a>
+                </Link>
               </li>
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-heading font-semibold mb-6">Newsletter</h3>
-            <p className="text-white/80 mb-4">
-              Suscríbete para recibir actualizaciones fiscales y contables.
-            </p>
-            <form className="mb-4" onSubmit={handleSubscribe}>
-              <div className="flex">
-                <Input
-                  type="email"
-                  placeholder="Tu email"
-                  className="rounded-l-md rounded-r-none focus:ring-secondary text-darkText"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  disabled={isSubmitting}
-                />
-                <Button
-                  type="submit"
-                  className="bg-secondary hover:bg-secondary/90 rounded-l-none rounded-r-md transition-colors"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? (
-                    <span className="animate-spin">⏳</span>
-                  ) : (
-                    <Send size={16} />
-                  )}
-                </Button>
-              </div>
-            </form>
-            <p className="text-white/80 text-sm">
-              Al suscribirte, aceptas nuestra política de privacidad y el envío de comunicaciones.
-            </p>
           </div>
         </div>
 
@@ -178,15 +144,15 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Solutumsa. Todos los derechos reservados.
             </p>
             <div className="flex flex-wrap justify-center space-x-4">
-              <a href="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              <Link href="#" className="text-white/70 hover:text-white text-sm transition-colors">
                 Términos y Condiciones
-              </a>
-              <a href="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              </Link>
+              <Link href="#" className="text-white/70 hover:text-white text-sm transition-colors">
                 Política de Privacidad
-              </a>
-              <a href="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              </Link>
+              <Link href="#" className="text-white/70 hover:text-white text-sm transition-colors">
                 Política de Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>

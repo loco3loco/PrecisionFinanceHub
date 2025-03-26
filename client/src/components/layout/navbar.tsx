@@ -46,7 +46,6 @@ export default function Navbar() {
       ]
     },
     { name: t("nav.about"), href: "#nosotros" },
-    { name: t("nav.testimonials"), href: "#testimonios" },
     { name: t("nav.contact"), href: "#contacto" },
   ];
 
@@ -117,7 +116,7 @@ export default function Navbar() {
                       {item.name}
                       <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
                     </button>
-                    
+
                     <AnimatePresence>
                       {servicesOpen && (
                         <motion.div
@@ -145,7 +144,7 @@ export default function Navbar() {
                   </div>
                 );
               }
-              
+
               return (
                 <a
                   key={item.name}
@@ -171,7 +170,7 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
-            
+
             <Button
               variant="secondary"
               className="bg-primary text-white hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg"
@@ -183,7 +182,7 @@ export default function Navbar() {
                 <span className="hidden sm:inline">{t("common.whatsapp")}</span>
               </a>
             </Button>
-            
+
             <button
               className="md:hidden text-primary focus:outline-none hover:text-primary/80 transition-colors"
               onClick={toggleMenu}
@@ -219,7 +218,7 @@ export default function Navbar() {
                         {item.name}
                         <ChevronDown className={`ml-auto h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
                       </button>
-                      
+
                       <AnimatePresence>
                         {mobileServicesOpen && (
                           <motion.div
@@ -249,7 +248,7 @@ export default function Navbar() {
                     </div>
                   );
                 }
-                
+
                 return (
                   <a
                     key={item.name}
