@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import BackToTop from "@/components/ui/back-to-top";
 import { Helmet } from "react-helmet";
-import Image from "next/image"; // Added import for Image component
 
 const AUDIT_IMAGE = "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80";
 
@@ -74,12 +73,10 @@ export default function AuditoriaFinanciera() {
                 transition={{ duration: 0.5 }}
                 className="bg-white rounded-2xl shadow-xl overflow-hidden"
               >
-                <Image 
-                  src={AUDIT_IMAGE} // Changed image source
+                <img 
+                  src={AUDIT_IMAGE} 
                   alt="Auditoría Financiera" 
                   className="w-full h-64 object-cover"
-                  fill
-                  style={{objectFit: "cover"}}
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">¿Por qué auditar sus finanzas?</h3>
