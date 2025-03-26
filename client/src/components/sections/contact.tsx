@@ -344,17 +344,13 @@ export default function Contact() {
                 <Clock className="text-primary mr-2 mt-0.5" />
                 <h4 className="text-lg font-semibold">Horario de Atención</h4>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
                 <div className="p-3 bg-primary/5 rounded-lg">
                   <p className="font-medium">Lunes a Viernes</p>
                   <p className="text-gray-600">9:00 - 17:00</p>
                 </div>
                 <div className="p-3 bg-primary/5 rounded-lg">
-                  <p className="font-medium">Sábados</p>
-                  <p className="text-gray-600">9:00 - 13:00</p>
-                </div>
-                <div className="p-3 bg-primary/5 rounded-lg">
-                  <p className="font-medium">Domingos</p>
+                  <p className="font-medium">Sábados y Domingos</p>
                   <p className="text-gray-600">Cerrado</p>
                 </div>
               </div>
