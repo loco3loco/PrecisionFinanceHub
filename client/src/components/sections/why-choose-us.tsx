@@ -1,16 +1,25 @@
-import { Building, TrendingUp, Users } from "lucide-react";
+import { Building, Shield, TrendingUp, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
+function CountUp({ target, prefix = "" }: { target: number; prefix?: string }) {
+  const { ref, isVisible } = useScrollAnimation();
+
+  return (
+    <span ref={ref}>
+      {isVisible ? `${prefix}${target}` : "0"}
+    </span>
+  );
+}
+
 interface StatCardProps {
   icon: React.ReactNode;
-  count: number;
   title: string;
   description: string;
   delay: number;
 }
 
-const StatCard = ({ icon, count, title, description, delay }: StatCardProps) => {
+const StatCard = ({ icon, title, description, delay }: StatCardProps) => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
@@ -24,68 +33,33 @@ const StatCard = ({ icon, count, title, description, delay }: StatCardProps) => 
       <div className="w-16 h-16 rounded-full bg-primary/10 mx-auto flex items-center justify-center mb-6">
         {icon}
       </div>
-      <h3 className="text-4xl font-heading font-bold text-primary mb-2">
-        <CountUp target={count} prefix="+" />
-      </h3>
-      <h4 className="text-xl font-heading font-semibold mb-3">{title}</h4>
+      <h3 className="text-xl font-heading font-bold text-primary mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </motion.div>
   );
 };
-
-// Simple count-up component
-function CountUp({ target, prefix = "" }: { target: number; prefix?: string }) {
-  const { ref, isVisible } = useScrollAnimation();
-  
-  return (
-    <span ref={ref}>
-      {isVisible ? `${prefix}${target}` : "0"}
-    </span>
-  );
-}
 
 export default function WhyChooseUs() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
 
   const stats = [
     {
-      icon: <Building className="text-2xl text-primary" />,
-      count: 1000,
-      title: "Empresas",
-      description: "Confían en nosotros todos los días.",
-      delay: 0,
-    },
-    {
-      icon: <TrendingUp className="text-2xl text-primary" />,
-      count: 50,
-      title: "Años",
-      description: "De trayectoria, brindando un servicio que supera expectativas.",
-      delay: 0.2,
-    },
-    {
-      icon: <Users className="text-2xl text-primary" />,
-      count: 40,
-      title: "Colaboradores",
-      description: "Tienen relación de dependencia en las empresas que asesoramos.",
-      delay: 0.4,
-    },
-  ];
-
-  const stats = [
-    {
       title: "Confianza garantizada",
       description: "Satisfacción del cliente al 98%",
-      icon: Shield
+      icon: <Shield className="text-2xl text-primary" />,
+      delay: 0
     },
     {
       title: "+100 empresas",
       description: "Confían en nuestros servicios",
-      icon: Building
+      icon: <Building className="text-2xl text-primary" />,
+      delay: 0.2
     },
     {
       title: "+800 colaboradores",
       description: "Gestionados con excelencia y dedicación",
-      icon: Users
+      icon: <Users className="text-2xl text-primary" />,
+      delay: 0.4
     }
   ];
 
