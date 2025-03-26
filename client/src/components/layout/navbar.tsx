@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import Logo from "@/components/ui/logo"; // Added import for Logo component
+
 
 // Definición de tipos para nuestros menús
 type SubMenuItem = {
@@ -84,19 +86,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <Link href="/">
             <div className="flex items-center cursor-pointer group">
-              <div className="w-12 h-12 relative overflow-hidden transition-all duration-300 group-hover:scale-105">
-                <svg
-                  viewBox="0 0 100 100"
-                  className="w-full h-full text-primary"
-                  fill="currentColor"
-                >
-                  <rect x="10" y="30" width="30" height="50" rx="5" />
-                  <rect x="50" y="30" width="40" height="10" rx="5" />
-                  <rect x="50" y="50" width="40" height="10" rx="5" />
-                  <rect x="50" y="70" width="40" height="10" rx="5" />
-                  <path d="M30,20 L70,20 L70,10 L30,10 Z" />
-                </svg>
-              </div>
+              <Link to="/" className="hover:opacity-90 transition-opacity"> {/* Replaced logo text with Logo component */}
+                <Logo width={150} height={60} />
+              </Link>
               <span className="ml-2 text-xl font-heading font-bold text-primary group-hover:text-primary/80 transition-colors">
                 Solutumsa
               </span>

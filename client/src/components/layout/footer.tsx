@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
+import Logo from "@/components/ui/logo"; // Added import for Logo component
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -48,31 +49,19 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"> {/* Changed to lg:grid-cols-3 */}
-          {/* Logo and Description */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-white rounded-md flex items-center justify-center mr-3">
-                <svg
-                  viewBox="0 0 100 100"
-                  className="w-8 h-8 text-primary"
-                  fill="currentColor"
-                >
-                  <rect x="10" y="30" width="30" height="50" rx="5" />
-                  <rect x="50" y="30" width="40" height="10" rx="5" />
-                  <rect x="50" y="50" width="40" height="10" rx="5" />
-                  <rect x="50" y="70" width="40" height="10" rx="5" />
-                  <path d="M30,20 L70,20 L70,10 L30,10 Z" />
-                </svg>
-              </div>
-              <span className="text-xl font-heading font-bold">Solutumsa</span>
+              <Link to="/" className="mb-3"> {/* Replaced logo text with Logo component */}
+                <Logo variant="white" width={180} height={70} />
+              </Link>
+              {/* <span className="text-xl font-heading font-bold">Solutumsa</span> */}
             </div>
             <p className="text-white/80 mb-6">
               Socios estratégicos en el crecimiento de tu empresa. Más de 50 años de experiencia a tu servicio.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">Enlaces Rápidos</h3>
             <ul className="space-y-3">
@@ -99,7 +88,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">Servicios</h3>
             <ul className="space-y-3">
@@ -137,7 +125,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright and Legal */}
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/70 text-sm mb-4 md:mb-0">

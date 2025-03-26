@@ -57,12 +57,14 @@
       "title": "Our Offices",
       "address": "Address",
       "phone": "Phone",
+      "mobile": "Mobile",
       "email": "Email",
       "hours": "Hours",
       "montevideo": {
         "name": "MONTEVIDEO",
         "address": "Paraguay 1380 Entrepiso, 11100 Montevideo, Uruguay",
         "phone": "Tel: 2908 95 95",
+        "mobile": "Mobile: +59898609965",
         "email": "info@solutumsa.com",
         "hours": "Monday to Friday 10:00-17:00",
         "city": "Montevideo, Uruguay"
@@ -71,6 +73,7 @@
         "name": "ATLÁNTIDA",
         "address": "Calle 26 esq, C. 3, 15200 Atlántida, Departamento de Canelones",
         "phone": "Tel: 4371 64 96",
+        "mobile": "Mobile: +59898609965",
         "email": "atlantida@solutumsa.com",
         "hours": "Monday to Friday 10:00-17:00",
         "city": "Atlántida, Canelones"
