@@ -5,7 +5,7 @@ import HeroSection from "@/components/sections/hero-section";
 import WhyChooseUs from "@/components/sections/why-choose-us";
 import Services from "@/components/sections/services";
 import AboutUs from "@/components/sections/about-us";
-import Testimonials from "@/components/sections/testimonials";
+
 import FAQ from "@/components/sections/faq";
 import CTA from "@/components/sections/cta";
 import Contact from "@/components/sections/contact";
@@ -28,7 +28,6 @@ export default function Home() {
         <WhyChooseUs />
         <Services />
         <AboutUs />
-        <Testimonials />
         <FAQ />
         <CTA />
         <Contact />
