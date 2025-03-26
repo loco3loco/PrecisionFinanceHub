@@ -104,32 +104,32 @@ export default function Footer() {
             <h3 className="text-lg font-heading font-semibold mb-6">Servicios</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#servicios" className="text-white/80 hover:text-white transition-colors">
+                <a href="/servicios/contabilidad-corporativa" className="text-white/80 hover:text-white transition-colors">
                   Servicio Contable
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-white/80 hover:text-white transition-colors">
+                <a href="/servicios/asesoria-fiscal" className="text-white/80 hover:text-white transition-colors">
                   Asesoría Fiscal
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-white/80 hover:text-white transition-colors">
+                <a href="/servicios/consultoria-empresarial" className="text-white/80 hover:text-white transition-colors">
                   Consultoría Empresarial
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-white/80 hover:text-white transition-colors">
+                <a href="/servicios/gestion-nomina" className="text-white/80 hover:text-white transition-colors">
                   Gestión de Nómina
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-white/80 hover:text-white transition-colors">
+                <a href="/servicios/auditoria-financiera" className="text-white/80 hover:text-white transition-colors">
                   Auditoría Interna
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-white/80 hover:text-white transition-colors">
+                <a href="/#contacto" className="text-white/80 hover:text-white transition-colors">
                   Planificación Financiera
                 </a>
               </li>

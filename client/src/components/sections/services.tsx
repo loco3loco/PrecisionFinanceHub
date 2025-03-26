@@ -123,7 +123,7 @@ export default function Services() {
       description:
         "Realizamos auditorías para identificar áreas de mejora, evaluar los controles internos y asegurar la integridad de la información financiera.",
       image:
-        "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       icon: <Search className="text-primary" />,
       features: [
         "Revisión de estados financieros",
@@ -138,7 +138,7 @@ export default function Services() {
       description:
         "Desarrollamos estrategias financieras personalizadas para maximizar el rendimiento y asegurar el crecimiento sostenible de tu empresa.",
       image:
-        "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       icon: <PieChart className="text-primary" />,
       features: [
         "Análisis financiero detallado",
