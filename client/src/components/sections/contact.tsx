@@ -277,18 +277,18 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-2"
           >
-            <h3 className="text-xl font-bold mb-6 text-center">{t("contact.locations.title")}</h3>
+            <h3 className="text-xl font-bold mb-6 text-center">Nuestras Oficinas</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-xl shadow-md transition-transform hover:translate-y-[-5px] duration-300">
                 <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 mx-auto">
                   <MapPin className="text-primary" />
                 </div>
-                <h4 className="text-lg font-bold text-center mb-3">{t("contact.locations.montevideo.title")}</h4>
+                <h4 className="text-lg font-bold text-center mb-3">Montevideo</h4>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.locations.address")}</h5>
+                      <h5 className="font-medium">Dirección</h5>
                       <p className="text-gray-600">
                         18 de Julio número 841 apto 301
                         <br />
@@ -299,15 +299,15 @@ export default function Contact() {
                   <div className="flex items-start">
                     <Phone className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.locations.phone")}</h5>
+                      <h5 className="font-medium">Teléfono</h5>
                       <p className="text-gray-600">29089595</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Mail className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.locations.email")}</h5>
-                      <p className="text-gray-600">{t("contact.locations.montevideo.email")}</p>
+                      <h5 className="font-medium">Email</h5>
+                      <p className="text-gray-600">contacto@solutmsa.com</p>
                     </div>
                   </div>
                 </div>
@@ -316,23 +316,23 @@ export default function Contact() {
                 <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 mx-auto">
                   <MapPin className="text-primary" />
                 </div>
-                <h4 className="text-lg font-bold text-center mb-3">{t("contact.locations.atlantida.title")}</h4>
+                <h4 className="text-lg font-bold text-center mb-3">Atlántida</h4>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.locations.address")}</h5>
+                      <h5 className="font-medium">Dirección</h5>
                       <p className="text-gray-600">
                         Calle 26 esq Calle 3
                         <br />
-                        Atlantida, Canelones, Uruguay
+                        Atlántida, Canelones, Uruguay
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Phone className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.locations.phone")}</h5>
+                      <h5 className="font-medium">Teléfono</h5>
                       <p className="text-gray-600">43716496</p>
                     </div>
                   </div>
@@ -342,20 +342,20 @@ export default function Contact() {
             <div className="mt-6 bg-white p-6 rounded-xl shadow-md">
               <div className="flex items-center mb-4">
                 <Clock className="text-primary mr-2 mt-0.5" />
-                <h4 className="text-lg font-semibold">{t("contact.locations.hours")}</h4>
+                <h4 className="text-lg font-semibold">Horario de Atención</h4>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                 <div className="p-3 bg-primary/5 rounded-lg">
-                  <p className="font-medium">{t("contact.days.weekdays")}</p>
+                  <p className="font-medium">Lunes a Viernes</p>
                   <p className="text-gray-600">9:00 - 17:00</p>
                 </div>
                 <div className="p-3 bg-primary/5 rounded-lg">
-                  <p className="font-medium">{t("contact.days.saturday")}</p>
+                  <p className="font-medium">Sábados</p>
                   <p className="text-gray-600">9:00 - 13:00</p>
                 </div>
                 <div className="p-3 bg-primary/5 rounded-lg">
-                  <p className="font-medium">{t("contact.days.sunday")}</p>
-                  <p className="text-gray-600">{t("contact.closed")}</p>
+                  <p className="font-medium">Domingos</p>
+                  <p className="text-gray-600">Cerrado</p>
                 </div>
               </div>
             </div>
