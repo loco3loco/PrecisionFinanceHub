@@ -304,6 +304,13 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="flex items-start">
+                    <Smartphone className="text-primary mr-3 mt-0.5" />
+                    <div>
+                      <h5 className="font-medium">Celular</h5>
+                      <p className="text-gray-600">+59898609965</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
                     <Mail className="text-primary mr-3 mt-0.5" />
                     <div>
                       <h5 className="font-medium">Email</h5>
@@ -334,6 +341,13 @@ export default function Contact() {
                     <div>
                       <h5 className="font-medium">Teléfono</h5>
                       <p className="text-gray-600">43716496</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Smartphone className="text-primary mr-3 mt-0.5" />
+                    <div>
+                      <h5 className="font-medium">Celular</h5>
+                      <p className="text-gray-600">+59898609965</p>
                     </div>
                   </div>
                 </div>
