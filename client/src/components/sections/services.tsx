@@ -71,14 +71,14 @@ export default function Services() {
         "Conciliaciones bancarias",
       ],
       delay: 0.1,
-      href: "contable" // Added href
+      href: "contabilidad-corporativa"
     },
     {
       title: "Asesoría Fiscal",
       description:
         "Optimizamos tu carga tributaria dentro del marco legal, asegurando el cumplimiento de todas tus obligaciones fiscales.",
       image:
-        "https://images.unsplash.com/photo-1586486855514-8c633cc6fd29?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       icon: <FileText className="text-primary" />,
       features: [
         "Declaraciones de impuestos",
@@ -86,7 +86,7 @@ export default function Services() {
         "Representación ante autoridades fiscales",
       ],
       delay: 0.2,
-      href: "fiscal" // Added href
+      href: "asesoria-fiscal"
     },
     {
       title: "Consultoría Empresarial",
@@ -101,7 +101,7 @@ export default function Services() {
         "Optimización de procesos internos",
       ],
       delay: 0.3,
-      href: "consultoria" // Added href
+      href: "consultoria"
     },
     {
       title: "Gestión de Nómina",
@@ -116,7 +116,7 @@ export default function Services() {
         "Cumplimiento de normativas laborales",
       ],
       delay: 0.4,
-      href: "nomina" // Added href
+      href: "nomina"
     },
     {
       title: "Auditoría Interna",
@@ -131,7 +131,7 @@ export default function Services() {
         "Recomendaciones de mejora",
       ],
       delay: 0.5,
-      href: "auditoria" // Added href
+      href: "auditoria"
     },
     {
       title: "Planificación Financiera",
@@ -146,7 +146,7 @@ export default function Services() {
         "Estrategias de financiamiento",
       ],
       delay: 0.6,
-      href: "planificacion" // Added href
+      href: "planificacion"
     },
   ];
 
