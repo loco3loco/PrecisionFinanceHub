@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Check, Send, Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Check, Send } from "lucide-react";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -13,7 +13,7 @@ export default function Footer() {
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email) {
       toast({
         title: "Error",
@@ -22,17 +22,17 @@ export default function Footer() {
       });
       return;
     }
-    
+
     setIsSubmitting(true);
-    
+
     try {
       await apiRequest("POST", "/api/subscribe", { email });
-      
+
       toast({
         title: "¡Suscripción exitosa!",
         description: "Gracias por suscribirte a nuestro newsletter",
       });
-      
+
       setEmail("");
     } catch (error) {
       toast({
@@ -70,36 +70,6 @@ export default function Footer() {
             <p className="text-white/80 mb-6">
               Socios estratégicos en el crecimiento de tu empresa. Más de 50 años de experiencia a tu servicio.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 border border-white/30 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={16} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 border border-white/30 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={16} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 border border-white/30 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={16} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 border border-white/30 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={16} />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -119,11 +89,6 @@ export default function Footer() {
               <li>
                 <a href="#nosotros" className="text-white/80 hover:text-white transition-colors">
                   Nosotros
-                </a>
-              </li>
-              <li>
-                <a href="#testimonios" className="text-white/80 hover:text-white transition-colors">
-                  Testimonios
                 </a>
               </li>
               <li>
