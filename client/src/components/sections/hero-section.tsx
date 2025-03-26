@@ -102,7 +102,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={cardVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="absolute -bottom-5 -left-5 bg-white rounded-lg shadow-lg p-4 max-w-xs"
+            className="absolute -bottom-5 -left-5 bg-white rounded-lg shadow-lg p-4 max-w-xs z-20"
           >
             <div className="flex items-center">
               <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
