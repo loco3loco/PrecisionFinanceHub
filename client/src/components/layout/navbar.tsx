@@ -149,7 +149,18 @@ export default function Navbar() {
               return (
                 <a
                   key={item.name}
-                  href={item.href}
+                  href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+                  onClick={(e) => {
+                    if (item.href.startsWith('#')) {
+                      e.preventDefault();
+                      const isHome = window.location.pathname === '/';
+                      if (!isHome) {
+                        window.location.href = `/${item.href}`;
+                      } else {
+                        document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }
+                  }}
                   className="font-heading font-medium hover:text-primary transition-colors py-2"
                 >
                   {item.name}

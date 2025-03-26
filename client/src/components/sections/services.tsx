@@ -136,17 +136,17 @@ export default function Services() {
     {
       title: "Planificación Financiera",
       description:
-        "Desarrollamos estrategias financieras personalizadas para maximizar el crecimiento y la rentabilidad de tu empresa.",
+        "Desarrollamos estrategias financieras personalizadas para maximizar el rendimiento y asegurar el crecimiento sostenible de tu empresa.",
       image:
-        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       icon: <PieChart className="text-primary" />,
       features: [
-        "Proyecciones financieras",
-        "Análisis de inversiones",
+        "Análisis financiero detallado",
+        "Proyecciones y presupuestos",
         "Estrategias de financiamiento",
       ],
       delay: 0.6,
-      href: "contacto"
+      href: "#contacto"
     },
   ];
 
