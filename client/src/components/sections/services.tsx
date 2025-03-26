@@ -101,14 +101,14 @@ export default function Services() {
         "Optimización de procesos internos",
       ],
       delay: 0.3,
-      href: "consultoria"
+      href: "consultoria-empresarial"
     },
     {
       title: "Gestión de Nómina",
       description:
         "Administramos la nómina de tu empresa, garantizando el cumplimiento de las obligaciones laborales y optimizando los procesos.",
       image:
-        "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1554224155-1696413565d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       icon: <Users className="text-primary" />,
       features: [
         "Cálculo de salarios y retenciones",
@@ -116,14 +116,14 @@ export default function Services() {
         "Cumplimiento de normativas laborales",
       ],
       delay: 0.4,
-      href: "nomina"
+      href: "gestion-nomina"
     },
     {
       title: "Auditoría Interna",
       description:
         "Realizamos auditorías para identificar áreas de mejora, evaluar los controles internos y asegurar la integridad de la información financiera.",
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       icon: <Search className="text-primary" />,
       features: [
         "Revisión de estados financieros",
@@ -131,7 +131,7 @@ export default function Services() {
         "Recomendaciones de mejora",
       ],
       delay: 0.5,
-      href: "auditoria"
+      href: "auditoria-financiera"
     },
     {
       title: "Planificación Financiera",
@@ -146,7 +146,7 @@ export default function Services() {
         "Estrategias de financiamiento",
       ],
       delay: 0.6,
-      href: "planificacion"
+      href: "contacto"
     },
   ];
 
