@@ -223,5 +223,95 @@
     "email_invalid": "Por favor, ingrese un email válido",
     "message_min_length": "El mensaje debe tener al menos 10 caracteres",
     "privacy_policy_required": "Debe aceptar la política de privacidad"
+  },
+  "service_pages": {
+    "common": {
+      "request_service": "Solicitar asesoría",
+      "why_choose_us": "¿Por qué elegirnos?",
+      "why_choose_us_title": "¿Por Qué Elegirnos?",
+      "our_services": "Nuestros Servicios",
+      "methodology": "Nuestra Metodología",
+      "benefits": "Beneficios",
+      "success_cases": "Casos de Éxito",
+      "faq": "Preguntas Frecuentes",
+      "contact_us": "Contáctenos",
+      "learn_more": "Conocer más"
+    },
+    "tax_advisory": {
+      "title": "Asesoría Fiscal",
+      "meta_description": "Servicios de asesoría fiscal de Solutumsa. Optimice su planificación fiscal, cumpla con normativas tributarias y maximice sus beneficios fiscales con nuestro asesoramiento especializado.",
+      "meta_keywords": "asesoría fiscal, planificación tributaria, cumplimiento normativo, beneficios fiscales, consultoría tributaria",
+      "subtitle": "Soluciones fiscales estratégicas para optimizar la carga tributaria de su empresa dentro del marco legal.",
+      "why_choose_us_items": [
+        "Expertos en legislación tributaria nacional e internacional",
+        "Enfoque personalizado según su sector e industria",
+        "Actualización constante ante cambios normativos",
+        "Estrategias fiscales legales que maximizan beneficios"
+      ],
+      "main_services_title": "Nuestros Servicios Fiscales",
+      "main_services_description": "Ofrecemos soluciones fiscales integrales que aseguran el cumplimiento normativo y optimizan la carga tributaria de su empresa.",
+      "approach_title": "Nuestro Enfoque",
+      "approach_description": "Adoptamos un enfoque preventivo y estratégico para la gestión fiscal de su empresa, anticipándonos a los cambios y optimizando resultados.",
+      "why_choose_us_description": "Contamos con las cualidades y la experiencia necesarias para convertir la gestión fiscal en una ventaja competitiva para su empresa.",
+      "cta_title": "Optimice la fiscalidad de su empresa",
+      "cta_description": "Nuestros expertos le ayudarán a implementar la estrategia fiscal más adecuada para su empresa. Solicite una consulta sin compromiso.",
+      "cta_button": "Solicitar consulta fiscal",
+      "services": {
+        "planning": {
+          "title": "Planificación Fiscal",
+          "description": "Desarrollamos estrategias fiscales a medida para optimizar la posición tributaria de su empresa en el corto y largo plazo.",
+          "features": [
+            "Análisis de la situación fiscal actual",
+            "Identificación de oportunidades de ahorro fiscal",
+            "Diseño de estructuras fiscales eficientes"
+          ]
+        },
+        "compliance": {
+          "title": "Cumplimiento Tributario",
+          "description": "Garantizamos que su empresa cumpla con todas las obligaciones fiscales en tiempo y forma.",
+          "features": [
+            "Preparación y presentación de declaraciones",
+            "Gestión de calendarios fiscales",
+            "Atención a requerimientos de autoridades fiscales"
+          ]
+        },
+        "defense": {
+          "title": "Defensa Fiscal",
+          "description": "Representamos y defendemos los intereses de su empresa ante autoridades fiscales en caso de auditorías o controversias.",
+          "features": [
+            "Respuesta a auditorías fiscales",
+            "Recursos administrativos y litigios fiscales",
+            "Acuerdos conclusivos con autoridades"
+          ]
+        },
+        "international": {
+          "title": "Fiscalidad Internacional",
+          "description": "Asesoramos sobre la estructura fiscal óptima para empresas con operaciones internacionales.",
+          "features": [
+            "Planificación fiscal internacional",
+            "Precios de transferencia",
+            "Aplicación de convenios para evitar doble imposición"
+          ]
+        },
+        "due_diligence": {
+          "title": "Due Diligence Fiscal",
+          "description": "Evaluamos los riesgos fiscales en operaciones de compra, venta o fusión de empresas.",
+          "features": [
+            "Revisión de contingencias fiscales",
+            "Evaluación de pasivos fiscales",
+            "Asesoría fiscal en operaciones corporativas"
+          ]
+        },
+        "consulting": {
+          "title": "Consultoría Fiscal",
+          "description": "Ofrecemos asesoramiento especializado para resolver dudas y situaciones fiscales específicas.",
+          "features": [
+            "Consultas sobre normativa fiscal",
+            "Análisis de situaciones fiscales complejas",
+            "Opiniones fiscales fundamentadas"
+          ]
+        }
+      }
+    }
   }
 }

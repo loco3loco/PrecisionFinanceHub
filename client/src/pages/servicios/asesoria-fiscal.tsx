@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import BackToTop from "@/components/ui/back-to-top";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 export default function AsesoriaFiscal() {
+  const { t } = useTranslation();
   const { ref: refSection1, isVisible: isVisibleSection1 } = useScrollAnimation();
   const { ref: refSection2, isVisible: isVisibleSection2 } = useScrollAnimation();
   const { ref: refSection3, isVisible: isVisibleSection3 } = useScrollAnimation();
@@ -22,9 +24,9 @@ export default function AsesoriaFiscal() {
   return (
     <>
       <Helmet>
-        <title>Asesoría Fiscal | Solutumsa</title>
-        <meta name="description" content="Servicios de asesoría fiscal de Solutumsa. Optimice su planificación fiscal, cumpla con normativas tributarias y maximice sus beneficios fiscales con nuestro asesoramiento especializado." />
-        <meta name="keywords" content="asesoría fiscal, planificación tributaria, cumplimiento normativo, beneficios fiscales, consultoría tributaria" />
+        <title>{t('service_pages.tax_advisory.title', 'Asesoría Fiscal')} | Solutumsa</title>
+        <meta name="description" content={t('service_pages.tax_advisory.meta_description', 'Servicios de asesoría fiscal de Solutumsa. Optimice su planificación fiscal, cumpla con normativas tributarias y maximice sus beneficios fiscales con nuestro asesoramiento especializado.')} />
+        <meta name="keywords" content={t('service_pages.tax_advisory.meta_keywords', 'asesoría fiscal, planificación tributaria, cumplimiento normativo, beneficios fiscales, consultoría tributaria')} />
       </Helmet>
 
       <Navbar />
@@ -40,7 +42,7 @@ export default function AsesoriaFiscal() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                Asesoría Fiscal
+                {t('service_pages.tax_advisory.title', 'Asesoría Fiscal')}
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -48,7 +50,7 @@ export default function AsesoriaFiscal() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                Soluciones fiscales estratégicas para optimizar la carga tributaria de su empresa dentro del marco legal.
+                {t('service_pages.tax_advisory.subtitle', 'Soluciones fiscales estratégicas para optimizar la carga tributaria de su empresa dentro del marco legal.')}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +59,7 @@ export default function AsesoriaFiscal() {
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
                   <a href="#contacto">
-                    Solicitar asesoría
+                    {t('service_pages.common.request_service', 'Solicitar asesoría')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -76,23 +78,23 @@ export default function AsesoriaFiscal() {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">¿Por qué elegirnos para su asesoría fiscal?</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('service_pages.common.why_choose_us', '¿Por qué elegirnos?')}</h3>
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Expertos en legislación tributaria nacional e internacional</span>
+                      <span>{t('service_pages.tax_advisory.why_choose_us_items.0', 'Expertos en legislación tributaria nacional e internacional')}</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Enfoque personalizado según su sector e industria</span>
+                      <span>{t('service_pages.tax_advisory.why_choose_us_items.1', 'Enfoque personalizado según su sector e industria')}</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Actualización constante ante cambios normativos</span>
+                      <span>{t('service_pages.tax_advisory.why_choose_us_items.2', 'Actualización constante ante cambios normativos')}</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Estrategias fiscales legales que maximizan beneficios</span>
+                      <span>{t('service_pages.tax_advisory.why_choose_us_items.3', 'Estrategias fiscales legales que maximizan beneficios')}</span>
                     </li>
                   </ul>
                 </div>
@@ -111,10 +113,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios Fiscales</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.main_services_title', 'Nuestros Servicios Fiscales')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrecemos soluciones fiscales integrales que aseguran el cumplimiento normativo
-              y optimizan la carga tributaria de su empresa.
+              {t('service_pages.tax_advisory.main_services_description', 'Ofrecemos soluciones fiscales integrales que aseguran el cumplimiento normativo y optimizan la carga tributaria de su empresa.')}
             </p>
           </motion.div>
 
@@ -323,10 +324,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestro Enfoque</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.approach_title', 'Nuestro Enfoque')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Adoptamos un enfoque preventivo y estratégico para la gestión fiscal
-              de su empresa, anticipándonos a los cambios y optimizando resultados.
+              {t('service_pages.tax_advisory.approach_description', 'Adoptamos un enfoque preventivo y estratégico para la gestión fiscal de su empresa, anticipándonos a los cambios y optimizando resultados.')}
             </p>
           </motion.div>
 
@@ -415,10 +415,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Por Qué Elegirnos?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.common.why_choose_us_title', '¿Por Qué Elegirnos?')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Contamos con las cualidades y la experiencia necesarias para convertir
-              la gestión fiscal en una ventaja competitiva para su empresa.
+              {t('service_pages.tax_advisory.why_choose_us_description', 'Contamos con las cualidades y la experiencia necesarias para convertir la gestión fiscal en una ventaja competitiva para su empresa.')}
             </p>
           </motion.div>
 
@@ -496,15 +495,14 @@ export default function AsesoriaFiscal() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Optimice la fiscalidad de su empresa
+              {t('service_pages.tax_advisory.cta_title', 'Optimice la fiscalidad de su empresa')}
             </h2>
             <p className="text-xl mb-8">
-              Nuestros expertos le ayudarán a implementar la estrategia fiscal más
-              adecuada para su empresa. Solicite una consulta sin compromiso.
+              {t('service_pages.tax_advisory.cta_description', 'Nuestros expertos le ayudarán a implementar la estrategia fiscal más adecuada para su empresa. Solicite una consulta sin compromiso.')}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                Solicitar consulta fiscal
+                {t('service_pages.tax_advisory.cta_button', 'Solicitar consulta fiscal')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
