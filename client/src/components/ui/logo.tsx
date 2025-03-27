@@ -40,3 +40,6 @@ export function Logo({
     </a>
   );
 }
+
+// Add default export
+export default Logo;
