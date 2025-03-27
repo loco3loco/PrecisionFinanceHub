@@ -14,20 +14,18 @@ export function Logo({
   width = 200, 
   height = 80 
 }: LogoProps) {
-  // Para simplificar, cargaremos la imagen directamente desde public/assets
-  // Cuando se necesite la versión blanca, usaremos un filtro CSS
-  
+  // Usamos la nueva imagen del logo y aplicamos el filtro solo si es variante blanca
   return (
     <div 
-      className={`${className} ${variant === "white" ? "brightness-0 invert" : ""}`} 
+      className={`${className} flex items-center justify-center`}
       style={{ width, height }}
     >
       <img 
-        src="/assets/logo-solutumsa.png" 
+        src="/assets/logo-solutumsa-new.png" 
         alt="Solutum S.A." 
-        width="100%" 
-        height="100%"
-        style={{ objectFit: "contain" }}
+        className={`w-full h-full object-contain ${variant === "white" ? "brightness-0 invert" : ""}`}
+        width={width}
+        height={height}
       />
     </div>
   );
