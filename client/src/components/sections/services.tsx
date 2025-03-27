@@ -16,10 +16,10 @@ interface ServiceProps {
 
 const ServiceCard = ({ title, description, image, icon, features, delay, href }: ServiceProps) => {
   const { t } = useTranslation();
-  
+
   // Debug to see what's being passed to features
   console.log("Features:", features, "Type:", typeof features, "Is array:", Array.isArray(features));
-  
+
   // Create a safe array if features is not an array
   const featuresList = Array.isArray(features) ? features : [];
 

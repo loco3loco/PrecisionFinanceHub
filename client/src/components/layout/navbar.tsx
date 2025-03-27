@@ -39,12 +39,12 @@ export default function Navbar() {
       name: t("nav.services"),
       href: "#servicios",
       submenu: [
-        { name: t("services.accounting.title"), href: "/servicios/contabilidad-corporativa" },
-        { name: t("services.tax.title"), href: "/servicios/asesoria-fiscal" },
-        { name: t("services.consulting.title"), href: "/servicios/consultoria-empresarial" },
-        { name: t("services.audit.title"), href: "/servicios/auditoria-financiera" },
-        { name: t("services.payroll.title"), href: "/servicios/gestion-nomina" },
-        { name: t("services.financial.title"), href: "/servicios/tecnologia-contable" }
+        { name: t("services.items.accounting.title"), href: "/servicios/contabilidad-corporativa" },
+        { name: t("services.items.tax.title"), href: "/servicios/asesoria-fiscal" },
+        { name: t("services.items.consulting.title"), href: "/servicios/consultoria-empresarial" },
+        { name: t("services.items.audit.title"), href: "/servicios/auditoria-financiera" },
+        { name: t("services.items.payroll.title"), href: "/servicios/gestion-nomina" },
+        { name: t("services.items.financial.title"), href: "/servicios/tecnologia-contable" }
       ]
     },
     { name: t("nav.about"), href: "#nosotros" },
