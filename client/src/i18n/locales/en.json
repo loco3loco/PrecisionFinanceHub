@@ -224,6 +224,11 @@
     "message_min_length": "Message must be at least 10 characters",
     "privacy_policy_required": "You must accept the privacy policy"
   },
+  "not_found": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "button": "Return to Home Page"
+  },
   "service_pages": {
     "common": {
       "request_service": "Request advisory",
@@ -478,6 +483,156 @@
       "cta_title": "Modernize your accounting processes",
       "cta_description": "Our experts will help you implement the appropriate technological solutions to optimize your company's financial management.",
       "cta_button": "Request technological advice"
+    },
+
+    "tech_account": {
+      "title": "Accounting Technology",
+      "meta_description": "Solutumsa's accounting technology solutions. Implementation of advanced systems to optimize your financial and accounting processes.",
+      "meta_keywords": "accounting technology, accounting software, financial automation, digital transformation, ERP systems",
+      "subtitle": "Take your accounting to the next level with innovative technological solutions that streamline processes and improve accuracy.",
+      "benefits": {
+        "title": "Benefits of Financial Technology",
+        "description": "Discover how technological solutions can transform your company's accounting and financial management."
+      },
+      "services": {
+        "title": "Our Technology Solutions",
+        "description": "We offer comprehensive services for the implementation and optimization of technological systems for your accounting and financial area.",
+        "items": [
+          {
+            "title": "Accounting Software Implementation",
+            "description": "We help you select and implement the accounting software that best suits your company's needs.",
+            "features": [
+              "Needs analysis and software selection",
+              "Implementation and customization",
+              "Migration of historical data",
+              "User training"
+            ]
+          },
+          {
+            "title": "ERP Systems",
+            "description": "Comprehensive business management solutions that integrate all your company's processes in a single platform.",
+            "features": [
+              "Modular implementation according to needs",
+              "Integration of all business areas",
+              "Customized reports and dashboards",
+              "Process automation"
+            ]
+          },
+          {
+            "title": "Digital Transformation",
+            "description": "We guide your company in the process of digital transformation of accounting and financial operations.",
+            "features": [
+              "Digitization of documents and processes",
+              "Workflow automation",
+              "Paperless accounting",
+              "Digital signature integration"
+            ]
+          },
+          {
+            "title": "Process Automation",
+            "description": "We implement solutions to automate repetitive tasks and streamline your accounting and financial processes.",
+            "features": [
+              "Accounts payable and receivable automation",
+              "Bank reconciliation automation",
+              "Financial reporting automation",
+              "Expense management automation"
+            ]
+          },
+          {
+            "title": "Financial Intelligence",
+            "description": "Data analysis tools to obtain valuable insights from your financial information.",
+            "features": [
+              "Business intelligence dashboards",
+              "Key performance indicators (KPIs)",
+              "Predictive financial analysis",
+              "Decision support systems"
+            ]
+          },
+          {
+            "title": "Integration with Third Parties",
+            "description": "We integrate your accounting systems with other platforms and services used in your company.",
+            "features": [
+              "Integration with e-commerce platforms",
+              "Electronic billing systems",
+              "Banking API connections",
+              "Integration with CRM systems"
+            ]
+          }
+        ]
+      },
+      "why_modernize": {
+        "title": "Why Modernize Your Accounting Processes?",
+        "description": "The implementation of technological solutions offers multiple advantages for the management of your company.",
+        "items": [
+          {
+            "title": "Increased Efficiency",
+            "description": "Automation of processes reduces the time spent on repetitive tasks and minimizes human error.",
+            "features": [
+              "Reduction of manual work",
+              "Faster financial closings",
+              "Elimination of duplicate tasks"
+            ]
+          },
+          {
+            "title": "Better Decision Making",
+            "description": "Access to real-time data and detailed reports allows for more informed business decisions.",
+            "features": [
+              "Real-time financial information",
+              "Advanced analytics",
+              "Custom reporting"
+            ]
+          },
+          {
+            "title": "Cost Reduction",
+            "description": "Process optimization leads to a reduction in operational costs in the medium and long term.",
+            "features": [
+              "Reduction of printing and storage costs",
+              "Optimization of human resources",
+              "Prevention of penalties for errors"
+            ]
+          },
+          {
+            "title": "Scalability",
+            "description": "Technological systems grow with your company, adapting to new needs as they arise.",
+            "features": [
+              "Flexible licensing models",
+              "Modular expansion of functionality",
+              "Cloud-based solutions"
+            ]
+          }
+        ]
+      },
+      "implementation": {
+        "title": "Our Implementation Methodology",
+        "description": "We follow a proven methodology to ensure the successful implementation of technological solutions.",
+        "steps": [
+          {
+            "title": "Analysis and Diagnosis",
+            "description": "We evaluate your current processes and identify areas for improvement through technology."
+          },
+          {
+            "title": "Solution Design",
+            "description": "We design a technological solution that addresses the specific needs of your business."
+          },
+          {
+            "title": "Implementation",
+            "description": "We carry out the implementation of the selected systems with minimal disruption to your operations."
+          },
+          {
+            "title": "Training",
+            "description": "We train your team to make the most of the new technological tools."
+          },
+          {
+            "title": "Ongoing Support",
+            "description": "We provide continuous technical support to resolve any incidents and optimize the use of systems."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Transform your financial management with technology",
+        "description": "Let our experts guide you in selecting and implementing the technological solutions that will take your accounting to the next level.",
+        "button": "Request a technological consultation"
+      }
     },
     "tax_advisory": {
       "title": "Tax Advisory",

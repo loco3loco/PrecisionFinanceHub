@@ -7,12 +7,14 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import BackToTop from "@/components/ui/back-to-top";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 export default function TecnologiaContable() {
   const { ref: refSection1, isVisible: isVisibleSection1 } = useScrollAnimation();
   const { ref: refSection2, isVisible: isVisibleSection2 } = useScrollAnimation();
   const { ref: refSection3, isVisible: isVisibleSection3 } = useScrollAnimation();
   const { ref: refSection4, isVisible: isVisibleSection4 } = useScrollAnimation();
+  const { t } = useTranslation();
 
   // Scroll to top on page load
   useEffect(() => {
@@ -22,9 +24,9 @@ export default function TecnologiaContable() {
   return (
     <>
       <Helmet>
-        <title>Tecnología Contable | Solutumsa</title>
-        <meta name="description" content="Soluciones tecnológicas para modernizar la contabilidad de su empresa. Implementamos software contable, automatizamos procesos y facilitamos la transición digital." />
-        <meta name="keywords" content="tecnología contable, software contable, automatización contable, digitalización financiera, transformación digital contable" />
+        <title>{t('service_pages.tech_account.title')} | Solutumsa</title>
+        <meta name="description" content={t('service_pages.tech_account.meta_description')} />
+        <meta name="keywords" content={t('service_pages.tech_account.meta_keywords')} />
       </Helmet>
 
       <Navbar />
@@ -40,7 +42,7 @@ export default function TecnologiaContable() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                Tecnología Contable
+                {t('service_pages.tech_account.title')}
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -48,7 +50,7 @@ export default function TecnologiaContable() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                Soluciones tecnológicas para modernizar los procesos contables y financieros de su empresa.
+                {t('service_pages.tech_account.subtitle')}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +59,7 @@ export default function TecnologiaContable() {
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
                   <a href="#contacto">
-                    Solicitar asesoría
+                    {t('service_pages.common.request_service')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -76,23 +78,23 @@ export default function TecnologiaContable() {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">¿Por qué modernizar su contabilidad?</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('service_pages.tech_account.why_modernize.title')}</h3>
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Aumento de eficiencia y reducción de tiempos</span>
+                      <span>{t('service_pages.tech_account.why_modernize.items.0.title')}</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Minimización de errores en procesos manuales</span>
+                      <span>{t('service_pages.tech_account.why_modernize.items.1.title')}</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Acceso a información financiera en tiempo real</span>
+                      <span>{t('service_pages.tech_account.why_modernize.items.2.title')}</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">✓</span>
-                      <span>Mayor seguridad y cumplimiento normativo</span>
+                      <span>{t('service_pages.tech_account.why_modernize.items.3.title')}</span>
                     </li>
                   </ul>
                 </div>
@@ -111,10 +113,9 @@ export default function TecnologiaContable() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestras Soluciones Tecnológicas</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tech_account.services.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrecemos un conjunto integral de servicios para digitalizar y
-              optimizar los procesos contables y financieros de su empresa.
+              {t('service_pages.tech_account.services.description')}
             </p>
           </motion.div>
 
@@ -323,10 +324,9 @@ export default function TecnologiaContable() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestro Proceso de Implementación</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tech_account.implementation.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Seguimos una metodología estructurada para garantizar una transición
-              tecnológica exitosa y sin interrupciones en su operativa.
+              {t('service_pages.tech_account.implementation.description')}
             </p>
           </motion.div>
 
@@ -338,10 +338,9 @@ export default function TecnologiaContable() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Diagnóstico</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.tech_account.implementation.steps.0.title')}</h3>
               <p className="text-gray-600">
-                Analizamos sus procesos actuales e identificamos oportunidades
-                de mejora y requisitos específicos.
+                {t('service_pages.tech_account.implementation.steps.0.description')}
               </p>
             </motion.div>
 
@@ -352,10 +351,9 @@ export default function TecnologiaContable() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Diseño</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.tech_account.implementation.steps.1.title')}</h3>
               <p className="text-gray-600">
-                Definimos la solución tecnológica adecuada y desarrollamos
-                un plan de implementación detallado.
+                {t('service_pages.tech_account.implementation.steps.1.description')}
               </p>
             </motion.div>
 
@@ -366,10 +364,9 @@ export default function TecnologiaContable() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Implementación</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.tech_account.implementation.steps.2.title')}</h3>
               <p className="text-gray-600">
-                Configuramos y adaptamos la solución seleccionada según
-                sus necesidades específicas.
+                {t('service_pages.tech_account.implementation.steps.2.description')}
               </p>
             </motion.div>
 
@@ -380,10 +377,9 @@ export default function TecnologiaContable() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Formación</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.tech_account.implementation.steps.3.title')}</h3>
               <p className="text-gray-600">
-                Capacitamos a su equipo para garantizar un uso óptimo
-                de las nuevas herramientas tecnológicas.
+                {t('service_pages.tech_account.implementation.steps.3.description')}
               </p>
             </motion.div>
 
@@ -394,10 +390,9 @@ export default function TecnologiaContable() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">5</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Soporte</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.tech_account.implementation.steps.4.title')}</h3>
               <p className="text-gray-600">
-                Proporcionamos asistencia continua para resolver dudas
-                y optimizar el uso de las soluciones implementadas.
+                {t('service_pages.tech_account.implementation.steps.4.description')}
               </p>
             </motion.div>
           </div>
@@ -413,10 +408,9 @@ export default function TecnologiaContable() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Beneficios de la Tecnología Contable</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tech_account.benefits.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              La digitalización de los procesos contables ofrece numerosas ventajas
-              que impactan directamente en la eficiencia y rentabilidad de su empresa.
+              {t('service_pages.tech_account.benefits.description')}
             </p>
           </motion.div>
 
@@ -427,10 +421,9 @@ export default function TecnologiaContable() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Mayor Eficiencia</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.benefits.items.0.title')}</h3>
               <p className="text-gray-600">
-                Automatización de tareas repetitivas que permite a su equipo centrarse
-                en actividades de mayor valor añadido para el negocio.
+                {t('service_pages.tech_account.benefits.items.0.description')}
               </p>
             </motion.div>
 
@@ -440,10 +433,9 @@ export default function TecnologiaContable() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Reducción de Errores</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.benefits.items.1.title')}</h3>
               <p className="text-gray-600">
-                Minimización de errores humanos gracias a la automatización
-                y validación de datos en tiempo real.
+                {t('service_pages.tech_account.benefits.items.1.description')}
               </p>
             </motion.div>
 
@@ -453,10 +445,9 @@ export default function TecnologiaContable() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Información en Tiempo Real</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.benefits.items.2.title')}</h3>
               <p className="text-gray-600">
-                Acceso inmediato a datos actualizados que facilitan una
-                toma de decisiones más ágil e informada.
+                {t('service_pages.tech_account.benefits.items.2.description')}
               </p>
             </motion.div>
 
@@ -466,10 +457,9 @@ export default function TecnologiaContable() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Ahorro de Costos</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.benefits.items.3.title')}</h3>
               <p className="text-gray-600">
-                Reducción de gastos operativos asociados a procesos manuales,
-                almacenamiento físico y corrección de errores.
+                {t('service_pages.tech_account.benefits.items.3.description')}
               </p>
             </motion.div>
 
@@ -479,10 +469,9 @@ export default function TecnologiaContable() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Mayor Seguridad</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.benefits.items.4.title')}</h3>
               <p className="text-gray-600">
-                Protección avanzada de datos financieros y cumplimiento de
-                normativas de seguridad y privacidad.
+                {t('service_pages.tech_account.benefits.items.4.description')}
               </p>
             </motion.div>
 

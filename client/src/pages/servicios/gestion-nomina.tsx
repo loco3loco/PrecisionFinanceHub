@@ -357,23 +357,22 @@ export default function GestionNomina() {
               className="bg-white rounded-xl shadow-md overflow-hidden"
             >
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Reducción de Errores</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.advantages.items.1.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Nuestra experiencia y sistemas especializados minimizan
-                  el riesgo de errores en los cálculos y procesos.
+                  {t('service_pages.payroll.advantages.items.1.description')}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Mayor precisión en los cálculos</span>
+                    <span>{t('service_pages.payroll.advantages.items.1.features.0')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Prevención de incidencias</span>
+                    <span>{t('service_pages.payroll.advantages.items.1.features.1')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Doble verificación de todos los procesos</span>
+                    <span>{t('service_pages.payroll.advantages.items.1.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -386,23 +385,22 @@ export default function GestionNomina() {
               className="bg-white rounded-xl shadow-md overflow-hidden"
             >
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Garantía de Cumplimiento</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.advantages.items.2.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Nos mantenemos constantemente actualizados sobre los cambios
-                  legislativos que afectan a la gestión laboral.
+                  {t('service_pages.payroll.advantages.items.2.description')}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Adaptación a cambios normativos</span>
+                    <span>{t('service_pages.payroll.advantages.items.2.features.0')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Prevención de sanciones</span>
+                    <span>{t('service_pages.payroll.advantages.items.2.features.1')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Aplicación correcta de convenios colectivos</span>
+                    <span>{t('service_pages.payroll.advantages.items.2.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -415,23 +413,22 @@ export default function GestionNomina() {
               className="bg-white rounded-xl shadow-md overflow-hidden"
             >
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Acceso a Expertos</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.advantages.items.3.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Contará con un equipo de profesionales especializados en
-                  legislación laboral y gestión de nómina.
+                  {t('service_pages.payroll.advantages.items.3.description')}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Consultas laborales ilimitadas</span>
+                    <span>{t('service_pages.payroll.advantages.items.3.features.0')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Asesoramiento personalizado</span>
+                    <span>{t('service_pages.payroll.advantages.items.3.features.1')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Soluciones adaptadas a su empresa</span>
+                    <span>{t('service_pages.payroll.advantages.items.3.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -467,10 +464,9 @@ export default function GestionNomina() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold mb-2">Seguridad Garantizada</h3>
+              <h3 className="text-lg font-bold mb-2">{t('service_pages.payroll.technology.items.0.title')}</h3>
               <p className="text-gray-600">
-                Protección de datos con los más altos estándares de seguridad
-                y cumplimiento del RGPD.
+                {t('service_pages.payroll.technology.items.0.description')}
               </p>
             </motion.div>
 
@@ -485,10 +481,9 @@ export default function GestionNomina() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold mb-2">Acceso Online</h3>
+              <h3 className="text-lg font-bold mb-2">{t('service_pages.payroll.technology.items.1.title')}</h3>
               <p className="text-gray-600">
-                Portal del empleado para consulta de nóminas, certificados y
-                gestión de solicitudes.
+                {t('service_pages.payroll.technology.items.1.description')}
               </p>
             </motion.div>
 
@@ -503,10 +498,9 @@ export default function GestionNomina() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold mb-2">Informes Personalizados</h3>
+              <h3 className="text-lg font-bold mb-2">{t('service_pages.payroll.technology.items.2.title')}</h3>
               <p className="text-gray-600">
-                Generación de informes a medida para análisis de costos
-                laborales y toma de decisiones.
+                {t('service_pages.payroll.technology.items.2.description')}
               </p>
             </motion.div>
           </div>

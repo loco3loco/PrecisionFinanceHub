@@ -224,6 +224,11 @@
     "message_min_length": "El mensaje debe tener al menos 10 caracteres",
     "privacy_policy_required": "Debe aceptar la política de privacidad"
   },
+  "not_found": {
+    "title": "Página No Encontrada",
+    "description": "La página que estás buscando no existe o ha sido movida.",
+    "button": "Volver a la Página Principal"
+  },
   "service_pages": {
     "common": {
       "request_service": "Solicitar asesoría",
@@ -477,7 +482,156 @@
       "why_choose_us_description": "Contamos con la experiencia necesaria para guiarle en la transformación digital de sus procesos contables y financieros.",
       "cta_title": "Modernice sus procesos contables",
       "cta_description": "Nuestros expertos le ayudarán a implementar las soluciones tecnológicas adecuadas para optimizar la gestión financiera de su empresa.",
-      "cta_button": "Solicitar asesoría tecnológica"
+      "cta_button": "Solicitar asesoramiento tecnológico"
+    },
+    "tech_account": {
+      "title": "Tecnología Contable",
+      "meta_description": "Soluciones de tecnología contable de Solutumsa. Implementación de sistemas avanzados para optimizar sus procesos financieros y contables.",
+      "meta_keywords": "tecnología contable, software contable, automatización financiera, transformación digital, sistemas ERP",
+      "subtitle": "Lleve su contabilidad al siguiente nivel con soluciones tecnológicas innovadoras que agilizan procesos y mejoran la precisión.",
+      "benefits": {
+        "title": "Beneficios de la Tecnología Financiera",
+        "description": "Descubra cómo las soluciones tecnológicas pueden transformar la gestión contable y financiera de su empresa."
+      },
+      "services": {
+        "title": "Nuestras Soluciones Tecnológicas",
+        "description": "Ofrecemos servicios integrales para la implementación y optimización de sistemas tecnológicos para su área contable y financiera.",
+        "items": [
+          {
+            "title": "Implementación de Software Contable",
+            "description": "Le ayudamos a seleccionar e implementar el software contable que mejor se adapte a las necesidades de su empresa.",
+            "features": [
+              "Análisis de necesidades y selección de software",
+              "Implementación y personalización",
+              "Migración de datos históricos",
+              "Capacitación de usuarios"
+            ]
+          },
+          {
+            "title": "Sistemas ERP",
+            "description": "Soluciones integrales de gestión empresarial que integran todos los procesos de su empresa en una única plataforma.",
+            "features": [
+              "Implementación modular según necesidades",
+              "Integración de todas las áreas del negocio",
+              "Informes y dashboards personalizados",
+              "Automatización de procesos"
+            ]
+          },
+          {
+            "title": "Transformación Digital",
+            "description": "Guiamos a su empresa en el proceso de transformación digital de las operaciones contables y financieras.",
+            "features": [
+              "Digitalización de documentos y procesos",
+              "Automatización de flujos de trabajo",
+              "Contabilidad sin papel",
+              "Integración de firma digital"
+            ]
+          },
+          {
+            "title": "Automatización de Procesos",
+            "description": "Implementamos soluciones para automatizar tareas repetitivas y agilizar sus procesos contables y financieros.",
+            "features": [
+              "Automatización de cuentas por pagar y cobrar",
+              "Automatización de conciliaciones bancarias",
+              "Automatización de informes financieros",
+              "Automatización de gestión de gastos"
+            ]
+          },
+          {
+            "title": "Inteligencia Financiera",
+            "description": "Herramientas de análisis de datos para obtener insights valiosos de su información financiera.",
+            "features": [
+              "Dashboards de inteligencia empresarial",
+              "Indicadores clave de rendimiento (KPIs)",
+              "Análisis financiero predictivo",
+              "Sistemas de apoyo a la decisión"
+            ]
+          },
+          {
+            "title": "Integración con Terceros",
+            "description": "Integramos sus sistemas contables con otras plataformas y servicios utilizados en su empresa.",
+            "features": [
+              "Integración con plataformas de e-commerce",
+              "Sistemas de facturación electrónica",
+              "Conexiones con APIs bancarias",
+              "Integración con sistemas CRM"
+            ]
+          }
+        ]
+      },
+      "why_modernize": {
+        "title": "¿Por qué Modernizar sus Procesos Contables?",
+        "description": "La implementación de soluciones tecnológicas ofrece múltiples ventajas para la gestión de su empresa.",
+        "items": [
+          {
+            "title": "Mayor Eficiencia",
+            "description": "La automatización de procesos reduce el tiempo dedicado a tareas repetitivas y minimiza el error humano.",
+            "features": [
+              "Reducción de trabajo manual",
+              "Cierres financieros más rápidos",
+              "Eliminación de tareas duplicadas"
+            ]
+          },
+          {
+            "title": "Mejor Toma de Decisiones",
+            "description": "El acceso a datos en tiempo real e informes detallados permite decisiones empresariales más informadas.",
+            "features": [
+              "Información financiera en tiempo real",
+              "Análisis avanzados",
+              "Informes personalizados"
+            ]
+          },
+          {
+            "title": "Reducción de Costos",
+            "description": "La optimización de procesos conlleva una reducción de costos operativos a medio y largo plazo.",
+            "features": [
+              "Reducción de costos de impresión y almacenamiento",
+              "Optimización de recursos humanos",
+              "Prevención de sanciones por errores"
+            ]
+          },
+          {
+            "title": "Escalabilidad",
+            "description": "Los sistemas tecnológicos crecen con su empresa, adaptándose a nuevas necesidades según surjan.",
+            "features": [
+              "Modelos de licenciamiento flexibles",
+              "Ampliación modular de funcionalidades",
+              "Soluciones basadas en la nube"
+            ]
+          }
+        ]
+      },
+      "implementation": {
+        "title": "Nuestra Metodología de Implementación",
+        "description": "Seguimos una metodología probada para garantizar la implementación exitosa de soluciones tecnológicas.",
+        "steps": [
+          {
+            "title": "Análisis y Diagnóstico",
+            "description": "Evaluamos sus procesos actuales e identificamos áreas de mejora a través de la tecnología."
+          },
+          {
+            "title": "Diseño de Solución",
+            "description": "Diseñamos una solución tecnológica que responda a las necesidades específicas de su negocio."
+          },
+          {
+            "title": "Implementación",
+            "description": "Llevamos a cabo la implementación de los sistemas seleccionados con mínima interrupción de sus operaciones."
+          },
+          {
+            "title": "Capacitación",
+            "description": "Formamos a su equipo para aprovechar al máximo las nuevas herramientas tecnológicas."
+          },
+          {
+            "title": "Soporte Continuo",
+            "description": "Proporcionamos soporte técnico continuo para resolver cualquier incidencia y optimizar el uso de los sistemas."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Transforme su gestión financiera con tecnología",
+        "description": "Deje que nuestros expertos le guíen en la selección e implementación de las soluciones tecnológicas que llevarán su contabilidad al siguiente nivel.",
+        "button": "Solicitar una consulta tecnológica"
+      }
     },
     "tax_advisory": {
       "title": "Asesoría Fiscal",
