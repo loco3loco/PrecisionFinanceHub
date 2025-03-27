@@ -304,7 +304,139 @@
       "why_choose_us_description": "Nuestro equipo de auditores garantiza un análisis imparcial y profesional de sus estados financieros, generando confianza ante terceros.",
       "cta_title": "Garantice la transparencia financiera de su empresa",
       "cta_description": "Nuestros auditores profesionales verificarán la integridad y precisión de su información financiera. Solicite una consulta sin compromiso.",
-      "cta_button": "Solicitar servicio de auditoría"
+      "cta_button": "Solicitar servicio de auditoría",
+      "benefits": {
+        "title": "Beneficios de la Auditoría Financiera",
+        "description": "La realización de auditorías financieras aporta múltiples ventajas para su empresa.",
+        "items": [
+          {
+            "title": "Confianza para Inversionistas",
+            "description": "Estados financieros auditados generan confianza entre inversionistas y partes interesadas."
+          },
+          {
+            "title": "Detección de Errores o Fraudes",
+            "description": "Identificación temprana de errores, irregularidades o posibles fraudes en los registros financieros."
+          },
+          {
+            "title": "Cumplimiento Normativo",
+            "description": "Garantía de que su información financiera cumple con todas las normativas y estándares aplicables."
+          },
+          {
+            "title": "Mejor Gestión de Riesgos",
+            "description": "Identificación de áreas de riesgo y recomendaciones para mejorar controles internos."
+          },
+          {
+            "title": "Optimización de Procesos",
+            "description": "Identificación de ineficiencias y recomendaciones para mejorar procesos financieros."
+          },
+          {
+            "title": "Fortalecimiento de la Posición Financiera",
+            "description": "Estados financieros auditados mejoran su posición para obtener financiamiento y en negociaciones comerciales."
+          }
+        ]
+      },
+      "services": {
+        "title": "Nuestros Servicios de Auditoría",
+        "description": "Ofrecemos una amplia gama de servicios de auditoría adaptados a las necesidades específicas de cada cliente.",
+        "items": [
+          {
+            "title": "Auditoría de Estados Financieros",
+            "description": "Verificación independiente de la exactitud e integridad de sus estados financieros.",
+            "features": [
+              "Auditoría completa de estados financieros",
+              "Revisiones limitadas y específicas",
+              "Emisión de opinión de auditoría"
+            ]
+          },
+          {
+            "title": "Auditoría Interna",
+            "description": "Evaluación independiente de los procesos y controles internos de su empresa.",
+            "features": [
+              "Evaluación de procesos y controles",
+              "Identificación de áreas de mejora",
+              "Recomendaciones prácticas"
+            ]
+          },
+          {
+            "title": "Auditoría de Cumplimiento",
+            "description": "Verificación del cumplimiento de normativas y regulaciones aplicables a su empresa.",
+            "features": [
+              "Revisión de cumplimiento normativo",
+              "Identificación de incumplimientos",
+              "Planes de acción correctiva"
+            ]
+          },
+          {
+            "title": "Due Diligence Financiero",
+            "description": "Análisis detallado de la situación financiera en procesos de adquisición o fusión.",
+            "features": [
+              "Análisis de estados financieros",
+              "Identificación de contingencias",
+              "Valoración de activos y pasivos"
+            ]
+          },
+          {
+            "title": "Auditoría de Sistemas",
+            "description": "Evaluación de la fiabilidad y seguridad de los sistemas de información financiera.",
+            "features": [
+              "Revisión de controles generales",
+              "Evaluación de seguridad de datos",
+              "Análisis de integridad de la información"
+            ]
+          },
+          {
+            "title": "Auditoría Forense",
+            "description": "Investigación especializada para detectar y prevenir fraudes financieros.",
+            "features": [
+              "Investigación de irregularidades",
+              "Análisis de transacciones sospechosas",
+              "Procedimientos anti-fraude"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "Nuestro Proceso de Auditoría",
+        "description": "Seguimos una metodología estructurada que garantiza auditorías exhaustivas y eficientes.",
+        "items": [
+          {
+            "title": "Planificación",
+            "description": "Definimos el alcance y enfoque de la auditoría, identificando áreas de riesgo y estableciendo el cronograma de trabajo.",
+            "features": [
+              "Análisis preliminar de riesgos",
+              "Definición de materialidad",
+              "Elaboración del plan de auditoría"
+            ]
+          },
+          {
+            "title": "Ejecución",
+            "description": "Realizamos pruebas sustantivas y de control para obtener evidencia sobre la exactitud de la información financiera.",
+            "features": [
+              "Pruebas de controles internos",
+              "Verificación de saldos y transacciones",
+              "Análisis de estimaciones contables"
+            ]
+          },
+          {
+            "title": "Evaluación",
+            "description": "Analizamos los resultados de las pruebas y evaluamos cualquier incidencia o ajuste necesario.",
+            "features": [
+              "Revisión de hallazgos",
+              "Evaluación de impacto",
+              "Comunicación con la dirección"
+            ]
+          },
+          {
+            "title": "Informe",
+            "description": "Emitimos nuestro informe con la opinión de auditoría y recomendaciones para mejorar procesos y controles.",
+            "features": [
+              "Dictamen de auditoría",
+              "Carta de recomendaciones",
+              "Presentación de resultados"
+            ]
+          }
+        ]
+      }
     },
     "payroll": {
       "title": "Gestión de Nómina",
@@ -491,7 +623,29 @@
       "subtitle": "Lleve su contabilidad al siguiente nivel con soluciones tecnológicas innovadoras que agilizan procesos y mejoran la precisión.",
       "benefits": {
         "title": "Beneficios de la Tecnología Financiera",
-        "description": "Descubra cómo las soluciones tecnológicas pueden transformar la gestión contable y financiera de su empresa."
+        "description": "Descubra cómo las soluciones tecnológicas pueden transformar la gestión contable y financiera de su empresa.",
+        "items": [
+          {
+            "title": "Mayor Eficiencia",
+            "description": "Automatización de procesos que reduce el tiempo dedicado a tareas repetitivas y minimiza el error humano."
+          },
+          {
+            "title": "Mejor Toma de Decisiones",
+            "description": "Acceso a datos en tiempo real e informes detallados que permiten tomar decisiones empresariales más informadas."
+          },
+          {
+            "title": "Reducción de Costos",
+            "description": "La optimización de procesos lleva a una reducción de costos operativos a medio y largo plazo."
+          },
+          {
+            "title": "Escalabilidad",
+            "description": "Los sistemas tecnológicos crecen con su empresa, adaptándose a las nuevas necesidades a medida que surgen."
+          },
+          {
+            "title": "Precisión y Fiabilidad",
+            "description": "Reducción significativa de errores humanos, garantizando la exactitud de su información financiera."
+          }
+        ]
       },
       "services": {
         "title": "Nuestras Soluciones Tecnológicas",

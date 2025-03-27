@@ -304,7 +304,139 @@
       "why_choose_us_description": "Our team of auditors guarantees an impartial and professional analysis of your financial statements, generating confidence for third parties.",
       "cta_title": "Ensure your company's financial transparency",
       "cta_description": "Our professional auditors will verify the integrity and accuracy of your financial information. Request a consultation with no obligation.",
-      "cta_button": "Request audit service"
+      "cta_button": "Request audit service",
+      "benefits": {
+        "title": "Benefits of Financial Audit",
+        "description": "Conducting financial audits provides multiple advantages for your company.",
+        "items": [
+          {
+            "title": "Investor Confidence",
+            "description": "Audited financial statements generate trust among investors and stakeholders."
+          },
+          {
+            "title": "Error or Fraud Detection",
+            "description": "Early identification of errors, irregularities, or potential fraud in financial records."
+          },
+          {
+            "title": "Regulatory Compliance",
+            "description": "Assurance that your financial information complies with all applicable regulations and standards."
+          },
+          {
+            "title": "Better Risk Management",
+            "description": "Identification of risk areas and recommendations to improve internal controls."
+          },
+          {
+            "title": "Process Optimization",
+            "description": "Identification of inefficiencies and recommendations to improve financial processes."
+          },
+          {
+            "title": "Strengthening Financial Position",
+            "description": "Audited financial statements improve your position for obtaining financing and in commercial negotiations."
+          }
+        ]
+      },
+      "services": {
+        "title": "Our Audit Services",
+        "description": "We offer a wide range of audit services tailored to the specific needs of each client.",
+        "items": [
+          {
+            "title": "Financial Statement Audit",
+            "description": "Independent verification of the accuracy and completeness of your financial statements.",
+            "features": [
+              "Complete audit of financial statements",
+              "Limited and specific reviews",
+              "Issuance of audit opinion"
+            ]
+          },
+          {
+            "title": "Internal Audit",
+            "description": "Independent evaluation of your company's internal processes and controls.",
+            "features": [
+              "Evaluation of processes and controls",
+              "Identification of areas for improvement",
+              "Practical recommendations"
+            ]
+          },
+          {
+            "title": "Compliance Audit",
+            "description": "Verification of compliance with regulations and rules applicable to your company.",
+            "features": [
+              "Review of regulatory compliance",
+              "Identification of non-compliance",
+              "Corrective action plans"
+            ]
+          },
+          {
+            "title": "Financial Due Diligence",
+            "description": "Detailed analysis of the financial situation in acquisition or merger processes.",
+            "features": [
+              "Analysis of financial statements",
+              "Identification of contingencies",
+              "Valuation of assets and liabilities"
+            ]
+          },
+          {
+            "title": "Systems Audit",
+            "description": "Evaluation of the reliability and security of financial information systems.",
+            "features": [
+              "Review of general controls",
+              "Data security assessment",
+              "Information integrity analysis"
+            ]
+          },
+          {
+            "title": "Forensic Audit",
+            "description": "Specialized investigation to detect and prevent financial fraud.",
+            "features": [
+              "Investigation of irregularities",
+              "Analysis of suspicious transactions",
+              "Anti-fraud procedures"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "title": "Our Audit Process",
+        "description": "We follow a structured methodology that ensures thorough and efficient audits.",
+        "items": [
+          {
+            "title": "Planning",
+            "description": "We define the scope and approach of the audit, identifying risk areas and establishing the work schedule.",
+            "features": [
+              "Preliminary risk analysis",
+              "Definition of materiality",
+              "Preparation of the audit plan"
+            ]
+          },
+          {
+            "title": "Execution",
+            "description": "We perform substantive and control tests to obtain evidence about the accuracy of the financial information.",
+            "features": [
+              "Internal control testing",
+              "Verification of balances and transactions",
+              "Analysis of accounting estimates"
+            ]
+          },
+          {
+            "title": "Evaluation",
+            "description": "We analyze test results and evaluate any necessary incidents or adjustments.",
+            "features": [
+              "Review of findings",
+              "Impact assessment",
+              "Communication with management"
+            ]
+          },
+          {
+            "title": "Reporting",
+            "description": "We issue our report with the audit opinion and recommendations to improve processes and controls.",
+            "features": [
+              "Audit opinion",
+              "Letter of recommendations",
+              "Presentation of results"
+            ]
+          }
+        ]
+      }
     },
     "payroll": {
       "title": "Payroll Management",
@@ -492,7 +624,29 @@
       "subtitle": "Take your accounting to the next level with innovative technological solutions that streamline processes and improve accuracy.",
       "benefits": {
         "title": "Benefits of Financial Technology",
-        "description": "Discover how technological solutions can transform your company's accounting and financial management."
+        "description": "Discover how technological solutions can transform your company's accounting and financial management.",
+        "items": [
+          {
+            "title": "Increased Efficiency",
+            "description": "Process automation that reduces time spent on repetitive tasks and minimizes human error."
+          },
+          {
+            "title": "Better Decision Making",
+            "description": "Access to real-time data and detailed reports that allow for more informed business decisions."
+          },
+          {
+            "title": "Cost Reduction",
+            "description": "Process optimization leads to a reduction in operational costs in the medium and long term."
+          },
+          {
+            "title": "Scalability",
+            "description": "Technological systems grow with your company, adapting to new needs as they arise."
+          },
+          {
+            "title": "Accuracy and Reliability",
+            "description": "Significant reduction of human errors, ensuring the accuracy of your financial information."
+          }
+        ]
       },
       "services": {
         "title": "Our Technology Solutions",
