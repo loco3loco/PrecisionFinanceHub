@@ -86,12 +86,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <Link href="/">
             <div className="flex items-center cursor-pointer group">
-              <Link to="/" className="hover:opacity-90 transition-opacity"> {/* Replaced logo text with Logo component */}
-                <Logo width={150} height={60} />
-              </Link>
-              <span className="ml-2 text-xl font-heading font-bold text-primary group-hover:text-primary/80 transition-colors">
-                Solutumsa
-              </span>
+              <div className="hover:opacity-90 transition-opacity">
+                <Logo width={180} height={70} />
+              </div>
             </div>
           </Link>
 
