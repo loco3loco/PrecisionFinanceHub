@@ -110,13 +110,24 @@
     "language": "Language",
     "read_more": "Read more",
     "contact_us": "Contact us",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "error": "Error"
+  },
+  "newsletter": {
+    "email_required": "Please enter your email",
+    "success_title": "Subscription successful!",
+    "success_message": "Thank you for subscribing to our newsletter",
+    "error_message": "We couldn't process your subscription. Please try again."
   },
   "home": {
     "hero": {
       "title": "Accounting solutions for your business",
       "subtitle": "We offer professional accounting and tax advisory services to help your business grow and thrive",
       "cta": "Learn more"
+    },
+    "trust": {
+      "title": "Guaranteed trust",
+      "subtitle": "98% client satisfaction"
     },
     "stats": {
       "companies": "+100 Companies",

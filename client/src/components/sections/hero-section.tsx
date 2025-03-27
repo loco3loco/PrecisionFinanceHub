@@ -109,8 +109,8 @@ export default function HeroSection() {
                 <Check className="h-5 w-5 text-primary" />
               </div>
               <div className="ml-3">
-                <h3 className="text-sm font-medium text-gray-800">Confianza garantizada</h3>
-                <p className="text-xs text-gray-500">Satisfacción del cliente al 98%</p>
+                <h3 className="text-sm font-medium text-gray-800">{t("home.trust.title", "Confianza garantizada")}</h3>
+                <p className="text-xs text-gray-500">{t("home.trust.subtitle", "Satisfacción del cliente al 98%")}</p>
               </div>
             </div>
           </motion.div>

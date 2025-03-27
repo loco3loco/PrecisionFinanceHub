@@ -19,8 +19,8 @@ export default function Footer() {
 
     if (!email) {
       toast({
-        title: "Error",
-        description: "Por favor ingresa tu correo electrónico",
+        title: t("common.error", "Error"),
+        description: t("newsletter.email_required", "Por favor ingresa tu correo electrónico"),
         variant: "destructive",
       });
       return;
@@ -32,15 +32,15 @@ export default function Footer() {
       await apiRequest("POST", "/api/subscribe", { email });
 
       toast({
-        title: "¡Suscripción exitosa!",
-        description: "Gracias por suscribirte a nuestro newsletter",
+        title: t("newsletter.success_title", "¡Suscripción exitosa!"),
+        description: t("newsletter.success_message", "Gracias por suscribirte a nuestro newsletter"),
       });
 
       setEmail("");
     } catch (error) {
       toast({
-        title: "Error",
-        description: "No pudimos procesar tu suscripción. Intenta nuevamente.",
+        title: t("common.error", "Error"),
+        description: t("newsletter.error_message", "No pudimos procesar tu suscripción. Intenta nuevamente."),
         variant: "destructive",
       });
     } finally {

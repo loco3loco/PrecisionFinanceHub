@@ -110,13 +110,24 @@
     "language": "Idioma",
     "read_more": "Leer más",
     "contact_us": "Contáctenos",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "error": "Error"
+  },
+  "newsletter": {
+    "email_required": "Por favor ingresa tu correo electrónico",
+    "success_title": "¡Suscripción exitosa!",
+    "success_message": "Gracias por suscribirte a nuestro newsletter",
+    "error_message": "No pudimos procesar tu suscripción. Intenta nuevamente."
   },
   "home": {
     "hero": {
       "title": "Soluciones contables para su empresa",
       "subtitle": "Ofrecemos servicios profesionales de contabilidad y asesoría fiscal para ayudar a su empresa a crecer y prosperar",
       "cta": "Conocer más"
+    },
+    "trust": {
+      "title": "Confianza garantizada",
+      "subtitle": "Satisfacción del cliente al 98%"
     },
     "stats": {
       "companies": "+100 Empresas",

@@ -1,5 +1,6 @@
 
 import React from "react";
+import SimpleLogo from "./simple-logo";
 
 interface LogoProps {
   variant?: "default" | "white";
@@ -14,18 +15,12 @@ export function Logo({
   width = 180, 
   height = 70 
 }: LogoProps) {
-  // Utilizar el logo original para la versión normal
-  // Para la versión blanca, aplicamos un filtro CSS
-  const isWhite = variant === "white";
-  
   return (
-    <img 
-      src="/assets/logo-simple.svg"
-      alt="Solutum S.A." 
-      className={`${className} ${isWhite ? "brightness-0 invert" : ""}`}
+    <SimpleLogo 
+      variant={variant}
+      className={className}
       width={width}
       height={height}
-      style={{ objectFit: "contain" }}
     />
   );
 }
