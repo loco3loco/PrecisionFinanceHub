@@ -119,7 +119,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/servicios/tecnologia-contable" className="text-white/80 hover:text-white transition-colors">
-                  Tecnología Contable
+                  {t("services.items.financial.title")}
                 </Link>
               </li>
             </ul>
