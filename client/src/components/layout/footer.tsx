@@ -52,10 +52,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-6">
-              <Link to="/" className="mb-3">
-                <div className="hover:opacity-90 transition-opacity">
-                  <Logo variant="white" width={180} height={70} />
-                </div>
+              <Link to="/" className="mb-3 hover:opacity-90 transition-opacity">
+                <Logo variant="white" width={180} height={70} />
               </Link>
             </div>
             <p className="text-white/80 mb-6">

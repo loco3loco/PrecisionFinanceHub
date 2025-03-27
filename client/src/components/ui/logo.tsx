@@ -1,45 +1,33 @@
 
+import React from "react";
+
 interface LogoProps {
-  variant?: "default" | "footer";
-  size?: "sm" | "default" | "lg";
+  variant?: "default" | "white";
+  className?: string;
+  width?: number;
+  height?: number;
 }
 
 export function Logo({ 
   variant = "default", 
-  size = "default" 
+  className = "", 
+  width = 180, 
+  height = 70 
 }: LogoProps) {
-  const dimensions = {
-    sm: { width: 120, height: 48 },
-    default: { width: 180, height: 70 },
-    lg: { width: 250, height: 100 },
-  };
-
-  const { width, height } = dimensions[size];
-  const isFooter = variant === "footer";
+  // Utilizar el logo original para la versión normal
+  // Para la versión blanca, aplicamos un filtro CSS
+  const isWhite = variant === "white";
   
   return (
-    <a href="/" aria-label="Solutum S.A.">
-      <div 
-        className={`flex items-center justify-center`}
-        style={{ width: `${width}px`, height: `${height}px` }}
-      >
-        <img 
-          src="/assets/logo-solutumsa-new.png" 
-          alt="Solutum S.A." 
-          className={`w-full h-full object-contain ${isFooter ? 'brightness-0 invert' : ''}`}
-          width={width}
-          height={height}
-          onError={(e) => {
-            // If image fails to load, try alternative path
-            const target = e.target as HTMLImageElement;
-            target.onerror = null; // Prevent infinite loop
-            target.src = "/logo-solutumsa-new.png";
-          }}
-        />
-      </div>
-    </a>
+    <img 
+      src="/assets/logo-solutum.png"
+      alt="Solutum S.A." 
+      className={`${className} ${isWhite ? "brightness-0 invert" : ""}`}
+      width={width}
+      height={height}
+      style={{ objectFit: "contain" }}
+    />
   );
 }
 
-// Add default export
 export default Logo;

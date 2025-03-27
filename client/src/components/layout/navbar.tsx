@@ -85,10 +85,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link href="/">
-            <div className="flex items-center cursor-pointer group">
-              <div className="hover:opacity-90 transition-opacity">
-                <Logo width={180} height={70} />
-              </div>
+            <div className="hover:opacity-90 transition-opacity">
+              <Logo width={180} height={70} />
             </div>
           </Link>
 
