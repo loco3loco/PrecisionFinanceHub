@@ -20,7 +20,7 @@ export function Logo({
   
   return (
     <img 
-      src="/assets/logo-solutum.png"
+      src="/assets/logo-simple.svg"
       alt="Solutum S.A." 
       className={`${className} ${isWhite ? "brightness-0 invert" : ""}`}
       width={width}

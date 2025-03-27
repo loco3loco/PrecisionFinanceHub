@@ -4,7 +4,8 @@
     "services": "Servicios",
     "about": "Nosotros",
     "testimonials": "Testimonios",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "quick_links": "Enlaces Rápidos"
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -102,7 +103,8 @@
   "footer": {
     "rights": "Todos los derechos reservados",
     "privacy": "Política de privacidad",
-    "terms": "Términos y condiciones"
+    "terms": "Términos y condiciones",
+    "cookies": "Política de Cookies"
   },
   "common": {
     "language": "Idioma",
