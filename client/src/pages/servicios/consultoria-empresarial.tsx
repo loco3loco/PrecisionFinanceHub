@@ -127,23 +127,22 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <TrendingUp className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Estrategia Empresarial</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.0.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Desarrollamos planes estratégicos que definen la dirección de su
-                  empresa y establecen las bases para un crecimiento sostenible.
+                  {t('service_pages.business_consulting.services.items.0.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Análisis del entorno competitivo</span>
+                    <span>{t('service_pages.business_consulting.services.items.0.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Definición de visión y objetivos</span>
+                    <span>{t('service_pages.business_consulting.services.items.0.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Planificación estratégica a largo plazo</span>
+                    <span>{t('service_pages.business_consulting.services.items.0.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -159,23 +158,22 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <LineChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Mejora de Procesos</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.1.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Optimizamos sus operaciones para aumentar la eficiencia,
-                  reducir costos y mejorar la calidad.
+                  {t('service_pages.business_consulting.services.items.1.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Mapeo y rediseño de procesos</span>
+                    <span>{t('service_pages.business_consulting.services.items.1.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Eliminación de ineficiencias</span>
+                    <span>{t('service_pages.business_consulting.services.items.1.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Implementación de mejoras continuas</span>
+                    <span>{t('service_pages.business_consulting.services.items.1.features.2')}</span>
                   </li>
                 </ul>
               </div>
