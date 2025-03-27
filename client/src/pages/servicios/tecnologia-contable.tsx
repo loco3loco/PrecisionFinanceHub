@@ -130,23 +130,22 @@ export default function TecnologiaContable() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Laptop className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Implementación de Software</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.services.items.0.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Asesoramos en la selección e implementación del software contable
-                  más adecuado para las necesidades de su empresa.
+                  {t('service_pages.tech_account.services.items.0.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Análisis de necesidades y requerimientos</span>
+                    <span>{t('service_pages.tech_account.services.items.0.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Selección de software especializado</span>
+                    <span>{t('service_pages.tech_account.services.items.0.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Configuración y personalización</span>
+                    <span>{t('service_pages.tech_account.services.items.0.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -162,23 +161,22 @@ export default function TecnologiaContable() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Cloud className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Migración a la Nube</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.services.items.1.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Trasladamos sus sistemas contables a la nube para permitir
-                  acceso remoto y mayor flexibilidad operativa.
+                  {t('service_pages.tech_account.services.items.1.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Planificación de la migración</span>
+                    <span>{t('service_pages.tech_account.services.items.1.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Transferencia segura de datos</span>
+                    <span>{t('service_pages.tech_account.services.items.1.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Configuración de accesos y permisos</span>
+                    <span>{t('service_pages.tech_account.services.items.1.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -201,15 +199,15 @@ export default function TecnologiaContable() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Identificación de procesos optimizables</span>
+                    <span>{t('service_pages.tech_account.services.items.2.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Configuración de flujos automáticos</span>
+                    <span>{t('service_pages.tech_account.services.items.2.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Integración entre sistemas</span>
+                    <span>{t('service_pages.tech_account.services.items.2.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -232,15 +230,15 @@ export default function TecnologiaContable() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Digitalización de documentos físicos</span>
+                    <span>{t('service_pages.tech_account.services.items.3.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Organización y clasificación automática</span>
+                    <span>{t('service_pages.tech_account.services.items.3.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Búsqueda y recuperación rápida</span>
+                    <span>{t('service_pages.tech_account.services.items.3.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -256,23 +254,22 @@ export default function TecnologiaContable() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <LockKeyhole className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Seguridad Informática</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.services.items.4.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Protegemos su información financiera con las más avanzadas
-                  soluciones de seguridad informática.
+                  {t('service_pages.tech_account.services.items.4.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Implementación de protocolos de seguridad</span>
+                    <span>{t('service_pages.tech_account.services.items.4.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión de backups y recuperación</span>
+                    <span>{t('service_pages.tech_account.services.items.4.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Control de accesos y auditorías</span>
+                    <span>{t('service_pages.tech_account.services.items.4.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -288,23 +285,22 @@ export default function TecnologiaContable() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart3 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Business Intelligence</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.services.items.5.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Implementamos herramientas de análisis de datos para transformar
-                  su información financiera en insights valiosos.
+                  {t('service_pages.tech_account.services.items.5.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Creación de cuadros de mando (dashboards)</span>
+                    <span>{t('service_pages.tech_account.services.items.5.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Informes interactivos personalizados</span>
+                    <span>{t('service_pages.tech_account.services.items.5.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Análisis predictivo y tendencias</span>
+                    <span>{t('service_pages.tech_account.services.items.5.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -479,10 +475,9 @@ export default function TecnologiaContable() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Escalabilidad</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.benefits.items.5.title')}</h3>
               <p className="text-gray-600">
-                Sistemas que crecen con su empresa, adaptándose a nuevas
-                necesidades sin grandes inversiones adicionales.
+                {t('service_pages.tech_account.benefits.items.5.description')}
               </p>
             </motion.div>
           </div>
