@@ -72,8 +72,7 @@ export default function Navbar() {
   }, []);
 
   const getServiceName = (key: string) => {
-    const translated = t(key);
-    return translated !== key ? translated : "Tecnología Contable"; // Fallback
+    return t(key);
   };
 
   return (
