@@ -194,10 +194,9 @@ export default function TecnologiaContable() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Binary className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Automatización de Procesos</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.services.items.2.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Implementamos soluciones para automatizar tareas repetitivas
-                  y reducir la intervención manual en procesos contables.
+                  {t('service_pages.tech_account.services.items.2.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -226,10 +225,9 @@ export default function TecnologiaContable() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Database className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Gestión Documental</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tech_account.services.items.3.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Implementamos sistemas para la digitalización, organización
-                  y gestión eficiente de documentos contables y financieros.
+                  {t('service_pages.tech_account.services.items.3.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">

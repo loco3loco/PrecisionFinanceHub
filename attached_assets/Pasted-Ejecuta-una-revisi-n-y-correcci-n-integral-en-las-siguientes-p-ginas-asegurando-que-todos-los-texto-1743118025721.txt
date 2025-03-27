@@ -1,0 +1,53 @@
+Ejecuta una revisión y corrección integral en las siguientes páginas, asegurando que todos los textos se muestren correctamente traducidos y sin errores en las claves de servicio. Mantén una metodología ágil y eficiente, verificando con capturas de pantalla que cada sección y tarjeta se visualice correctamente.
+
+Página de Home:
+Sección de Conozca Nuestra Historia: Verificar que el contenido esté correctamente traducido y bien estructurado.
+
+Sección de Preguntas Frecuentes: Asegurar que todas las preguntas y respuestas se muestren correctamente. Ejemplo a validar:
+
+"¿Qué servicios contables ofrecen para pequeñas empresas?"
+
+Sección de "¿Listo para llevar tu empresa al siguiente nivel?": Revisar que el call to action se muestre bien.
+
+Sección de Nuestras Oficinas: Corregir traducciones y validar datos como "Celular", "Montevideo", "Horario de Atención".
+
+Página de Corporate Accounting:
+Sección de Contabilidad Financiera, Contabilidad Regulatoria y Diagnóstico: Corregir y validar traducciones.
+
+Sección de Beneficios de Nuestro Servicio: Asegurar que las tarjetas muestren los textos correctos, ejemplo:
+
+"Reducción de Errores: Nuestros procedimientos meticulosos y múltiples niveles de revisión minimizan el riesgo de errores contables que podrían resultar costosos."
+
+Página de Our Tax Services:
+Sección de Planificación Fiscal: Revisar que los textos como "Due Diligence Fiscal" y sus puntos clave se visualicen correctamente.
+
+Sección de Our Approach: Verificar la traducción de elementos como "Enfoque Preventivo" y sus detalles.
+
+Sección de Años de Experiencia: Asegurar que los textos se muestren correctamente y sin claves erróneas.
+
+Página de Business Consulting:
+Sección de Our Consulting Services: Validar textos como "Estrategia Empresarial" y sus elementos.
+
+Sección de Our Methodology: Asegurar que términos como "Diagnóstico" estén bien traducidos.
+
+Página de Financial Audit:
+Solucionar errores en los textos que actualmente muestran claves en lugar del contenido, por ejemplo:
+
+service_pages.financial_audit.cta.title
+
+service_pages.financial_audit.cta.description
+
+Página de Accounting Technology:
+Sección de Our Technology Solutions: Validar que todos los textos y tarjetas dentro de "Implementación de Software" estén correctamente traducidos y bien formateados.
+
+Metodología de corrección:
+
+Corregir los errores de claves de servicio que no muestran el texto correcto.
+
+Traducir cualquier contenido faltante, asegurando coherencia con el resto del sitio.
+
+Revisar y corregir textos dentro de tarjetas y secciones específicas.
+
+Verificar con capturas de pantalla que los cambios se reflejen correctamente.
+
+Ejecuta estos cambios en un solo flujo continuo, asegurando que todas las páginas estén completamente corregidas y optimizadas.
