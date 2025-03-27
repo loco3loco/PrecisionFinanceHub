@@ -5,10 +5,9 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
-import Logo from "@/components/ui/logo"; // Added import for Logo component
+import Logo from "@/components/ui/logo";
 
 
-// Definición de tipos para nuestros menús
 type SubMenuItem = {
   name: string;
   href: string;
@@ -32,7 +31,6 @@ export default function Navbar() {
   const toggleServices = () => setServicesOpen(!servicesOpen);
   const toggleMobileServices = () => setMobileServicesOpen(!mobileServicesOpen);
 
-  // Creamos el array de menú de forma dinámica usando las traducciones
   const menuItems = [
     { name: t("nav.home"), href: "#inicio" },
     {
@@ -60,7 +58,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as Node;
@@ -73,6 +70,11 @@ export default function Navbar() {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  const getServiceName = (key: string) => {
+    const translated = t(key);
+    return translated !== key ? translated : "Tecnología Contable"; // Fallback
+  };
 
   return (
     <header
@@ -121,7 +123,7 @@ export default function Navbar() {
                               onClick={() => setServicesOpen(false)}
                             >
                               <div className="px-4 py-3 text-sm hover:bg-gray-50 cursor-pointer transition-colors">
-                                {t(subItem.name)} {/* Corrected line: Use t() to translate subItem.name */}
+                                {getServiceName(subItem.name)}
                               </div>
                             </Link>
                           ))}
@@ -225,7 +227,7 @@ export default function Navbar() {
                                 }}
                               >
                                 <div className="py-2 text-sm hover:text-primary cursor-pointer transition-colors">
-                                  {t(subItem.name)} {/* Corrected line: Use t() to translate subItem.name */}
+                                  {getServiceName(subItem.name)}
                                 </div>
                               </Link>
                             ))}
