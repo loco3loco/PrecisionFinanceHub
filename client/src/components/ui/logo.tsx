@@ -1,6 +1,4 @@
 
-import { Link } from "react-router-dom";
-
 interface LogoProps {
   variant?: "default" | "footer";
   size?: "sm" | "default" | "lg";
@@ -20,7 +18,7 @@ export function Logo({
   const isFooter = variant === "footer";
   
   return (
-    <Link to="/" aria-label="Solutum S.A.">
+    <a href="/" aria-label="Solutum S.A.">
       <div 
         className={`flex items-center justify-center`}
         style={{ width: `${width}px`, height: `${height}px` }}
@@ -39,6 +37,6 @@ export function Logo({
           }}
         />
       </div>
-    </Link>
+    </a>
   );
 }
