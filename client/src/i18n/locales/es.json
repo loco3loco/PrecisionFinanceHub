@@ -138,6 +138,85 @@
       "employees_subtitle": "Tienen relación de dependencia en las empresas que asesoramos."
     }
   },
+  "whyChooseUs": {
+    "title": "¿Por Qué Solutumsa?",
+    "description": "Ofrecemos soluciones contables y fiscales integrales con un enfoque personalizado para cada negocio, respaldados por décadas de experiencia y un equipo de profesionales dedicados.",
+    "stats": {
+      "trust": {
+        "title": "Confianza garantizada",
+        "description": "Satisfacción del cliente al 98%"
+      },
+      "companies": {
+        "title": "+100 empresas",
+        "description": "Confían en nuestros servicios"
+      },
+      "employees": {
+        "title": "+800 colaboradores",
+        "description": "Gestionados con excelencia y dedicación"
+      }
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "description": "Ofrecemos soluciones integrales para la gestión contable, fiscal y financiera de tu empresa, adaptadas a tus necesidades específicas.",
+    "view_details": "Ver más detalles",
+    "items": {
+      "accounting": {
+        "title": "Servicio Contable",
+        "description": "Mantenemos tus libros contables al día, cumpliendo con todas las normativas vigentes y generando informes precisos para la toma de decisiones.",
+        "features": [
+          "Registros contables actualizados",
+          "Balances mensuales y anuales",
+          "Conciliaciones bancarias"
+        ]
+      },
+      "tax": {
+        "title": "Asesoría Fiscal",
+        "description": "Optimizamos tu carga tributaria dentro del marco legal, asegurando el cumplimiento de todas tus obligaciones fiscales.",
+        "features": [
+          "Declaraciones de impuestos",
+          "Planificación fiscal estratégica",
+          "Representación ante autoridades fiscales"
+        ]
+      },
+      "consulting": {
+        "title": "Consultoría Empresarial",
+        "description": "Asesoramos en la toma de decisiones estratégicas y en la implementación de mejores prácticas para optimizar la rentabilidad de tu negocio.",
+        "features": [
+          "Análisis financiero y de costos",
+          "Proyecciones y presupuestos",
+          "Optimización de procesos internos"
+        ]
+      },
+      "payroll": {
+        "title": "Gestión de Nómina",
+        "description": "Administramos la nómina de tu empresa, garantizando el cumplimiento de las obligaciones laborales y optimizando los procesos.",
+        "features": [
+          "Cálculo de salarios y retenciones",
+          "Gestión de beneficios sociales",
+          "Cumplimiento de normativas laborales"
+        ]
+      },
+      "audit": {
+        "title": "Auditoría Interna",
+        "description": "Realizamos auditorías para identificar áreas de mejora, evaluar los controles internos y asegurar la integridad de la información financiera.",
+        "features": [
+          "Revisión de estados financieros",
+          "Evaluación de riesgos",
+          "Recomendaciones de mejora"
+        ]
+      },
+      "planning": {
+        "title": "Planificación Financiera",
+        "description": "Desarrollamos estrategias financieras personalizadas para maximizar el rendimiento y asegurar el crecimiento sostenible de tu empresa.",
+        "features": [
+          "Análisis financiero detallado",
+          "Proyecciones y presupuestos",
+          "Estrategias de financiamiento"
+        ]
+      }
+    }
+  },
   "validation": {
     "name_required": "El nombre es requerido",
     "lastname_required": "El apellido es requerido",

@@ -138,6 +138,85 @@
       "employees_subtitle": "Are in a dependency relationship with the companies we advise."
     }
   },
+  "whyChooseUs": {
+    "title": "Why Solutumsa?",
+    "description": "We offer comprehensive accounting and tax solutions with a personalized approach for each business, backed by decades of experience and a team of dedicated professionals.",
+    "stats": {
+      "trust": {
+        "title": "Guaranteed trust",
+        "description": "98% client satisfaction"
+      },
+      "companies": {
+        "title": "+100 companies",
+        "description": "Trust our services"
+      },
+      "employees": {
+        "title": "+800 employees",
+        "description": "Managed with excellence and dedication"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer comprehensive solutions for accounting, tax, and financial management of your company, tailored to your specific needs.",
+    "view_details": "View more details",
+    "items": {
+      "accounting": {
+        "title": "Accounting Service",
+        "description": "We keep your accounting books up to date, complying with all current regulations and generating accurate reports for decision making.",
+        "features": [
+          "Updated accounting records",
+          "Monthly and annual balance sheets",
+          "Bank reconciliations"
+        ]
+      },
+      "tax": {
+        "title": "Tax Advisory",
+        "description": "We optimize your tax burden within the legal framework, ensuring compliance with all your tax obligations.",
+        "features": [
+          "Tax declarations",
+          "Strategic tax planning",
+          "Representation before tax authorities"
+        ]
+      },
+      "consulting": {
+        "title": "Business Consulting",
+        "description": "We advise on strategic decision making and implementation of best practices to optimize the profitability of your business.",
+        "features": [
+          "Financial and cost analysis",
+          "Projections and budgets",
+          "Optimization of internal processes"
+        ]
+      },
+      "payroll": {
+        "title": "Payroll Management",
+        "description": "We manage your company's payroll, ensuring compliance with labor obligations and optimizing processes.",
+        "features": [
+          "Calculation of salaries and withholdings",
+          "Management of social benefits",
+          "Compliance with labor regulations"
+        ]
+      },
+      "audit": {
+        "title": "Internal Audit",
+        "description": "We conduct audits to identify areas for improvement, evaluate internal controls, and ensure the integrity of financial information.",
+        "features": [
+          "Review of financial statements",
+          "Risk assessment",
+          "Improvement recommendations"
+        ]
+      },
+      "planning": {
+        "title": "Financial Planning",
+        "description": "We develop personalized financial strategies to maximize performance and ensure sustainable growth of your company.",
+        "features": [
+          "Detailed financial analysis",
+          "Projections and budgets",
+          "Financing strategies"
+        ]
+      }
+    }
+  },
   "validation": {
     "name_required": "Name is required",
     "lastname_required": "Last name is required",

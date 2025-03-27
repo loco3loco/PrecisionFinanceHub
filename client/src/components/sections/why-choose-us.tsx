@@ -1,6 +1,7 @@
 import { Building, Shield, TrendingUp, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { useTranslation } from "react-i18next";
 
 function CountUp({ target, prefix = "" }: { target: number; prefix?: string }) {
   const { ref, isVisible } = useScrollAnimation();
@@ -40,24 +41,25 @@ const StatCard = ({ icon, title, description, delay }: StatCardProps) => {
 };
 
 export default function WhyChooseUs() {
+  const { t } = useTranslation();
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
 
   const stats = [
     {
-      title: "Confianza garantizada",
-      description: "Satisfacción del cliente al 98%",
+      title: t("whyChooseUs.stats.trust.title", "Confianza garantizada"),
+      description: t("whyChooseUs.stats.trust.description", "Satisfacción del cliente al 98%"),
       icon: <Shield className="text-2xl text-primary" />,
       delay: 0
     },
     {
-      title: "+100 empresas",
-      description: "Confían en nuestros servicios",
+      title: t("whyChooseUs.stats.companies.title", "+100 empresas"),
+      description: t("whyChooseUs.stats.companies.description", "Confían en nuestros servicios"),
       icon: <Building className="text-2xl text-primary" />,
       delay: 0.2
     },
     {
-      title: "+800 colaboradores",
-      description: "Gestionados con excelencia y dedicación",
+      title: t("whyChooseUs.stats.employees.title", "+800 colaboradores"),
+      description: t("whyChooseUs.stats.employees.description", "Gestionados con excelencia y dedicación"),
       icon: <Users className="text-2xl text-primary" />,
       delay: 0.4
     }
@@ -73,12 +75,10 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">¿Por Qué Solutumsa?</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">{t("whyChooseUs.title", "¿Por Qué Solutumsa?")}</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Ofrecemos soluciones contables y fiscales integrales con un enfoque personalizado para
-            cada negocio, respaldados por décadas de experiencia y un equipo de profesionales
-            dedicados.
+            {t("whyChooseUs.description", "Ofrecemos soluciones contables y fiscales integrales con un enfoque personalizado para cada negocio, respaldados por décadas de experiencia y un equipo de profesionales dedicados.")}
           </p>
         </motion.div>
 
