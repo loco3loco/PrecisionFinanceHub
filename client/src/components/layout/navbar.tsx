@@ -121,7 +121,7 @@ export default function Navbar() {
                               onClick={() => setServicesOpen(false)}
                             >
                               <div className="px-4 py-3 text-sm hover:bg-gray-50 cursor-pointer transition-colors">
-                                {subItem.name}
+                                {t(subItem.name)} {/* Corrected line: Use t() to translate subItem.name */}
                               </div>
                             </Link>
                           ))}
@@ -225,7 +225,7 @@ export default function Navbar() {
                                 }}
                               >
                                 <div className="py-2 text-sm hover:text-primary cursor-pointer transition-colors">
-                                  {subItem.name}
+                                  {t(subItem.name)} {/* Corrected line: Use t() to translate subItem.name */}
                                 </div>
                               </Link>
                             ))}
