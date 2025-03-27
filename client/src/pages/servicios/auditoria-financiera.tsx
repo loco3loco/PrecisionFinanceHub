@@ -481,14 +481,14 @@ export default function AuditoriaFinanciera() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('service_pages.financial_audit.cta.title')}
+              {t('service_pages.financial_audit.cta_title')}
             </h2>
             <p className="text-xl mb-8">
-              {t('service_pages.financial_audit.cta.description')}
+              {t('service_pages.financial_audit.cta_description')}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                {t('service_pages.financial_audit.cta.button')}
+                {t('service_pages.financial_audit.cta_button')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
