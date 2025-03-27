@@ -499,15 +499,14 @@ export default function TecnologiaContable() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Digitalice su contabilidad y finanzas
+              {t('service_pages.tech_account.cta.title')}
             </h2>
             <p className="text-xl mb-8">
-              Nuestro equipo de expertos le ayudará a seleccionar e implementar
-              las soluciones tecnológicas más adecuadas para su empresa.
+              {t('service_pages.tech_account.cta.description')}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                Solicitar consulta tecnológica
+                {t('service_pages.tech_account.cta.button')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
