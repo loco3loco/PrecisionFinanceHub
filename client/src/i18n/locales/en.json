@@ -301,6 +301,144 @@
       "cta_description": "Our professional auditors will verify the integrity and accuracy of your financial information. Request a consultation with no obligation.",
       "cta_button": "Request audit service"
     },
+    "payroll": {
+      "title": "Payroll Management",
+      "meta_description": "Solutumsa's payroll management services. Efficient staff administration, labor compliance, and optimization of human resources processes.",
+      "meta_keywords": "payroll management, personnel administration, human resources, labor compliance, salary payments",
+      "subtitle": "Efficient administration of salaries, compensations, and benefits for your employees with full regulatory compliance.",
+      "why_outsource": "Why outsource your payroll?",
+      "why_choose_us_items": [
+        "Reduces costs and administrative burdens",
+        "Ensures compliance with labor regulations",
+        "Minimizes errors in calculations and payments",
+        "Access to experts in labor legislation"
+      ],
+      "services": {
+        "title": "Our Payroll Services",
+        "description": "We offer comprehensive solutions for payroll management that free up resources and ensure regulatory compliance.",
+        "items": [
+          {
+            "title": "Payroll Administration",
+            "description": "Complete management of the payroll process, from calculation to payment to employees and official organizations.",
+            "features": [
+              "Calculation of wages and salaries",
+              "Management of withholdings and taxes",
+              "Issuance of payslips"
+            ]
+          },
+          {
+            "title": "Social Security Management",
+            "description": "Processing of all obligations related to the Social Security of your employees.",
+            "features": [
+              "Registrations, deregistrations, and modifications",
+              "Calculation and presentation of contributions",
+              "Management of bonuses and reductions"
+            ]
+          },
+          {
+            "title": "Labor Contracting",
+            "description": "Advice and management of all aspects related to personnel hiring.",
+            "features": [
+              "Drafting and registration of contracts",
+              "Selection of the optimal contract type",
+              "Management of extensions and modifications"
+            ]
+          },
+          {
+            "title": "Attendance Control",
+            "description": "Implementation and management of systems for recording and controlling working hours.",
+            "features": [
+              "Time tracking",
+              "Management of absences and permissions",
+              "Working time control reports"
+            ]
+          },
+          {
+            "title": "Regulatory Compliance",
+            "description": "Advice and adaptation to legislative changes in labor matters and Social Security.",
+            "features": [
+              "Regulatory updates",
+              "Prevention of penalties",
+              "Compliance audits"
+            ]
+          },
+          {
+            "title": "Reports and Analytics",
+            "description": "Preparation of detailed reports on labor costs and other personnel-related indicators.",
+            "features": [
+              "Analysis of labor costs",
+              "Personnel statistics",
+              "Budget forecasts"
+            ]
+          }
+        ]
+      },
+      "advantages": {
+        "title": "Advantages of Outsourcing Payroll",
+        "description": "Discover why more and more companies are entrusting their payroll management to specialized professionals.",
+        "items": [
+          {
+            "title": "Time and Resource Savings",
+            "description": "By outsourcing payroll management, your internal team can focus on higher-value tasks for your business.",
+            "features": [
+              "Reduction of administrative burdens",
+              "Optimization of internal processes",
+              "Elimination of repetitive tasks"
+            ]
+          },
+          {
+            "title": "Error Reduction",
+            "description": "Our experience and specialized systems minimize the risk of errors in calculations and processes.",
+            "features": [
+              "Greater precision in calculations",
+              "Prevention of incidents",
+              "Double verification of all processes"
+            ]
+          },
+          {
+            "title": "Compliance Guarantee",
+            "description": "We constantly keep up to date with legislative changes that affect labor management.",
+            "features": [
+              "Adaptation to regulatory changes",
+              "Prevention of sanctions",
+              "Correct application of collective agreements"
+            ]
+          },
+          {
+            "title": "Access to Experts",
+            "description": "You will have a team of professionals specialized in labor legislation and payroll management.",
+            "features": [
+              "Unlimited labor consultations",
+              "Personalized advice",
+              "Solutions tailored to your company"
+            ]
+          }
+        ]
+      },
+      "technology": {
+        "title": "Cutting-Edge Technology",
+        "description": "We use the most advanced technological tools to ensure efficient and secure payroll management.",
+        "items": [
+          {
+            "title": "Guaranteed Security",
+            "description": "Data protection with the highest security standards and GDPR compliance."
+          },
+          {
+            "title": "Online Access",
+            "description": "Employee portal for consultation of payslips, certificates, and request management."
+          },
+          {
+            "title": "Customized Reports",
+            "description": "Generation of tailored reports for analysis of labor costs and decision making."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Simplify your personnel management",
+        "description": "Entrust your payroll administration to our experts and focus your resources on business growth.",
+        "button": "Request a personalized quote"
+      }
+    },
     "payroll_management": {
       "title": "Payroll Management",
       "meta_description": "Solutumsa's payroll management services. Efficient staff administration, labor compliance, and optimization of human resources processes.",

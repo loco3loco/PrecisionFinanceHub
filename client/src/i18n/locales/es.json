@@ -301,6 +301,144 @@
       "cta_description": "Nuestros auditores profesionales verificarán la integridad y precisión de su información financiera. Solicite una consulta sin compromiso.",
       "cta_button": "Solicitar servicio de auditoría"
     },
+    "payroll": {
+      "title": "Gestión de Nómina",
+      "meta_description": "Servicios de gestión de nómina de Solutumsa. Administración eficiente de su personal, cumplimiento laboral y optimización de procesos de recursos humanos.",
+      "meta_keywords": "gestión de nómina, administración de personal, recursos humanos, cumplimiento laboral, liquidación de sueldos",
+      "subtitle": "Administración eficiente de sueldos, compensaciones y beneficios para sus empleados con total cumplimiento normativo.",
+      "why_outsource": "¿Por qué externalizar su nómina?",
+      "why_choose_us_items": [
+        "Reduce costos y cargas administrativas",
+        "Garantiza el cumplimiento de normativas laborales",
+        "Minimiza errores en cálculos y pagos",
+        "Acceso a expertos en legislación laboral"
+      ],
+      "services": {
+        "title": "Nuestros Servicios de Nómina",
+        "description": "Ofrecemos soluciones integrales para la gestión de nómina que liberan recursos y garantizan el cumplimiento normativo.",
+        "items": [
+          {
+            "title": "Administración de Nómina",
+            "description": "Gestión completa del proceso de nómina, desde el cálculo hasta el pago a empleados y organismos oficiales.",
+            "features": [
+              "Cálculo de sueldos y salarios",
+              "Gestión de retenciones e impuestos",
+              "Emisión de recibos de nómina"
+            ]
+          },
+          {
+            "title": "Gestión de Seguridad Social",
+            "description": "Tramitación de todas las obligaciones relacionadas con la Seguridad Social de sus empleados.",
+            "features": [
+              "Altas, bajas y modificaciones",
+              "Cálculo y presentación de cotizaciones",
+              "Gestión de bonificaciones y reducciones"
+            ]
+          },
+          {
+            "title": "Contratación Laboral",
+            "description": "Asesoramiento y gestión de todos los aspectos relacionados con la contratación de personal.",
+            "features": [
+              "Redacción y registro de contratos",
+              "Selección del tipo de contrato óptimo",
+              "Gestión de prórrogas y modificaciones"
+            ]
+          },
+          {
+            "title": "Control de Presencia",
+            "description": "Implementación y gestión de sistemas para el registro y control de jornada laboral.",
+            "features": [
+              "Registro de jornada",
+              "Gestión de ausencias y permisos",
+              "Informes de control horario"
+            ]
+          },
+          {
+            "title": "Cumplimiento Normativo",
+            "description": "Asesoramiento y adaptación a cambios legislativos en materia laboral y de Seguridad Social.",
+            "features": [
+              "Actualizaciones normativas",
+              "Prevención de sanciones",
+              "Auditorías de cumplimiento"
+            ]
+          },
+          {
+            "title": "Informes y Analítica",
+            "description": "Elaboración de informes detallados sobre costos laborales y otros indicadores relacionados con el personal.",
+            "features": [
+              "Análisis de costos laborales",
+              "Estadísticas de personal",
+              "Previsiones presupuestarias"
+            ]
+          }
+        ]
+      },
+      "advantages": {
+        "title": "Ventajas de Externalizar la Nómina",
+        "description": "Descubra por qué cada vez más empresas confían la gestión de su nómina a profesionales especializados.",
+        "items": [
+          {
+            "title": "Ahorro de Tiempo y Recursos",
+            "description": "Al externalizar la gestión de nómina, su equipo interno puede centrarse en tareas de mayor valor para su negocio.",
+            "features": [
+              "Reducción de cargas administrativas",
+              "Optimización de procesos internos",
+              "Eliminación de tareas repetitivas"
+            ]
+          },
+          {
+            "title": "Reducción de Errores",
+            "description": "Nuestra experiencia y sistemas especializados minimizan el riesgo de errores en los cálculos y procesos.",
+            "features": [
+              "Mayor precisión en los cálculos",
+              "Prevención de incidencias",
+              "Doble verificación de todos los procesos"
+            ]
+          },
+          {
+            "title": "Garantía de Cumplimiento",
+            "description": "Nos mantenemos constantemente actualizados sobre los cambios legislativos que afectan a la gestión laboral.",
+            "features": [
+              "Adaptación a cambios normativos",
+              "Prevención de sanciones",
+              "Aplicación correcta de convenios colectivos"
+            ]
+          },
+          {
+            "title": "Acceso a Expertos",
+            "description": "Contará con un equipo de profesionales especializados en legislación laboral y gestión de nómina.",
+            "features": [
+              "Consultas laborales ilimitadas",
+              "Asesoramiento personalizado",
+              "Soluciones adaptadas a su empresa"
+            ]
+          }
+        ]
+      },
+      "technology": {
+        "title": "Tecnología de Vanguardia",
+        "description": "Utilizamos las herramientas tecnológicas más avanzadas para garantizar una gestión de nómina eficiente y segura.",
+        "items": [
+          {
+            "title": "Seguridad Garantizada",
+            "description": "Protección de datos con los más altos estándares de seguridad y cumplimiento del RGPD."
+          },
+          {
+            "title": "Acceso Online",
+            "description": "Portal del empleado para consulta de nóminas, certificados y gestión de solicitudes."
+          },
+          {
+            "title": "Informes Personalizados",
+            "description": "Generación de informes a medida para análisis de costos laborales y toma de decisiones."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Simplifique la gestión de su personal",
+        "description": "Confíe la administración de su nómina a nuestros expertos y centre sus recursos en el crecimiento de su negocio.",
+        "button": "Solicitar presupuesto personalizado"
+      }
+    },
     "payroll_management": {
       "title": "Gestión de Nómina",
       "meta_description": "Servicios de gestión de nómina de Solutumsa. Administración eficiente de su personal, cumplimiento laboral y optimización de procesos de recursos humanos.",

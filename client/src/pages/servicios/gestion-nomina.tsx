@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import BackToTop from "@/components/ui/back-to-top";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 export default function GestionNomina() {
+  const { t } = useTranslation();
   const { ref: refSection1, isVisible: isVisibleSection1 } = useScrollAnimation();
   const { ref: refSection2, isVisible: isVisibleSection2 } = useScrollAnimation();
   const { ref: refSection3, isVisible: isVisibleSection3 } = useScrollAnimation();
@@ -19,12 +21,19 @@ export default function GestionNomina() {
     window.scrollTo(0, 0);
   }, []);
 
+  const whyChooseUsItems = [
+    t('service_pages.payroll.why_choose_us_items.0'),
+    t('service_pages.payroll.why_choose_us_items.1'),
+    t('service_pages.payroll.why_choose_us_items.2'),
+    t('service_pages.payroll.why_choose_us_items.3')
+  ];
+
   return (
     <>
       <Helmet>
-        <title>Gestión de Nómina | Solutumsa</title>
-        <meta name="description" content="Servicios de gestión de nómina de Solutumsa. Administración eficiente de sueldos, compensaciones y beneficios para empleados con cumplimiento normativo y reducción de cargas administrativas." />
-        <meta name="keywords" content="gestión de nómina, administración de personal, sueldos, compensaciones, beneficios, cumplimiento laboral" />
+        <title>{t('service_pages.payroll.title')} | Solutumsa</title>
+        <meta name="description" content={t('service_pages.payroll.meta_description')} />
+        <meta name="keywords" content={t('service_pages.payroll.meta_keywords')} />
       </Helmet>
 
       <Navbar />
@@ -40,7 +49,7 @@ export default function GestionNomina() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                Gestión de Nómina
+                {t('service_pages.payroll.title')}
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -48,7 +57,7 @@ export default function GestionNomina() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                Administración eficiente de sueldos, compensaciones y beneficios para sus empleados con total cumplimiento normativo.
+                {t('service_pages.payroll.subtitle')}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +66,7 @@ export default function GestionNomina() {
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
                   <a href="#contacto">
-                    Solicitar asesoría
+                    {t('service_pages.common.request_service')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -72,28 +81,18 @@ export default function GestionNomina() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-                  alt="Gestión de Nómina" 
+                  alt={t('service_pages.payroll.title')} 
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">¿Por qué externalizar su nómina?</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('service_pages.payroll.why_outsource')}</h3>
                   <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Reduce costos y cargas administrativas</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Garantiza el cumplimiento de normativas laborales</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Minimiza errores en cálculos y pagos</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Acceso a expertos en legislación laboral</span>
-                    </li>
+                    {whyChooseUsItems.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </motion.div>
@@ -111,10 +110,9 @@ export default function GestionNomina() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios de Nómina</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.payroll.services.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrecemos soluciones integrales para la gestión de nómina que
-              liberan recursos y garantizan el cumplimiento normativo.
+              {t('service_pages.payroll.services.description')}
             </p>
           </motion.div>
 
@@ -129,23 +127,22 @@ export default function GestionNomina() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Administración de Nómina</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.services.items.0.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Gestión completa del proceso de nómina, desde el cálculo
-                  hasta el pago a empleados y organismos oficiales.
+                  {t('service_pages.payroll.services.items.0.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Cálculo de sueldos y salarios</span>
+                    <span>{t('service_pages.payroll.services.items.0.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión de retenciones e impuestos</span>
+                    <span>{t('service_pages.payroll.services.items.0.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Emisión de recibos de nómina</span>
+                    <span>{t('service_pages.payroll.services.items.0.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -161,23 +158,22 @@ export default function GestionNomina() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <ClipboardList className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Gestión de Seguridad Social</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.services.items.1.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Tramitación de todas las obligaciones relacionadas con
-                  la Seguridad Social de sus empleados.
+                  {t('service_pages.payroll.services.items.1.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Altas, bajas y modificaciones</span>
+                    <span>{t('service_pages.payroll.services.items.1.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Cálculo y presentación de cotizaciones</span>
+                    <span>{t('service_pages.payroll.services.items.1.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión de bonificaciones y reducciones</span>
+                    <span>{t('service_pages.payroll.services.items.1.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -193,23 +189,22 @@ export default function GestionNomina() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Contratación Laboral</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.services.items.2.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Asesoramiento y gestión de todos los aspectos relacionados
-                  con la contratación de personal.
+                  {t('service_pages.payroll.services.items.2.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Redacción y registro de contratos</span>
+                    <span>{t('service_pages.payroll.services.items.2.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Selección del tipo de contrato óptimo</span>
+                    <span>{t('service_pages.payroll.services.items.2.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión de prórrogas y modificaciones</span>
+                    <span>{t('service_pages.payroll.services.items.2.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -225,23 +220,22 @@ export default function GestionNomina() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <CalendarClock className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Control de Presencia</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.services.items.3.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Implementación y gestión de sistemas para el registro
-                  y control de jornada laboral.
+                  {t('service_pages.payroll.services.items.3.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Registro de jornada</span>
+                    <span>{t('service_pages.payroll.services.items.3.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión de ausencias y permisos</span>
+                    <span>{t('service_pages.payroll.services.items.3.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Informes de control horario</span>
+                    <span>{t('service_pages.payroll.services.items.3.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -257,23 +251,22 @@ export default function GestionNomina() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FileText className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Cumplimiento Normativo</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.services.items.4.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Asesoramiento y adaptación a cambios legislativos
-                  en materia laboral y de Seguridad Social.
+                  {t('service_pages.payroll.services.items.4.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Actualizaciones normativas</span>
+                    <span>{t('service_pages.payroll.services.items.4.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Prevención de sanciones</span>
+                    <span>{t('service_pages.payroll.services.items.4.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Auditorías de cumplimiento</span>
+                    <span>{t('service_pages.payroll.services.items.4.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -289,23 +282,22 @@ export default function GestionNomina() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Informes y Analítica</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.services.items.5.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Elaboración de informes detallados sobre costos laborales
-                  y otros indicadores relacionados con el personal.
+                  {t('service_pages.payroll.services.items.5.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Análisis de costos laborales</span>
+                    <span>{t('service_pages.payroll.services.items.5.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Estadísticas de personal</span>
+                    <span>{t('service_pages.payroll.services.items.5.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Previsiones presupuestarias</span>
+                    <span>{t('service_pages.payroll.services.items.5.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -323,10 +315,9 @@ export default function GestionNomina() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ventajas de Externalizar la Nómina</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.payroll.advantages.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Descubra por qué cada vez más empresas confían la gestión de su nómina
-              a profesionales especializados.
+              {t('service_pages.payroll.advantages.description')}
             </p>
           </motion.div>
 
@@ -338,23 +329,22 @@ export default function GestionNomina() {
               className="bg-white rounded-xl shadow-md overflow-hidden"
             >
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Ahorro de Tiempo y Recursos</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.payroll.advantages.items.0.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Al externalizar la gestión de nómina, su equipo interno puede
-                  centrarse en tareas de mayor valor para su negocio.
+                  {t('service_pages.payroll.advantages.items.0.description')}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Reducción de cargas administrativas</span>
+                    <span>{t('service_pages.payroll.advantages.items.0.features.0')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Optimización de procesos internos</span>
+                    <span>{t('service_pages.payroll.advantages.items.0.features.1')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Eliminación de tareas repetitivas</span>
+                    <span>{t('service_pages.payroll.advantages.items.0.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -459,10 +449,9 @@ export default function GestionNomina() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Tecnología de Vanguardia</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.payroll.technology.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Utilizamos las herramientas tecnológicas más avanzadas para garantizar
-              una gestión de nómina eficiente y segura.
+              {t('service_pages.payroll.technology.description')}
             </p>
           </motion.div>
 
@@ -534,15 +523,14 @@ export default function GestionNomina() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Simplifique la gestión de su personal
+              {t('service_pages.payroll.cta.title')}
             </h2>
             <p className="text-xl mb-8">
-              Confíe la administración de su nómina a nuestros expertos y centre
-              sus recursos en el crecimiento de su negocio.
+              {t('service_pages.payroll.cta.description')}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                Solicitar presupuesto personalizado
+                {t('service_pages.payroll.cta.button')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
