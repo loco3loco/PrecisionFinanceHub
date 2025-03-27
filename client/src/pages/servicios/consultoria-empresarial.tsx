@@ -189,23 +189,22 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <BrainCircuit className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Transformación Digital</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.2.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Guiamos a su empresa en la adopción de tecnologías y cambios
-                  culturales necesarios para la era digital.
+                  {t('service_pages.business_consulting.services.items.2.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Evaluación de madurez digital</span>
+                    <span>{t('service_pages.business_consulting.services.items.2.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Implementación de soluciones tecnológicas</span>
+                    <span>{t('service_pages.business_consulting.services.items.2.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión del cambio organizacional</span>
+                    <span>{t('service_pages.business_consulting.services.items.2.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -221,23 +220,22 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Gestión Financiera</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.3.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Mejoramos la salud financiera de su empresa con estrategias
-                  para optimizar recursos y maximizar la rentabilidad.
+                  {t('service_pages.business_consulting.services.items.3.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Análisis financiero y presupuestario</span>
+                    <span>{t('service_pages.business_consulting.services.items.3.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Optimización de costos</span>
+                    <span>{t('service_pages.business_consulting.services.items.3.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Planificación de inversiones</span>
+                    <span>{t('service_pages.business_consulting.services.items.3.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -253,23 +251,22 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart4 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Desarrollo Organizacional</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.4.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Fortalecemos la estructura y cultura de su organización para
-                  mejorar el desempeño y la satisfacción del personal.
+                  {t('service_pages.business_consulting.services.items.4.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Diseño organizacional</span>
+                    <span>{t('service_pages.business_consulting.services.items.4.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Desarrollo de liderazgo</span>
+                    <span>{t('service_pages.business_consulting.services.items.4.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión del talento</span>
+                    <span>{t('service_pages.business_consulting.services.items.4.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -285,23 +282,22 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Lightbulb className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Innovación Empresarial</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.5.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Fomentamos la cultura de innovación para desarrollar nuevas
-                  soluciones que diferencien su empresa en el mercado.
+                  {t('service_pages.business_consulting.services.items.5.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Metodologías de innovación</span>
+                    <span>{t('service_pages.business_consulting.services.items.5.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Desarrollo de nuevos productos/servicios</span>
+                    <span>{t('service_pages.business_consulting.services.items.5.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Gestión del conocimiento</span>
+                    <span>{t('service_pages.business_consulting.services.items.5.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -333,23 +329,22 @@ export default function ConsultoriaEmpresarial() {
               className="bg-white rounded-xl shadow-md p-6 relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-              <h3 className="text-xl font-bold mt-4 mb-3 text-center">Diagnóstico</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3 text-center">{t('service_pages.business_consulting.methodology.steps.0.title')}</h3>
               <p className="text-gray-600">
-                Analizamos en profundidad su empresa para identificar fortalezas,
-                debilidades y oportunidades de mejora.
+                {t('service_pages.business_consulting.methodology.steps.0.description')}
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start text-sm">
                   <span className="text-primary mr-2">•</span>
-                  <span>Análisis de la situación actual</span>
+                  <span>{t('service_pages.business_consulting.methodology.steps.0.features.0')}</span>
                 </li>
                 <li className="flex items-start text-sm">
                   <span className="text-primary mr-2">•</span>
-                  <span>Entrevistas con stakeholders clave</span>
+                  <span>{t('service_pages.business_consulting.methodology.steps.0.features.1')}</span>
                 </li>
                 <li className="flex items-start text-sm">
                   <span className="text-primary mr-2">•</span>
-                  <span>Benchmarking sectorial</span>
+                  <span>{t('service_pages.business_consulting.methodology.steps.0.features.2')}</span>
                 </li>
               </ul>
             </motion.div>
