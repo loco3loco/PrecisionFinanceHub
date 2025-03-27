@@ -235,7 +235,111 @@
       "success_cases": "Success Cases",
       "faq": "Frequently Asked Questions",
       "contact_us": "Contact Us",
-      "learn_more": "Learn More"
+      "learn_more": "Learn More",
+      "work_process": "Our Work Process",
+      "work_process_description": "We implement a structured methodology to ensure maximum quality and efficiency in all our services"
+    },
+    "corporate_accounting": {
+      "title": "Corporate Accounting",
+      "meta_description": "Solutumsa's corporate accounting services. We offer tailored solutions for financial management of your company, regulatory compliance and much more.",
+      "meta_keywords": "corporate accounting, financial advisory, financial statements, regulatory compliance, accounting consultants",
+      "subtitle": "Comprehensive accounting solutions specifically designed to optimize the financial management of your company.",
+      "why_choose_us_items": {
+        "0": "Over 15 years of experience in the sector",
+        "1": "Certified and up-to-date professionals",
+        "2": "Solutions tailored to your industry",
+        "3": "Cutting-edge technology and optimized processes"
+      },
+      "main_services_title": "Our Accounting Services",
+      "main_services_description": "We offer complete accounting solutions that cover all your company's needs, allowing you to focus on business growth.",
+      "approach_title": "Our Approach",
+      "approach_description": "We combine professional experience with advanced technology to offer accounting services of the highest quality and precision.",
+      "why_choose_us_description": "Our team of professionals provides the accounting solutions that your company needs to achieve its financial objectives.",
+      "cta_title": "Simplify your company's accounting management",
+      "cta_description": "Our accounting experts are ready to help you. Request a personalized consultation with no obligation.",
+      "cta_button": "Request accounting consultation",
+      "work_process_title": "Our Work Process",
+      "work_process_description": "We follow a structured and transparent approach to ensure maximum quality in all our accounting services."
+    },
+    "business_consulting": {
+      "title": "Business Consulting",
+      "meta_description": "Solutumsa's business consulting services. Strategic advice to enhance the growth and profitability of your business.",
+      "meta_keywords": "business consulting, strategic advice, process optimization, business management, business transformation",
+      "subtitle": "Strategic advice to enhance the performance and growth of your business.",
+      "why_choose_us_items": {
+        "0": "Consultants with extensive experience in various industries",
+        "1": "Customized solutions adapted to your business reality",
+        "2": "Practical and results-oriented approach",
+        "3": "Continuous support throughout the entire process"
+      },
+      "main_services_title": "Our Consulting Services",
+      "main_services_description": "We offer comprehensive consulting services to help your company reach the next level of development and competitiveness.",
+      "approach_title": "Our Approach",
+      "approach_description": "We use a methodology focused on the specific needs of each client, combining strategic analysis with practical actions.",
+      "why_choose_us_description": "We have the experience and resources necessary to transform business challenges into growth opportunities.",
+      "cta_title": "Take your company to the next level",
+      "cta_description": "Our team of consultants is ready to help you overcome obstacles and achieve your business objectives.",
+      "cta_button": "Request business consulting"
+    },
+    "financial_audit": {
+      "title": "Financial Audit",
+      "meta_description": "Solutumsa's financial audit services. We verify the integrity and accuracy of your financial statements to generate trust and transparency.",
+      "meta_keywords": "financial audit, accounting review, financial statements, regulatory compliance, internal control",
+      "subtitle": "Reliable audit services to ensure the transparency and accuracy of your financial information.",
+      "why_choose_us_items": {
+        "0": "Auditors with extensive experience and international certifications",
+        "1": "Compliance with international auditing standards",
+        "2": "Rigorous and methodical approach",
+        "3": "Guaranteed independence and objectivity"
+      },
+      "main_services_title": "Our Audit Services",
+      "main_services_description": "We offer comprehensive financial audit services that generate trust and transparency in your financial information.",
+      "approach_title": "Our Approach",
+      "approach_description": "We apply rigorous methodologies to objectively and accurately assess your company's financial information.",
+      "why_choose_us_description": "Our team of auditors guarantees an impartial and professional analysis of your financial statements, generating confidence for third parties.",
+      "cta_title": "Ensure your company's financial transparency",
+      "cta_description": "Our professional auditors will verify the integrity and accuracy of your financial information. Request a consultation with no obligation.",
+      "cta_button": "Request audit service"
+    },
+    "payroll_management": {
+      "title": "Payroll Management",
+      "meta_description": "Solutumsa's payroll management services. Efficient staff administration, labor compliance, and optimization of human resources processes.",
+      "meta_keywords": "payroll management, personnel administration, human resources, labor compliance, salary payments",
+      "subtitle": "Comprehensive solutions for efficient personnel management and compliance with labor obligations.",
+      "why_choose_us_items": {
+        "0": "Experience in multiple sectors and company sizes",
+        "1": "Constant updates to changes in labor legislation",
+        "2": "Specialized and secure software for payroll management",
+        "3": "Personalized and confidential service"
+      },
+      "main_services_title": "Our Payroll Management Services",
+      "main_services_description": "We offer complete solutions for personnel administration, allowing you to focus on developing your business.",
+      "approach_title": "Our Approach",
+      "approach_description": "We combine technical expertise with advanced technology to provide a precise, timely payroll service in compliance with current regulations.",
+      "why_choose_us_description": "Our specialized team ensures efficient payroll management, minimizing labor risks and optimizing your resources.",
+      "cta_title": "Optimize your human capital management",
+      "cta_description": "Let us take care of your payroll administration so you can focus on growing your business.",
+      "cta_button": "Request payroll service"
+    },
+    "accounting_tech": {
+      "title": "Accounting Technology",
+      "meta_description": "Solutumsa's accounting technology solutions. Implementation of advanced systems to optimize your financial and accounting processes.",
+      "meta_keywords": "accounting technology, accounting software, financial automation, digital transformation, ERP systems",
+      "subtitle": "Advanced technological solutions to modernize and optimize your accounting and financial processes.",
+      "why_choose_us_items": {
+        "0": "Experience in implementing multiple technological platforms",
+        "1": "Solutions adapted to your specific needs",
+        "2": "Comprehensive training for your team",
+        "3": "Continuous technical support post-implementation"
+      },
+      "main_services_title": "Our Technological Solutions",
+      "main_services_description": "We offer complete implementation and optimization services for technological systems for your accounting and financial area.",
+      "approach_title": "Our Approach",
+      "approach_description": "We analyze your specific needs to recommend and implement the technological solutions that best suit your company.",
+      "why_choose_us_description": "We have the necessary experience to guide you in the digital transformation of your accounting and financial processes.",
+      "cta_title": "Modernize your accounting processes",
+      "cta_description": "Our experts will help you implement the appropriate technological solutions to optimize your company's financial management.",
+      "cta_button": "Request technological advice"
     },
     "tax_advisory": {
       "title": "Tax Advisory",

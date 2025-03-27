@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import BackToTop from "@/components/ui/back-to-top";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 export default function ConsultoriaEmpresarial() {
+  const { t } = useTranslation();
   const { ref: refSection1, isVisible: isVisibleSection1 } = useScrollAnimation();
   const { ref: refSection2, isVisible: isVisibleSection2 } = useScrollAnimation();
   const { ref: refSection3, isVisible: isVisibleSection3 } = useScrollAnimation();
@@ -19,12 +21,19 @@ export default function ConsultoriaEmpresarial() {
     window.scrollTo(0, 0);
   }, []);
 
+  const whyChooseUsItems = [
+    t('service_pages.business_consulting.why_choose_us_items.0'),
+    t('service_pages.business_consulting.why_choose_us_items.1'),
+    t('service_pages.business_consulting.why_choose_us_items.2'),
+    t('service_pages.business_consulting.why_choose_us_items.3')
+  ];
+
   return (
     <>
       <Helmet>
-        <title>Consultoría Empresarial | Solutumsa</title>
-        <meta name="description" content="Servicios de consultoría empresarial de Solutumsa. Potenciamos el crecimiento de su negocio con asesoramiento estratégico, optimización de procesos y soluciones a medida." />
-        <meta name="keywords" content="consultoría empresarial, asesoramiento estratégico, optimización de procesos, consultoría de negocios, mejora empresarial" />
+        <title>{t('service_pages.business_consulting.title')} | Solutumsa</title>
+        <meta name="description" content={t('service_pages.business_consulting.meta_description')} />
+        <meta name="keywords" content={t('service_pages.business_consulting.meta_keywords')} />
       </Helmet>
 
       <Navbar />
@@ -40,7 +49,7 @@ export default function ConsultoriaEmpresarial() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                Consultoría Empresarial
+                {t('service_pages.business_consulting.title')}
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -48,7 +57,7 @@ export default function ConsultoriaEmpresarial() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                Soluciones estratégicas para impulsar el crecimiento y la rentabilidad de su organización.
+                {t('service_pages.business_consulting.subtitle')}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +66,7 @@ export default function ConsultoriaEmpresarial() {
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
                   <a href="#contacto">
-                    Solicitar asesoría
+                    {t('service_pages.common.request_service')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -72,28 +81,18 @@ export default function ConsultoriaEmpresarial() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Consultoría Empresarial" 
+                  alt={t('service_pages.business_consulting.title')} 
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">¿Por qué elegir nuestra consultoría?</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('service_pages.common.why_choose_us')}</h3>
                   <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Enfoque integral orientado a resultados</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Consultores con amplia experiencia sectorial</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Soluciones personalizadas para su negocio</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Implementación práctica de las recomendaciones</span>
-                    </li>
+                    {whyChooseUsItems.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </motion.div>
@@ -111,10 +110,9 @@ export default function ConsultoriaEmpresarial() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios de Consultoría</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.business_consulting.main_services_title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrecemos un amplio abanico de servicios de consultoría diseñados para
-              potenciar cada aspecto de su negocio.
+              {t('service_pages.business_consulting.main_services_description')}
             </p>
           </motion.div>
 
@@ -323,10 +321,9 @@ export default function ConsultoriaEmpresarial() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestra Metodología</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.common.methodology')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Aplicamos un enfoque sistemático que garantiza soluciones efectivas
-              y resultados medibles para su empresa.
+              {t('service_pages.business_consulting.approach_description')}
             </p>
           </motion.div>
 
@@ -428,15 +425,14 @@ export default function ConsultoriaEmpresarial() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Transforme los desafíos en oportunidades
+              {t('service_pages.business_consulting.cta_title')}
             </h2>
             <p className="text-xl mb-8">
-              Nuestro equipo de consultores está listo para ayudarle a impulsar
-              el crecimiento y la rentabilidad de su empresa.
+              {t('service_pages.business_consulting.cta_description')}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                Solicitar consultoría gratuita
+                {t('service_pages.business_consulting.cta_button')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>

@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import BackToTop from "@/components/ui/back-to-top";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 export default function ContabilidadCorporativa() {
+  const { t } = useTranslation();
   const { ref: refSection1, isVisible: isVisibleSection1 } = useScrollAnimation();
   const { ref: refSection2, isVisible: isVisibleSection2 } = useScrollAnimation();
   const { ref: refSection3, isVisible: isVisibleSection3 } = useScrollAnimation();
@@ -19,12 +21,19 @@ export default function ContabilidadCorporativa() {
     window.scrollTo(0, 0);
   }, []);
 
+  const whyChooseUsItems = [
+    t('service_pages.corporate_accounting.why_choose_us_items.0'),
+    t('service_pages.corporate_accounting.why_choose_us_items.1'),
+    t('service_pages.corporate_accounting.why_choose_us_items.2'),
+    t('service_pages.corporate_accounting.why_choose_us_items.3')
+  ];
+
   return (
     <>
       <Helmet>
-        <title>Contabilidad Corporativa | Solutumsa</title>
-        <meta name="description" content="Servicios de contabilidad corporativa de Solutumsa. Ofrecemos soluciones a medida para la gestión financiera de su empresa, cumplimiento normativo y mucho más." />
-        <meta name="keywords" content="contabilidad corporativa, asesoría financiera, estados financieros, cumplimiento normativo, consultores contables" />
+        <title>{t('service_pages.corporate_accounting.title')} | Solutumsa</title>
+        <meta name="description" content={t('service_pages.corporate_accounting.meta_description')} />
+        <meta name="keywords" content={t('service_pages.corporate_accounting.meta_keywords')} />
       </Helmet>
 
       <Navbar />
@@ -40,7 +49,7 @@ export default function ContabilidadCorporativa() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                Contabilidad Corporativa
+                {t('service_pages.corporate_accounting.title')}
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -48,7 +57,7 @@ export default function ContabilidadCorporativa() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                Soluciones contables integrales diseñadas específicamente para optimizar la gestión financiera de su empresa.
+                {t('service_pages.corporate_accounting.subtitle')}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +66,7 @@ export default function ContabilidadCorporativa() {
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
                   <a href="#contacto">
-                    Solicitar asesoría
+                    {t('service_pages.common.request_service')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -72,28 +81,18 @@ export default function ContabilidadCorporativa() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" 
-                  alt="Contabilidad Corporativa" 
+                  alt={t('service_pages.corporate_accounting.title')} 
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">¿Por qué elegir nuestros servicios?</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('service_pages.common.why_choose_us')}</h3>
                   <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Experiencia de más de 15 años en el sector</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Profesionales certificados y actualizados</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Soluciones adaptadas a su industria</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">✓</span>
-                      <span>Tecnología de punta y procesos optimizados</span>
-                    </li>
+                    {whyChooseUsItems.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </motion.div>
@@ -111,10 +110,9 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios de Contabilidad</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.main_services_title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrecemos soluciones contables completas que cubren todas las necesidades
-              de su empresa, permitiéndole enfocarse en el crecimiento del negocio.
+              {t('service_pages.corporate_accounting.main_services_description')}
             </p>
           </motion.div>
 
@@ -323,10 +321,9 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestro Proceso de Trabajo</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.work_process_title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Seguimos una metodología estructurada para garantizar un servicio de calidad
-              que se adapta a las necesidades específicas de su empresa.
+              {t('service_pages.corporate_accounting.work_process_description')}
             </p>
           </motion.div>
 
@@ -494,15 +491,14 @@ export default function ContabilidadCorporativa() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Optimice la gestión financiera de su empresa
+              {t('service_pages.corporate_accounting.cta_title')}
             </h2>
             <p className="text-xl mb-8">
-              Contamos con la experiencia y el conocimiento para llevar su contabilidad
-              corporativa al siguiente nivel. Solicite una consulta gratuita hoy mismo.
+              {t('service_pages.corporate_accounting.cta_description')}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                Solicitar consulta gratuita
+                {t('service_pages.corporate_accounting.cta_button')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>

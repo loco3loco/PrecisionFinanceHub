@@ -235,7 +235,111 @@
       "success_cases": "Casos de Éxito",
       "faq": "Preguntas Frecuentes",
       "contact_us": "Contáctenos",
-      "learn_more": "Conocer más"
+      "learn_more": "Conocer más",
+      "work_process": "Nuestro Proceso de Trabajo",
+      "work_process_description": "Implementamos una metodología estructurada para garantizar la máxima calidad y eficiencia en todos nuestros servicios"
+    },
+    "corporate_accounting": {
+      "title": "Contabilidad Corporativa",
+      "meta_description": "Servicios de contabilidad corporativa de Solutumsa. Ofrecemos soluciones a medida para la gestión financiera de su empresa, cumplimiento normativo y mucho más.",
+      "meta_keywords": "contabilidad corporativa, asesoría financiera, estados financieros, cumplimiento normativo, consultores contables",
+      "subtitle": "Soluciones contables integrales diseñadas específicamente para optimizar la gestión financiera de su empresa.",
+      "why_choose_us_items": {
+        "0": "Experiencia de más de 15 años en el sector",
+        "1": "Profesionales certificados y actualizados",
+        "2": "Soluciones adaptadas a su industria",
+        "3": "Tecnología de punta y procesos optimizados"
+      },
+      "main_services_title": "Nuestros Servicios de Contabilidad",
+      "main_services_description": "Ofrecemos soluciones contables completas que cubren todas las necesidades de su empresa, permitiéndole enfocarse en el crecimiento del negocio.",
+      "approach_title": "Nuestro Enfoque",
+      "approach_description": "Combinamos experiencia profesional con tecnología avanzada para ofrecer servicios contables de máxima calidad y precisión.",
+      "why_choose_us_description": "Nuestro equipo de profesionales le brinda las soluciones contables que su empresa necesita para alcanzar sus objetivos financieros.",
+      "cta_title": "Simplifique la gestión contable de su empresa",
+      "cta_description": "Nuestros expertos contables están listos para ayudarle. Solicite una consulta personalizada sin compromiso.",
+      "cta_button": "Solicitar consulta contable",
+      "work_process_title": "Nuestro Proceso de Trabajo",
+      "work_process_description": "Seguimos un enfoque estructurado y transparente para garantizar la máxima calidad en todos nuestros servicios contables."
+    },
+    "business_consulting": {
+      "title": "Consultoría Empresarial",
+      "meta_description": "Servicios de consultoría empresarial de Solutumsa. Asesoramiento estratégico para potenciar el crecimiento y rentabilidad de su negocio.",
+      "meta_keywords": "consultoría empresarial, asesoría estratégica, optimización de procesos, gestión empresarial, transformación de negocios",
+      "subtitle": "Asesoramiento estratégico para potenciar el rendimiento y crecimiento de su negocio.",
+      "why_choose_us_items": {
+        "0": "Consultores con amplia experiencia en diversas industrias",
+        "1": "Soluciones personalizadas adaptadas a su realidad empresarial",
+        "2": "Enfoque práctico y orientado a resultados",
+        "3": "Acompañamiento continuo durante todo el proceso"
+      },
+      "main_services_title": "Nuestros Servicios de Consultoría",
+      "main_services_description": "Ofrecemos servicios de consultoría integral para ayudar a su empresa a alcanzar el siguiente nivel de desarrollo y competitividad.",
+      "approach_title": "Nuestro Enfoque",
+      "approach_description": "Utilizamos una metodología centrada en las necesidades específicas de cada cliente, combinando análisis estratégico con acciones prácticas.",
+      "why_choose_us_description": "Contamos con la experiencia y los recursos necesarios para transformar los desafíos empresariales en oportunidades de crecimiento.",
+      "cta_title": "Lleve su empresa al siguiente nivel",
+      "cta_description": "Nuestro equipo de consultores está listo para ayudarle a superar obstáculos y alcanzar sus objetivos empresariales.",
+      "cta_button": "Solicitar consultoría empresarial"
+    },
+    "financial_audit": {
+      "title": "Auditoría Financiera",
+      "meta_description": "Servicios de auditoría financiera de Solutumsa. Verificamos la integridad y precisión de sus estados financieros para generar confianza y transparencia.",
+      "meta_keywords": "auditoría financiera, revisión contable, estados financieros, cumplimiento normativo, control interno",
+      "subtitle": "Servicios de auditoría confiables para garantizar la transparencia y exactitud de su información financiera.",
+      "why_choose_us_items": {
+        "0": "Auditores con amplia experiencia y certificaciones internacionales",
+        "1": "Cumplimiento de normas internacionales de auditoría",
+        "2": "Enfoque riguroso y metodológico",
+        "3": "Independencia y objetividad garantizadas"
+      },
+      "main_services_title": "Nuestros Servicios de Auditoría",
+      "main_services_description": "Ofrecemos servicios de auditoría financiera completos que generan confianza y transparencia en su información financiera.",
+      "approach_title": "Nuestro Enfoque",
+      "approach_description": "Aplicamos metodologías rigurosas para evaluar con objetividad y precisión la información financiera de su empresa.",
+      "why_choose_us_description": "Nuestro equipo de auditores garantiza un análisis imparcial y profesional de sus estados financieros, generando confianza ante terceros.",
+      "cta_title": "Garantice la transparencia financiera de su empresa",
+      "cta_description": "Nuestros auditores profesionales verificarán la integridad y precisión de su información financiera. Solicite una consulta sin compromiso.",
+      "cta_button": "Solicitar servicio de auditoría"
+    },
+    "payroll_management": {
+      "title": "Gestión de Nómina",
+      "meta_description": "Servicios de gestión de nómina de Solutumsa. Administración eficiente de su personal, cumplimiento laboral y optimización de procesos de recursos humanos.",
+      "meta_keywords": "gestión de nómina, administración de personal, recursos humanos, cumplimiento laboral, liquidación de sueldos",
+      "subtitle": "Soluciones integrales para la administración eficiente de su personal y el cumplimiento de obligaciones laborales.",
+      "why_choose_us_items": {
+        "0": "Experiencia en múltiples sectores y tamaños de empresa",
+        "1": "Actualización constante ante cambios en la legislación laboral",
+        "2": "Software especializado y seguro para gestión de nóminas",
+        "3": "Servicio personalizado y confidencial"
+      },
+      "main_services_title": "Nuestros Servicios de Gestión de Nómina",
+      "main_services_description": "Ofrecemos soluciones completas para la administración de personal, permitiéndole concentrarse en el desarrollo de su negocio.",
+      "approach_title": "Nuestro Enfoque",
+      "approach_description": "Combinamos experiencia técnica con tecnología avanzada para ofrecer un servicio de nómina preciso, puntual y conforme a la normativa vigente.",
+      "why_choose_us_description": "Nuestro equipo especializado garantiza una gestión eficiente de la nómina, minimizando riesgos laborales y optimizando sus recursos.",
+      "cta_title": "Optimice la gestión de su capital humano",
+      "cta_description": "Déjenos encargarnos de la administración de su nómina para que usted pueda concentrarse en hacer crecer su negocio.",
+      "cta_button": "Solicitar servicio de nómina"
+    },
+    "accounting_tech": {
+      "title": "Tecnología Contable",
+      "meta_description": "Soluciones de tecnología contable de Solutumsa. Implementación de sistemas avanzados para optimizar sus procesos financieros y contables.",
+      "meta_keywords": "tecnología contable, software contable, automatización financiera, transformación digital, sistemas ERP",
+      "subtitle": "Soluciones tecnológicas avanzadas para modernizar y optimizar sus procesos contables y financieros.",
+      "why_choose_us_items": {
+        "0": "Experiencia en implementación de múltiples plataformas tecnológicas",
+        "1": "Soluciones adaptadas a sus necesidades específicas",
+        "2": "Capacitación completa para su equipo",
+        "3": "Soporte técnico continuo post-implementación"
+      },
+      "main_services_title": "Nuestras Soluciones Tecnológicas",
+      "main_services_description": "Ofrecemos servicios completos de implementación y optimización de sistemas tecnológicos para su área contable y financiera.",
+      "approach_title": "Nuestro Enfoque",
+      "approach_description": "Analizamos sus necesidades específicas para recomendar e implementar las soluciones tecnológicas que mejor se adapten a su empresa.",
+      "why_choose_us_description": "Contamos con la experiencia necesaria para guiarle en la transformación digital de sus procesos contables y financieros.",
+      "cta_title": "Modernice sus procesos contables",
+      "cta_description": "Nuestros expertos le ayudarán a implementar las soluciones tecnológicas adecuadas para optimizar la gestión financiera de su empresa.",
+      "cta_button": "Solicitar asesoría tecnológica"
     },
     "tax_advisory": {
       "title": "Asesoría Fiscal",
