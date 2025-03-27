@@ -1,46 +1,44 @@
 
-import React from "react";
+import { Link } from "react-router-dom";
 
 interface LogoProps {
-  variant?: "default" | "white" | "primary";
-  className?: string;
-  width?: number;
-  height?: number;
+  variant?: "default" | "footer";
+  size?: "sm" | "default" | "lg";
 }
 
 export function Logo({ 
   variant = "default", 
-  className = "", 
-  width = 200, 
-  height = 80 
+  size = "default" 
 }: LogoProps) {
-  // Usamos la nueva imagen del logo y aplicamos el filtro solo si es variante blanca
-  // Verificamos si estamos en desarrollo o producción
-  const logoUrl = variant === "white" 
-    ? "https://res.cloudinary.com/djzcbeezb/image/upload/v1682701234/solutumsa-logo-white.png" 
-    : "https://raw.githubusercontent.com/user-content/solutumsa/main/logo.png";
-    
+  const dimensions = {
+    sm: { width: 120, height: 48 },
+    default: { width: 180, height: 70 },
+    lg: { width: 250, height: 100 },
+  };
+
+  const { width, height } = dimensions[size];
+  const isFooter = variant === "footer";
+  
   return (
-    <div 
-      className={`${className} flex items-center justify-center`}
-      style={{ width, height }}
-    >
-      {/* Primera opción: imagen local */}
-      <img 
-        src="/assets/logo-solutumsa.png" 
-        alt="Solutum S.A."
-        className={`w-full h-full object-contain ${variant === "white" ? "brightness-0 invert" : ""}`}
-        width={width}
-        height={height}
-        onError={(e) => {
-          // Si la imagen local falla, usamos la imagen de respaldo
-          const target = e.target as HTMLImageElement;
-          target.onerror = null; // Prevenir bucle infinito
-          target.src = logoUrl;
-        }}
-      />
-    </div>
+    <Link to="/" aria-label="Solutum S.A.">
+      <div 
+        className={`flex items-center justify-center`}
+        style={{ width: `${width}px`, height: `${height}px` }}
+      >
+        <img 
+          src="/assets/logo-solutumsa-new.png" 
+          alt="Solutum S.A." 
+          className={`w-full h-full object-contain ${isFooter ? 'brightness-0 invert' : ''}`}
+          width={width}
+          height={height}
+          onError={(e) => {
+            // If image fails to load, try alternative path
+            const target = e.target as HTMLImageElement;
+            target.onerror = null; // Prevent infinite loop
+            target.src = "/logo-solutumsa-new.png";
+          }}
+        />
+      </div>
+    </Link>
   );
 }
-
-export default Logo;
