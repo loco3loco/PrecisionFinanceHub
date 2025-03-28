@@ -23,7 +23,7 @@ export default function AboutUs() {
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <img
                   src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  alt="Equipo de Solutumsa"
+                  alt="Solutumsa Team"
                   className="w-full h-auto"
                 />
               </div>
@@ -40,10 +40,10 @@ export default function AboutUs() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-sm font-heading font-semibold text-gray-800">
-                      Experiencia Certificada
+                      Certified Experience
                     </h3>
                     <p className="text-xs text-gray-600">
-                      +50 años sirviendo al sector empresarial
+                      +50 years serving the business sector
                     </p>
                   </div>
                 </div>
@@ -59,19 +59,19 @@ export default function AboutUs() {
             className="md:w-1/2 md:pl-12"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Conozca Nuestra <span className="text-primary">Historia</span>
+              Our <span className="text-primary">Story</span>
             </h2>
             <div className="w-20 h-1 bg-secondary mb-6"></div>
             <p className="text-gray-600 mb-6">
-              En Solutumsa, nos enorgullece nuestra trayectoria de más de 50 años brindando
-              soluciones contables y fiscales de excelencia. Desde nuestros inicios, nos hemos
-              comprometido a ofrecer un servicio personalizado y de calidad, adaptándonos
-              constantemente a los cambios del entorno empresarial.
+              At Solutumsa, we take pride in our track record of over 50 years providing
+              excellent accounting and tax solutions. Since our beginnings, we have been
+              committed to offering personalized, quality service, constantly adapting
+              to changes in the business environment.
             </p>
             <p className="text-gray-600 mb-6">
-              Nuestro equipo está formado por profesionales altamente calificados, con amplia
-              experiencia en diferentes sectores y un profundo conocimiento de la normativa fiscal y
-              contable vigente.
+              Our team consists of highly qualified professionals with extensive
+              experience in different sectors and deep knowledge of current tax and
+              accounting regulations.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-8">
@@ -80,8 +80,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Profesionalismo</h3>
-                  <p className="text-sm text-gray-600">Equipo altamente calificado</p>
+                  <h3 className="font-heading font-semibold mb-1">Professionalism</h3>
+                  <p className="text-sm text-gray-600">Highly qualified team</p>
                 </div>
               </div>
 
@@ -90,8 +90,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Confianza</h3>
-                  <p className="text-sm text-gray-600">Relaciones sólidas y duraderas</p>
+                  <h3 className="font-heading font-semibold mb-1">Trust</h3>
+                  <p className="text-sm text-gray-600">Strong and lasting relationships</p>
                 </div>
               </div>
 
@@ -100,8 +100,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Innovación</h3>
-                  <p className="text-sm text-gray-600">Soluciones adaptadas al futuro</p>
+                  <h3 className="font-heading font-semibold mb-1">Innovation</h3>
+                  <p className="text-sm text-gray-600">Future-proof solutions</p>
                 </div>
               </div>
 
@@ -110,8 +110,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Compromiso</h3>
-                  <p className="text-sm text-gray-600">Siempre a tu servicio</p>
+                  <h3 className="font-heading font-semibold mb-1">Commitment</h3>
+                  <p className="text-sm text-gray-600">Always at your service</p>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function AboutUs() {
               asChild
               className="inline-flex items-center bg-primary text-white hover:bg-secondary transition-colors duration-300"
             >
-              <a href="#contacto">Contáctanos Hoy</a>
+              <a href="#contacto">Contact Us Today</a>
             </Button>
           </motion.div>
         </div>

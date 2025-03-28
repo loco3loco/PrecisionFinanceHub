@@ -22,10 +22,10 @@ export default function ConsultoriaEmpresarial() {
   }, []);
 
   const whyChooseUsItems = [
-    t('service_pages.business_consulting.why_choose_us_items.0'),
-    t('service_pages.business_consulting.why_choose_us_items.1'),
-    t('service_pages.business_consulting.why_choose_us_items.2'),
-    t('service_pages.business_consulting.why_choose_us_items.3')
+    "Expert consultants with extensive experience",
+    "Customized solutions for your business",
+    "Continuous support during implementation",
+    "Proven results and success stories"
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function ConsultoriaEmpresarial() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                {t('service_pages.business_consulting.title')}
+                Business Consulting
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function ConsultoriaEmpresarial() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                {t('service_pages.business_consulting.subtitle')}
+                Strategic solutions to optimize your business processes, improve performance and drive sustainable growth.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ export default function ConsultoriaEmpresarial() {
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
                   <a href="#contacto">
-                    {t('service_pages.common.request_service')}
+                    Request Our Service
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -81,11 +81,11 @@ export default function ConsultoriaEmpresarial() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt={t('service_pages.business_consulting.title')} 
+                  alt="Business Consulting" 
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{t('service_pages.common.why_choose_us')}</h3>
+                  <h3 className="text-xl font-bold mb-2">Why Choose Us</h3>
                   <ul className="space-y-2">
                     {whyChooseUsItems.map((item, index) => (
                       <li key={index} className="flex items-start">
@@ -110,9 +110,10 @@ export default function ConsultoriaEmpresarial() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.business_consulting.main_services_title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.business_consulting.main_services_description')}
+              We offer a wide range of consulting services to improve all areas of your business, 
+              from strategy to operations and innovation.
             </p>
           </motion.div>
 
@@ -127,22 +128,23 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <TrendingUp className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.0.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">Strategic Planning</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.business_consulting.services.items.0.description')}
+                  We help you define clear objectives and develop comprehensive
+                  strategies to achieve sustainable business growth.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.business_consulting.services.items.0.features.0')}</span>
+                    <span>Market and competitive analysis</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.business_consulting.services.items.0.features.1')}</span>
+                    <span>Business model evaluation</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.business_consulting.services.items.0.features.2')}</span>
+                    <span>Growth strategy development</span>
                   </li>
                 </ul>
               </div>
@@ -158,22 +160,23 @@ export default function ConsultoriaEmpresarial() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <LineChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.business_consulting.services.items.1.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">Process Optimization</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.business_consulting.services.items.1.description')}
+                  We analyze and redesign your business processes to 
+                  improve efficiency, reduce costs, and enhance quality.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.business_consulting.services.items.1.features.0')}</span>
+                    <span>Process mapping and analysis</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.business_consulting.services.items.1.features.1')}</span>
+                    <span>Bottleneck identification</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.business_consulting.services.items.1.features.2')}</span>
+                    <span>Performance metrics development</span>
                   </li>
                 </ul>
               </div>

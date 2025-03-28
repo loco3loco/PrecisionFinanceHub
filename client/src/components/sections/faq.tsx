@@ -45,29 +45,29 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "¿Qué servicios contables ofrecen para pequeñas empresas?",
+      question: "What accounting services do you offer for small businesses?",
       answer:
-        "Ofrecemos una amplia gama de servicios contables adaptados a las necesidades de las pequeñas empresas, incluyendo registros contables, preparación de estados financieros, conciliaciones bancarias, gestión de nómina, declaraciones de impuestos y asesoramiento fiscal. Nuestro enfoque es personalizado, brindando soluciones que se ajusten al tamaño y sector de tu negocio.",
+        "We offer a wide range of accounting services tailored to the needs of small businesses, including bookkeeping, financial statement preparation, bank reconciliations, payroll management, tax returns, and tax advisory. Our approach is personalized, providing solutions that fit the size and sector of your business.",
     },
     {
-      question: "¿Cómo me ayuda Solutumsa a optimizar mi carga fiscal?",
+      question: "How does Solutumsa help me optimize my tax burden?",
       answer:
-        "Nuestro equipo de expertos fiscales analiza en detalle la situación de tu empresa para identificar oportunidades de optimización fiscal legítimas. Desarrollamos estrategias personalizadas que aprovechan los incentivos y deducciones disponibles, asegurando siempre el cumplimiento de la normativa vigente. Nuestro objetivo es minimizar tu carga tributaria mientras mantenemos tu empresa en total conformidad con las leyes fiscales.",
+        "Our team of tax experts analyzes your company's situation in detail to identify legitimate tax optimization opportunities. We develop customized strategies that take advantage of available incentives and deductions, always ensuring compliance with current regulations. Our goal is to minimize your tax burden while keeping your company in full compliance with tax laws.",
     },
     {
-      question: "¿Con qué frecuencia recibiré informes financieros?",
+      question: "How often will I receive financial reports?",
       answer:
-        "La frecuencia de los informes financieros se establece según las necesidades específicas de cada cliente. Por defecto, proporcionamos informes mensuales que incluyen estados financieros básicos, análisis de flujo de caja y comparativas con períodos anteriores. También ofrecemos informes trimestrales más detallados y un análisis anual completo. Podemos personalizar tanto la frecuencia como el contenido de los informes según los requerimientos de tu empresa.",
+        "The frequency of financial reports is established according to the specific needs of each client. By default, we provide monthly reports that include basic financial statements, cash flow analysis, and comparisons with previous periods. We also offer more detailed quarterly reports and a complete annual analysis. We can customize both the frequency and content of the reports according to your company's requirements.",
     },
     {
-      question: "¿Cómo garantizan la confidencialidad de mi información?",
+      question: "How do you ensure the confidentiality of my information?",
       answer:
-        "La confidencialidad es una prioridad absoluta en Solutumsa. Implementamos estrictos protocolos de seguridad y utilizamos sistemas con encriptación avanzada para proteger toda la información de nuestros clientes. Todo nuestro personal firma acuerdos de confidencialidad, y limitamos el acceso a la información sensible solo al personal que trabaja directamente con tu cuenta. Además, cumplimos con todas las regulaciones de protección de datos aplicables.",
+        "Confidentiality is an absolute priority at Solutumsa. We implement strict security protocols and use systems with advanced encryption to protect all our clients' information. All our staff sign confidentiality agreements, and we limit access to sensitive information only to personnel who work directly with your account. Additionally, we comply with all applicable data protection regulations.",
     },
     {
-      question: "¿Qué hace diferente a Solutumsa de otros estudios contables?",
+      question: "What makes Solutumsa different from other accounting firms?",
       answer:
-        "Lo que distingue a Solutumsa es nuestro enfoque integral y personalizado. Con más de 50 años de experiencia, combinamos conocimiento profundo con un servicio cercano y accesible. No solo nos limitamos a cumplir con las obligaciones contables y fiscales, sino que nos convertimos en verdaderos socios estratégicos de tu negocio, identificando oportunidades de mejora y acompañándote en la toma de decisiones. Nuestro equipo multidisciplinario ofrece soluciones completas adaptadas a las necesidades específicas de cada cliente.",
+        "What distinguishes Solutumsa is our comprehensive and personalized approach. With more than 50 years of experience, we combine deep knowledge with close and accessible service. We don't just limit ourselves to fulfilling accounting and tax obligations; we become true strategic partners for your business, identifying opportunities for improvement and supporting you in decision-making. Our multidisciplinary team offers complete solutions adapted to the specific needs of each client.",
     },
   ];
 
@@ -81,11 +81,11 @@ export default function FAQ() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Preguntas Frecuentes</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Frequently Asked Questions</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Respondemos a las dudas más comunes sobre nuestros servicios y cómo podemos ayudar a tu
-            empresa.
+            We answer the most common questions about our services and how we can help your
+            business.
           </p>
         </motion.div>
 

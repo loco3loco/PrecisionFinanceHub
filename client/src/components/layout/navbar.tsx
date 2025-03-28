@@ -42,7 +42,7 @@ export default function Navbar() {
         { name: t("services.items.consulting.title"), href: "/servicios/consultoria-empresarial" },
         { name: t("services.items.audit.title"), href: "/servicios/auditoria-financiera" },
         { name: t("services.items.payroll.title"), href: "/servicios/gestion-nomina" },
-        { name: t("services.items.financial.title"), href: "/servicios/tecnologia-contable" }
+        { name: "Accounting Technology", href: "/servicios/tecnologia-contable" }
       ]
     },
     { name: t("nav.about"), href: "#nosotros" },
@@ -72,7 +72,8 @@ export default function Navbar() {
   }, []);
 
   const getServiceName = (key: string) => {
-    return t(key);
+    // Si es una clave de traducción, traducirla, si no, devolver el texto directo
+    return key.startsWith("services.") ? t(key) : key;
   };
 
   return (

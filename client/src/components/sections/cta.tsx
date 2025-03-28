@@ -17,12 +17,11 @@ export default function CTA() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-            ¿Listo para llevar tu empresa al siguiente nivel?
+            Ready to Take Your Business to the Next Level?
           </h2>
           <p className="text-lg opacity-90 mb-10">
-            Programa una consulta virtual gratuita de 30 minutos con uno de nuestros expertos y
-            descubre cómo podemos ayudarte a optimizar tus finanzas y potenciar el crecimiento de tu
-            negocio.
+            Schedule a free 30-minute virtual consultation with one of our experts and
+            discover how we can help you optimize your finances and boost your business growth.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button
@@ -32,7 +31,7 @@ export default function CTA() {
             >
               <a href="#contacto">
                 <Calendar className="mr-2 h-5 w-5" />
-                Agendar Consulta Gratuita
+                Schedule Free Consultation
               </a>
             </Button>
             <Button
@@ -43,7 +42,7 @@ export default function CTA() {
             >
               <a href="https://wa.me/5491112345678">
                 <MessageSquare className="mr-2 h-5 w-5" />
-                Contactar por WhatsApp
+                Contact via WhatsApp
               </a>
             </Button>
           </div>

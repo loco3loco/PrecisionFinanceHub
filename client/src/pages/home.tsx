@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Solutumsa - Socios Estratégicos en el Crecimiento de tu Empresa</title>
+        <title>Solutumsa - Strategic Partners in Your Business Growth</title>
         <meta 
           name="description" 
-          content="Solutumsa ofrece soluciones contables y fiscales integrales con más de 50 años de trayectoria. Expertos en asesoría contable, fiscal y financiera para tu empresa."
+          content="Solutumsa offers comprehensive accounting and tax solutions with over 50 years of experience. Experts in accounting, tax, and financial advisory for your business."
         />
       </Helmet>
       <Navbar />

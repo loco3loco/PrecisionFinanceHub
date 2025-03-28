@@ -94,32 +94,32 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/servicios/contabilidad-corporativa" className="text-white/80 hover:text-white transition-colors">
-                  Contabilidad Corporativa
+                  Corporate Accounting
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/asesoria-fiscal" className="text-white/80 hover:text-white transition-colors">
-                  Asesoría Fiscal
+                  Tax Advisory
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/consultoria-empresarial" className="text-white/80 hover:text-white transition-colors">
-                  Consultoría Empresarial
+                  Business Consulting
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/gestion-nomina" className="text-white/80 hover:text-white transition-colors">
-                  Gestión de Nómina
+                  Payroll Management
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/auditoria-financiera" className="text-white/80 hover:text-white transition-colors">
-                  Auditoría Financiera
+                  Financial Audit
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/tecnologia-contable" className="text-white/80 hover:text-white transition-colors">
-                  Tecnología Contable
+                  Accounting Technology
                 </Link>
               </li>
             </ul>

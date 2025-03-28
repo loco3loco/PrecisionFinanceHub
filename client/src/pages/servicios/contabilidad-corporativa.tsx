@@ -127,23 +127,23 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FileDigit className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Contabilidad Financiera</h3>
+                <h3 className="text-xl font-bold mb-3">Financial Accounting</h3>
                 <p className="text-gray-600 mb-4">
-                  Mantenemos sus libros contables en orden, preparamos estados financieros
-                  precisos y garantizamos el cumplimiento de todas las regulaciones.
+                  We keep your accounting books in order, prepare accurate financial statements
+                  and ensure compliance with all regulations.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Registro de transacciones diarias</span>
+                    <span>Daily transaction recording</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Elaboración de balances y estados de resultados</span>
+                    <span>Preparation of balance sheets and income statements</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Conciliaciones bancarias</span>
+                    <span>Bank reconciliations</span>
                   </li>
                 </ul>
               </div>
@@ -159,23 +159,23 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Análisis Financiero</h3>
+                <h3 className="text-xl font-bold mb-3">Financial Analysis</h3>
                 <p className="text-gray-600 mb-4">
-                  Interpretamos sus datos financieros para proporcionar información
-                  valiosa que apoye la toma de decisiones estratégicas.
+                  We interpret your financial data to provide valuable information
+                  that supports strategic decision-making.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Análisis de rentabilidad y liquidez</span>
+                    <span>Profitability and liquidity analysis</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Proyecciones financieras</span>
+                    <span>Financial projections</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Reportes personalizados para directivos</span>
+                    <span>Customized reports for executives</span>
                   </li>
                 </ul>
               </div>
@@ -191,23 +191,23 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <DollarSign className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Planificación Fiscal</h3>
+                <h3 className="text-xl font-bold mb-3">Tax Planning</h3>
                 <p className="text-gray-600 mb-4">
-                  Desarrollamos estrategias fiscales legales que minimizan su carga
-                  tributaria y aseguran el cumplimiento normativo.
+                  We develop legal tax strategies that minimize your tax burden
+                  and ensure regulatory compliance.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Optimización de la estructura fiscal</span>
+                    <span>Tax structure optimization</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Preparación y presentación de declaraciones</span>
+                    <span>Preparation and filing of tax returns</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Auditorías preventivas</span>
+                    <span>Preventive audits</span>
                   </li>
                 </ul>
               </div>
@@ -223,23 +223,23 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <LineChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Control de Costos</h3>
+                <h3 className="text-xl font-bold mb-3">Cost Control</h3>
                 <p className="text-gray-600 mb-4">
-                  Implementamos sistemas eficientes para el seguimiento y control de costos
-                  que ayudan a mejorar la rentabilidad de su empresa.
+                  We implement efficient systems for cost tracking and control
+                  that help improve your company's profitability.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Análisis de costos por departamentos</span>
+                    <span>Department cost analysis</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Presupuestos y seguimiento</span>
+                    <span>Budgeting and monitoring</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Identificación de áreas de mejora</span>
+                    <span>Identification of improvement areas</span>
                   </li>
                 </ul>
               </div>
@@ -255,23 +255,23 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Landmark className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Contabilidad Regulatoria</h3>
+                <h3 className="text-xl font-bold mb-3">Regulatory Accounting</h3>
                 <p className="text-gray-600 mb-4">
-                  Aseguramos que su empresa cumpla con todos los requisitos contables
-                  específicos de su industria y jurisdicción.
+                  We ensure your company complies with all accounting requirements
+                  specific to your industry and jurisdiction.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Adaptación a cambios normativos</span>
+                    <span>Adaptation to regulatory changes</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Informes específicos para reguladores</span>
+                    <span>Specific reports for regulators</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Asesoría en normativa contable</span>
+                    <span>Advice on accounting regulations</span>
                   </li>
                 </ul>
               </div>
@@ -287,23 +287,23 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <ShieldCheck className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Prevención de Riesgos</h3>
+                <h3 className="text-xl font-bold mb-3">Risk Prevention</h3>
                 <p className="text-gray-600 mb-4">
-                  Identificamos y mitigamos posibles riesgos financieros y contables
-                  antes de que afecten a su empresa.
+                  We identify and mitigate potential financial and accounting risks
+                  before they affect your company.
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Evaluación de controles internos</span>
+                    <span>Internal controls evaluation</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Detección temprana de irregularidades</span>
+                    <span>Early detection of irregularities</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Implementación de sistemas de seguridad</span>
+                    <span>Implementation of security systems</span>
                   </li>
                 </ul>
               </div>
@@ -321,9 +321,9 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.work_process_title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Work Process</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.corporate_accounting.work_process_description')}
+              We follow a proven methodology that ensures the success of our accounting services. Each step is carefully designed to deliver optimal results.
             </p>
           </motion.div>
 
@@ -335,9 +335,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Diagnóstico</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">Diagnosis</h3>
               <p className="text-gray-600">
-                Evaluamos la situación financiera y contable actual de su empresa para identificar áreas de mejora.
+                We evaluate your company's current financial and accounting situation to identify areas for improvement.
               </p>
             </motion.div>
 
@@ -348,9 +348,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Planificación</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">Planning</h3>
               <p className="text-gray-600">
-                Diseñamos un plan de acción personalizado que aborda las necesidades específicas de su negocio.
+                We design a customized action plan that addresses the specific needs of your business.
               </p>
             </motion.div>
 
@@ -361,9 +361,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Implementación</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">Implementation</h3>
               <p className="text-gray-600">
-                Ejecutamos las soluciones contables acordadas, optimizando procesos y sistemas.
+                We execute the agreed accounting solutions, optimizing processes and systems.
               </p>
             </motion.div>
 
@@ -374,9 +374,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Seguimiento</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">Monitoring</h3>
               <p className="text-gray-600">
-                Monitoreamos continuamente los resultados y hacemos ajustes para garantizar el éxito a largo plazo.
+                We continuously monitor results and make adjustments to ensure long-term success.
               </p>
             </motion.div>
           </div>
@@ -392,10 +392,10 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Beneficios de Nuestro Servicio</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefits of Our Service</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Al confiar su contabilidad corporativa a Solutumsa, obtendrá ventajas competitivas
-              que impulsarán el crecimiento de su empresa.
+              By entrusting your corporate accounting to Solutumsa, you will gain competitive advantages
+              that will drive your company's growth.
             </p>
           </motion.div>
 
@@ -406,10 +406,10 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Ahorro de Tiempo y Recursos</h3>
+              <h3 className="text-xl font-bold mb-3">Time and Resource Savings</h3>
               <p className="text-gray-600">
-                Externalizando su contabilidad, su equipo podrá enfocarse en las actividades
-                clave de su negocio mientras nuestros expertos se encargan de la gestión financiera.
+                By outsourcing your accounting, your team can focus on the core activities
+                of your business while our experts handle financial management.
               </p>
             </motion.div>
 
@@ -419,10 +419,10 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Reducción de Errores</h3>
+              <h3 className="text-xl font-bold mb-3">Error Reduction</h3>
               <p className="text-gray-600">
-                Nuestros procedimientos meticulosos y múltiples niveles de revisión
-                minimizan el riesgo de errores contables que podrían resultar costosos.
+                Our meticulous procedures and multiple levels of review
+                minimize the risk of accounting errors that could prove costly.
               </p>
             </motion.div>
 
@@ -432,10 +432,10 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Acceso a Experiencia Especializada</h3>
+              <h3 className="text-xl font-bold mb-3">Access to Specialized Expertise</h3>
               <p className="text-gray-600">
-                Contará con un equipo de profesionales con conocimientos especializados
-                en diversos sectores y áreas de la contabilidad.
+                You'll have a team of professionals with specialized knowledge
+                in various sectors and areas of accounting.
               </p>
             </motion.div>
 
@@ -445,10 +445,10 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Información Financiera Actualizada</h3>
+              <h3 className="text-xl font-bold mb-3">Updated Financial Information</h3>
               <p className="text-gray-600">
-                Tendrá acceso a informes financieros precisos y actualizados que le
-                permitirán tomar decisiones estratégicas con confianza.
+                You'll have access to accurate and up-to-date financial reports that
+                will allow you to make strategic decisions with confidence.
               </p>
             </motion.div>
 
@@ -458,10 +458,10 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Cumplimiento Normativo</h3>
+              <h3 className="text-xl font-bold mb-3">Regulatory Compliance</h3>
               <p className="text-gray-600">
-                Nos mantenemos actualizados sobre cambios en las regulaciones para
-                asegurar que su empresa cumpla con todas las obligaciones legales.
+                We stay updated on changes in regulations to
+                ensure your company meets all legal obligations.
               </p>
             </motion.div>
 
@@ -471,10 +471,10 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Escalabilidad</h3>
+              <h3 className="text-xl font-bold mb-3">Scalability</h3>
               <p className="text-gray-600">
-                Nuestros servicios se adaptan al crecimiento de su empresa,
-                proporcionando las soluciones necesarias en cada etapa de su desarrollo.
+                Our services adapt to your company's growth,
+                providing the necessary solutions at each stage of your development.
               </p>
             </motion.div>
           </div>
@@ -491,14 +491,14 @@ export default function ContabilidadCorporativa() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('service_pages.corporate_accounting.cta_title')}
+              Ready to Optimize Your Corporate Accounting?
             </h2>
             <p className="text-xl mb-8">
-              {t('service_pages.corporate_accounting.cta_description')}
+              Take the first step towards financial excellence. Our team of experts is ready to assist you.
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                {t('service_pages.corporate_accounting.cta_button')}
+                Contact Us Today
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
