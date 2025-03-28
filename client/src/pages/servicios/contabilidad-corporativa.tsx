@@ -478,14 +478,14 @@ export default function ContabilidadCorporativa() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t("service_pages.corporate_accounting.cta.title", "Ready to Optimize Your Corporate Accounting?")}
+              {t("service_pages.corporate_accounting.cta.title")}
             </h2>
             <p className="text-xl mb-8">
-              {t("service_pages.corporate_accounting.cta.description", "Take the first step towards financial excellence. Our team of experts is ready to assist you.")}
+              {t("service_pages.corporate_accounting.cta.description")}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                {t("service_pages.corporate_accounting.cta.button", "Contact Us Today")}
+                {t("service_pages.corporate_accounting.cta.button")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>

@@ -192,10 +192,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Scale className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Tax Defense</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service3.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We represent and defend your company's interests before
-                  tax authorities in case of audits or disputes.
+                  {t('service_pages.tax_advisory.services.service3.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -224,10 +223,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">International Taxation</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service4.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We advise on the optimal tax structure for companies
-                  with international operations.
+                  {t('service_pages.tax_advisory.services.service4.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -256,10 +254,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FileText className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Tax Due Diligence</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service5.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We evaluate tax risks in business acquisition,
-                  sale, or merger operations.
+                  {t('service_pages.tax_advisory.services.service5.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -288,10 +285,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <HelpCircle className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Tax Consulting</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service6.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We offer specialized advice to resolve specific tax
-                  questions and situations.
+                  {t('service_pages.tax_advisory.services.service6.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -322,9 +318,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Approach</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.approach.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We adopt a preventive and strategic approach to your company's tax management, anticipating changes and optimizing results.
+              {t('service_pages.tax_advisory.approach.description')}
             </p>
           </motion.div>
 
@@ -343,23 +339,22 @@ export default function AsesoriaFiscal() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Preventive Approach</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.approach.preventive.title')}</h3>
                 <p className="text-gray-600">
-                  We identify and address potential tax risks before they
-                  materialize, avoiding contingencies and ensuring compliance.
+                  {t('service_pages.tax_advisory.approach.preventive.description')}
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Periodic compliance reviews</span>
+                    <span>{t('service_pages.tax_advisory.approach.preventive.item1')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Monitoring of legislative changes</span>
+                    <span>{t('service_pages.tax_advisory.approach.preventive.item2')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Implementation of tax controls</span>
+                    <span>{t('service_pages.tax_advisory.approach.preventive.item3')}</span>
                   </li>
                 </ul>
               </div>
@@ -379,23 +374,22 @@ export default function AsesoriaFiscal() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">Strategic Approach</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.approach.strategic.title')}</h3>
                 <p className="text-gray-600">
-                  We align tax management with business objectives, leveraging
-                  opportunities to generate value and efficiency.
+                  {t('service_pages.tax_advisory.approach.strategic.description')}
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Tax planning integrated with business strategy</span>
+                    <span>{t('service_pages.tax_advisory.approach.strategic.item1')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Adaptation to sector-specific needs</span>
+                    <span>{t('service_pages.tax_advisory.approach.strategic.item2')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>Tax optimization in business decisions</span>
+                    <span>{t('service_pages.tax_advisory.approach.strategic.item3')}</span>
                   </li>
                 </ul>
               </div>
@@ -413,9 +407,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Us?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.why_choose_us.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We have the necessary qualifications and experience to turn tax management into a competitive advantage for your business.
+              {t('service_pages.tax_advisory.why_choose_us.description')}
             </p>
           </motion.div>
 
@@ -429,9 +423,9 @@ export default function AsesoriaFiscal() {
               <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl font-bold text-primary">50+</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">Years of Experience</h3>
+              <h3 className="text-lg font-bold mb-2">{t('service_pages.tax_advisory.why_choose_us.stat1.title')}</h3>
               <p className="text-gray-600">
-                Proven track record advising companies across diverse sectors.
+                {t('service_pages.tax_advisory.why_choose_us.stat1.description')}
               </p>
             </motion.div>
 
@@ -444,9 +438,9 @@ export default function AsesoriaFiscal() {
               <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl font-bold text-primary">100%</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">Compliance</h3>
+              <h3 className="text-lg font-bold mb-2">{t('service_pages.tax_advisory.why_choose_us.stat2.title')}</h3>
               <p className="text-gray-600">
-                We guarantee full compliance with all tax obligations.
+                {t('service_pages.tax_advisory.why_choose_us.stat2.description')}
               </p>
             </motion.div>
 
@@ -459,9 +453,9 @@ export default function AsesoriaFiscal() {
               <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl font-bold text-primary">24/7</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">Availability</h3>
+              <h3 className="text-lg font-bold mb-2">{t('service_pages.tax_advisory.why_choose_us.stat3.title')}</h3>
               <p className="text-gray-600">
-                Continuous assistance to resolve your tax inquiries.
+                {t('service_pages.tax_advisory.why_choose_us.stat3.description')}
               </p>
             </motion.div>
 
@@ -474,9 +468,9 @@ export default function AsesoriaFiscal() {
               <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl font-bold text-primary">500+</span>
               </div>
-              <h3 className="text-lg font-bold mb-2">Satisfied Clients</h3>
+              <h3 className="text-lg font-bold mb-2">{t('service_pages.tax_advisory.why_choose_us.stat4.title')}</h3>
               <p className="text-gray-600">
-                Companies that trust our tax advisory services.
+                {t('service_pages.tax_advisory.why_choose_us.stat4.description')}
               </p>
             </motion.div>
           </div>
