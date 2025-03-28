@@ -97,7 +97,7 @@ export default function Contact() {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">{t("contact.title")}</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            {t("contact.description")}
+            {t("contact.subtitle")}
           </p>
         </motion.div>
 
@@ -109,7 +109,7 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="lg:col-span-1 bg-white p-8 rounded-xl shadow-md"
           >
-            <h3 className="text-xl font-bold mb-4 border-b pb-2 border-primary/20">{t("contact.form.title")}</h3>
+            <h3 className="text-xl font-bold mb-4 border-b pb-2 border-primary/20">{t("contact.send")}</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                 <div>
@@ -200,11 +200,11 @@ export default function Contact() {
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder={t("contact.form.selectService")} />
+                              <SelectValue placeholder={t("contact.form.servicePlaceholder")} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="ninguno">{t("contact.form.selectService")}</SelectItem>
+                            <SelectItem value="ninguno">{t("contact.form.servicePlaceholder")}</SelectItem>
                             <SelectItem value="contable">{t("services.accounting.title")}</SelectItem>
                             <SelectItem value="fiscal">{t("services.tax.title")}</SelectItem>
                             <SelectItem value="consultoria">{t("services.consulting.title")}</SelectItem>
@@ -251,7 +251,7 @@ export default function Contact() {
                         </FormControl>
                         <div className="space-y-1 leading-none">
                           <FormLabel>
-                            {t("contact.form.privacyPolicy")} *
+                            {t("contact.form.privacy")} *
                           </FormLabel>
                           <FormMessage />
                         </div>
@@ -264,7 +264,7 @@ export default function Contact() {
                   className="w-full py-3 px-4 bg-primary text-white font-medium rounded-md hover:bg-secondary transition duration-300"
                   disabled={form.formState.isSubmitting}
                 >
-                  {form.formState.isSubmitting ? t("contact.form.sending") : t("contact.form.send")}
+                  {form.formState.isSubmitting ? t("contact.form.sending") : t("contact.form.submit")}
                 </Button>
               </form>
             </Form>
@@ -277,44 +277,42 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-2"
           >
-            <h3 className="text-xl font-bold mb-6 text-center">{t("contact.offices.title")}</h3>
+            <h3 className="text-xl font-bold mb-6 text-center">{t("contact.locations.title")}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-xl shadow-md transition-transform hover:translate-y-[-5px] duration-300">
                 <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 mx-auto">
                   <MapPin className="text-primary" />
                 </div>
-                <h4 className="text-lg font-bold text-center mb-3">Montevideo</h4>
+                <h4 className="text-lg font-bold text-center mb-3">{t("contact.locations.montevideo.name")}</h4>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.offices.address")}</h5>
+                      <h5 className="font-medium">{t("contact.locations.address")}</h5>
                       <p className="text-gray-600">
-                        18 de Julio número 841 apto 301
-                        <br />
-                        Montevideo, Uruguay
+                        {t("contact.locations.montevideo.address")}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Phone className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.offices.phone")}</h5>
-                      <p className="text-gray-600">29089595</p>
+                      <h5 className="font-medium">{t("contact.locations.phone")}</h5>
+                      <p className="text-gray-600">{t("contact.locations.montevideo.phone")}</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Smartphone className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.offices.mobile")}</h5>
-                      <p className="text-gray-600">+59898609965</p>
+                      <h5 className="font-medium">{t("contact.locations.mobile")}</h5>
+                      <p className="text-gray-600">{t("contact.locations.montevideo.mobile")}</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Mail className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.offices.email")}</h5>
-                      <p className="text-gray-600">contacto@solutmsa.com</p>
+                      <h5 className="font-medium">{t("contact.locations.email")}</h5>
+                      <p className="text-gray-600">{t("contact.locations.montevideo.email")}</p>
                     </div>
                   </div>
                 </div>
@@ -323,31 +321,29 @@ export default function Contact() {
                 <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 mx-auto">
                   <MapPin className="text-primary" />
                 </div>
-                <h4 className="text-lg font-bold text-center mb-3">Atlántida</h4>
+                <h4 className="text-lg font-bold text-center mb-3">{t("contact.locations.atlantida.name")}</h4>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.offices.address")}</h5>
+                      <h5 className="font-medium">{t("contact.locations.address")}</h5>
                       <p className="text-gray-600">
-                        Calle 26 esq Calle 3
-                        <br />
-                        Atlántida, Canelones, Uruguay
+                        {t("contact.locations.atlantida.address")}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Phone className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.offices.phone")}</h5>
-                      <p className="text-gray-600">43716496</p>
+                      <h5 className="font-medium">{t("contact.locations.phone")}</h5>
+                      <p className="text-gray-600">{t("contact.locations.atlantida.phone")}</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Smartphone className="text-primary mr-3 mt-0.5" />
                     <div>
-                      <h5 className="font-medium">{t("contact.offices.mobile")}</h5>
-                      <p className="text-gray-600">+59898609965</p>
+                      <h5 className="font-medium">{t("contact.locations.mobile")}</h5>
+                      <p className="text-gray-600">{t("contact.locations.atlantida.mobile")}</p>
                     </div>
                   </div>
                 </div>
@@ -356,16 +352,14 @@ export default function Contact() {
             <div className="mt-6 bg-white p-6 rounded-xl shadow-md">
               <div className="flex items-center mb-4">
                 <Clock className="text-primary mr-2 mt-0.5" />
-                <h4 className="text-lg font-semibold">{t("contact.offices.businessHours")}</h4>
+                <h4 className="text-lg font-semibold">{t("contact.locations.hours")}</h4>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
                 <div className="p-3 bg-primary/5 rounded-lg">
-                  <p className="font-medium">{t("contact.offices.weekdays")}</p>
-                  <p className="text-gray-600">9:00 - 17:00</p>
+                  <p className="font-medium">{t("contact.locations.montevideo.hours")}</p>
                 </div>
                 <div className="p-3 bg-primary/5 rounded-lg">
-                  <p className="font-medium">{t("contact.offices.weekends")}</p>
-                  <p className="text-gray-600">{t("contact.offices.closed")}</p>
+                  <p className="font-medium">{t("contact.locations.atlantida.hours")}</p>
                 </div>
               </div>
             </div>

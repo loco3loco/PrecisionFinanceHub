@@ -495,14 +495,14 @@ export default function AsesoriaFiscal() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Optimize Your Company's Tax Strategy
+              {t("service_pages.tax_advisory.cta.title", "Optimize Your Company's Tax Strategy")}
             </h2>
             <p className="text-xl mb-8">
-              Our experts will help you implement the most appropriate tax strategy for your business. Request a no-obligation consultation.
+              {t("service_pages.tax_advisory.cta.description", "Our experts will help you implement the most appropriate tax strategy for your business. Request a no-obligation consultation.")}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                Request Tax Consultation
+                {t("service_pages.tax_advisory.cta.button", "Request Tax Consultation")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>

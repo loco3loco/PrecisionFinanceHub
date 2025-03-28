@@ -37,8 +37,8 @@
   },
   "about": {
     "title": "Sobre Nosotros",
-    "subtitle": "Expertos en contabilidad y consultoría con más de 32 años de experiencia",
-    "experience_years": "32 años de experiencia",
+    "subtitle": "Expertos en contabilidad y consultoría con más de 50 años de experiencia",
+    "experience_years": "50 años de experiencia",
     "client_companies": "+100 empresas confían en nosotros",
     "employees_managed": "+700 colaboradores en relación de dependencia"
   },
@@ -132,7 +132,7 @@
     "stats": {
       "companies": "+100 Empresas",
       "companies_subtitle": "Confian en nosotros todos los días.",
-      "years": "+32 Años",
+      "years": "+50 Años",
       "years_subtitle": "De trayectoria, brindando un servicio que supera espectativas.",
       "employees": "+700 Colaboradores",
       "employees_subtitle": "Tienen relación de dependencia en las empresas que asesoramos."
@@ -250,7 +250,7 @@
       "meta_keywords": "contabilidad corporativa, asesoría financiera, estados financieros, cumplimiento normativo, consultores contables",
       "subtitle": "Soluciones contables integrales diseñadas específicamente para optimizar la gestión financiera de su empresa.",
       "why_choose_us_items": {
-        "0": "Experiencia de más de 15 años en el sector",
+        "0": "Experiencia de más de 50 años en el sector",
         "1": "Profesionales certificados y actualizados",
         "2": "Soluciones adaptadas a su industria",
         "3": "Tecnología de punta y procesos optimizados"

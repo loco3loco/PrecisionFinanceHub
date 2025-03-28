@@ -426,15 +426,14 @@ export default function ConsultoriaEmpresarial() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Transform Your Business?
+              {t("service_pages.business_consulting.cta.title", "Ready to Transform Your Business?")}
             </h2>
             <p className="text-xl mb-8">
-              Contact us today to discuss how our consulting services can help 
-              your business reach its full potential.
+              {t("service_pages.business_consulting.cta.description", "Contact us today to discuss how our consulting services can help your business reach its full potential.")}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                Get a Free Consultation
+                {t("service_pages.business_consulting.cta.button", "Get a Free Consultation")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>

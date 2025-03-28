@@ -37,8 +37,8 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Accounting and consulting experts with over 32 years of experience",
-    "experience_years": "32 years of experience",
+    "subtitle": "Accounting and consulting experts with over 50 years of experience",
+    "experience_years": "50 years of experience",
     "client_companies": "+100 companies trust us",
     "employees_managed": "+700 employees in dependency relationship"
   },
@@ -132,7 +132,7 @@
     "stats": {
       "companies": "+100 Companies",
       "companies_subtitle": "Trust us every day.",
-      "years": "+32 Years",
+      "years": "+50 Years",
       "years_subtitle": "Of experience, providing service that exceeds expectations.",
       "employees": "+700 Employees",
       "employees_subtitle": "Are in a dependency relationship with the companies we advise."
@@ -250,7 +250,7 @@
       "meta_keywords": "corporate accounting, financial advisory, financial statements, regulatory compliance, accounting consultants",
       "subtitle": "Comprehensive accounting solutions specifically designed to optimize the financial management of your company.",
       "why_choose_us_items": {
-        "0": "Over 15 years of experience in the sector",
+        "0": "Over 50 years of experience in the sector",
         "1": "Certified and up-to-date professionals",
         "2": "Solutions tailored to your industry",
         "3": "Cutting-edge technology and optimized processes"

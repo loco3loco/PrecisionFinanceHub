@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Check, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function AboutUs() {
+  const { t } = useTranslation();
   const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation();
   const { ref: badgeRef, isVisible: badgeVisible } = useScrollAnimation();
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
@@ -40,10 +42,10 @@ export default function AboutUs() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-sm font-heading font-semibold text-gray-800">
-                      Certified Experience
+                      {t("about.badge_title", "Certified Experience")}
                     </h3>
                     <p className="text-xs text-gray-600">
-                      +50 years serving the business sector
+                      {t("about.badge_text", "+50 years serving the business sector")}
                     </p>
                   </div>
                 </div>
@@ -59,19 +61,14 @@ export default function AboutUs() {
             className="md:w-1/2 md:pl-12"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Our <span className="text-primary">Story</span>
+              {t("about.title", "About Us")} <span className="text-primary">{t("about.story", "Story")}</span>
             </h2>
             <div className="w-20 h-1 bg-secondary mb-6"></div>
             <p className="text-gray-600 mb-6">
-              At Solutumsa, we take pride in our track record of over 50 years providing
-              excellent accounting and tax solutions. Since our beginnings, we have been
-              committed to offering personalized, quality service, constantly adapting
-              to changes in the business environment.
+              {t("about.paragraph1", "At Solutumsa, we take pride in our track record of over 50 years providing excellent accounting and tax solutions. Since our beginnings, we have been committed to offering personalized, quality service, constantly adapting to changes in the business environment.")}
             </p>
             <p className="text-gray-600 mb-6">
-              Our team consists of highly qualified professionals with extensive
-              experience in different sectors and deep knowledge of current tax and
-              accounting regulations.
+              {t("about.paragraph2", "Our team consists of highly qualified professionals with extensive experience in different sectors and deep knowledge of current tax and accounting regulations.")}
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-8">
@@ -80,8 +77,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Professionalism</h3>
-                  <p className="text-sm text-gray-600">Highly qualified team</p>
+                  <h3 className="font-heading font-semibold mb-1">{t("about.values.professionalism.title", "Professionalism")}</h3>
+                  <p className="text-sm text-gray-600">{t("about.values.professionalism.description", "Highly qualified team")}</p>
                 </div>
               </div>
 
@@ -90,8 +87,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Trust</h3>
-                  <p className="text-sm text-gray-600">Strong and lasting relationships</p>
+                  <h3 className="font-heading font-semibold mb-1">{t("about.values.trust.title", "Trust")}</h3>
+                  <p className="text-sm text-gray-600">{t("about.values.trust.description", "Strong and lasting relationships")}</p>
                 </div>
               </div>
 
@@ -100,8 +97,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Innovation</h3>
-                  <p className="text-sm text-gray-600">Future-proof solutions</p>
+                  <h3 className="font-heading font-semibold mb-1">{t("about.values.innovation.title", "Innovation")}</h3>
+                  <p className="text-sm text-gray-600">{t("about.values.innovation.description", "Future-proof solutions")}</p>
                 </div>
               </div>
 
@@ -110,8 +107,8 @@ export default function AboutUs() {
                   <Check className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">Commitment</h3>
-                  <p className="text-sm text-gray-600">Always at your service</p>
+                  <h3 className="font-heading font-semibold mb-1">{t("about.values.commitment.title", "Commitment")}</h3>
+                  <p className="text-sm text-gray-600">{t("about.values.commitment.description", "Always at your service")}</p>
                 </div>
               </div>
             </div>
@@ -120,7 +117,7 @@ export default function AboutUs() {
               asChild
               className="inline-flex items-center bg-primary text-white hover:bg-secondary transition-colors duration-300"
             >
-              <a href="#contacto">Contact Us Today</a>
+              <a href="#contacto">{t("about.contact_button", "Contact Us Today")}</a>
             </Button>
           </motion.div>
         </div>
