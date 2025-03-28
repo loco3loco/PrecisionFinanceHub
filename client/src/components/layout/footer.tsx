@@ -9,7 +9,8 @@ import Logo from "@/components/ui/logo";
 import { useTranslation } from "react-i18next";
 
 // Constante para los enlaces de contacto - centralizada para facilitar cambios futuros
-export const CONTACT_LINK = "/#contacto"; // Dirección relativa que funciona en todas las rutas
+export const CONTACT_LINK = "/"; // Redirige a la página principal
+export const CONTACT_SECTION = "/#contacto"; // Usado solo para la página principal
 
 export default function Footer() {
   const [email, setEmail] = useState("");

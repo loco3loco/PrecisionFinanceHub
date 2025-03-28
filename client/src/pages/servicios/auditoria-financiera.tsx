@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/layout/footer";
+import Footer, { CONTACT_LINK } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Clipboard, Search, ShieldCheck, BarChart3, FileSpreadsheet, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -68,7 +68,7 @@ export default function AuditoriaFinanciera() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                  <a href="#contacto">
+                  <a href={CONTACT_LINK}>
                     {t('service_pages.common.request_service')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
@@ -487,7 +487,7 @@ export default function AuditoriaFinanciera() {
               {t('service_pages.financial_audit.cta_description')}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-              <a href="#contacto">
+              <a href={CONTACT_LINK}>
                 {t('service_pages.financial_audit.cta_button')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
