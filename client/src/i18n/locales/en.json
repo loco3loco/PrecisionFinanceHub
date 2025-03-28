@@ -315,7 +315,63 @@
       "cta_description": "Our accounting experts are ready to help you. Request a personalized consultation with no obligation.",
       "cta_button": "Request accounting consultation",
       "work_process_title": "Our Work Process",
-      "work_process_description": "We follow a structured and transparent approach to ensure maximum quality in all our accounting services."
+      "work_process_description": "We follow a structured and transparent approach to ensure maximum quality in all our accounting services.",
+      "services": {
+        "financial_accounting": {
+          "title": "Financial Accounting",
+          "description": "We keep your accounting records accurate and up-to-date, ensuring compliance with all applicable regulations.",
+          "features": [
+            "Updated accounting records",
+            "Monthly and annual balance sheets",
+            "Bank reconciliations"
+          ]
+        },
+        "financial_analysis": {
+          "title": "Financial Analysis",
+          "description": "We transform your accounting data into strategic information for decision-making in your company.",
+          "features": [
+            "Detailed financial analysis",
+            "Projections and budgets",
+            "Financing strategies"
+          ]
+        },
+        "tax_planning": {
+          "title": "Tax Planning",
+          "description": "We optimize your tax burden within the legal framework, maximizing your company's tax savings.",
+          "features": [
+            "Tax declarations",
+            "Strategic tax planning",
+            "Representation before tax authorities"
+          ]
+        },
+        "cost_control": {
+          "title": "Cost Control",
+          "description": "We implement effective systems to monitor and optimize all operating costs of your business.",
+          "features": [
+            "Financial and cost analysis",
+            "Projections and budgets",
+            "Optimization of internal processes"
+          ]
+        },
+        "regulatory_accounting": {
+          "title": "Regulatory Accounting",
+          "description": "We ensure that your accounting complies with all current legal and sectoral regulations.",
+          "features": [
+            "Compliance with accounting regulations",
+            "Adaptation to legal changes",
+            "Reports for regulatory entities"
+          ]
+        },
+        "risk_prevention": {
+          "title": "Risk Prevention",
+          "description": "We identify and mitigate financial and accounting risks before they affect your company.",
+          "features": [
+            "Review of financial statements",
+            "Risk assessment",
+            "Improvement recommendations"
+          ]
+        }
+      }
     },
     "business_consulting": {
       "title": "Business Consulting",

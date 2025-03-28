@@ -315,7 +315,63 @@
       "cta_description": "Nuestros expertos contables están listos para ayudarle. Solicite una consulta personalizada sin compromiso.",
       "cta_button": "Solicitar consulta contable",
       "work_process_title": "Nuestro Proceso de Trabajo",
-      "work_process_description": "Seguimos un enfoque estructurado y transparente para garantizar la máxima calidad en todos nuestros servicios contables."
+      "work_process_description": "Seguimos un enfoque estructurado y transparente para garantizar la máxima calidad en todos nuestros servicios contables.",
+      "services": {
+        "financial_accounting": {
+          "title": "Contabilidad Financiera",
+          "description": "Mantenemos sus registros contables precisos y actualizados, asegurando el cumplimiento de todas las normativas aplicables.",
+          "features": [
+            "Registros contables actualizados",
+            "Balances mensuales y anuales",
+            "Conciliaciones bancarias"
+          ]
+        },
+        "financial_analysis": {
+          "title": "Análisis Financiero",
+          "description": "Transformamos sus datos contables en información estratégica para la toma de decisiones en su empresa.",
+          "features": [
+            "Análisis financiero detallado",
+            "Proyecciones y presupuestos",
+            "Estrategias de financiamiento"
+          ]
+        },
+        "tax_planning": {
+          "title": "Planificación Fiscal",
+          "description": "Optimizamos su carga tributaria dentro del marco legal, maximizando el ahorro fiscal de su empresa.",
+          "features": [
+            "Declaraciones de impuestos",
+            "Planificación fiscal estratégica",
+            "Representación ante autoridades fiscales"
+          ]
+        },
+        "cost_control": {
+          "title": "Control de Costos",
+          "description": "Implementamos sistemas efectivos para monitorear y optimizar todos los costos operativos de su negocio.",
+          "features": [
+            "Análisis financiero y de costos",
+            "Proyecciones y presupuestos",
+            "Optimización de procesos internos"
+          ]
+        },
+        "regulatory_accounting": {
+          "title": "Contabilidad Normativa",
+          "description": "Aseguramos que su contabilidad cumpla con todas las normativas legales y sectoriales vigentes.",
+          "features": [
+            "Cumplimiento de normativas contables",
+            "Adaptación a cambios legales",
+            "Informes para entidades reguladoras"
+          ]
+        },
+        "risk_prevention": {
+          "title": "Prevención de Riesgos",
+          "description": "Identificamos y mitigamos riesgos financieros y contables antes de que afecten a su empresa.",
+          "features": [
+            "Revisión de estados financieros",
+            "Evaluación de riesgos",
+            "Recomendaciones de mejora"
+          ]
+        }
+      }
     },
     "business_consulting": {
       "title": "Consultoría Empresarial",
