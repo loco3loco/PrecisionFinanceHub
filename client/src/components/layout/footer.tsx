@@ -17,15 +17,14 @@ export default function Footer() {
   const { toast } = useToast();
   const { t } = useTranslation();
   
-  // Estructura de servicios para el footer
-  // Usamos las claves que existen en el archivo es.json bajo la clave "services"
+  // Servicios para el footer
   const footerServices = [
-    { key: "services.corporate_accounting", href: "/servicios/contabilidad-corporativa" },
-    { key: "services.tax_advisory", href: "/servicios/asesoria-fiscal" },
-    { key: "services.business_consulting", href: "/servicios/consultoria-empresarial" },
-    { key: "services.payroll_management", href: "/servicios/gestion-nomina" },
-    { key: "services.financial_audit", href: "/servicios/auditoria-financiera" },
-    { key: "services.accounting_tech", href: "/servicios/tecnologia-contable" }
+    { key: "corporate_accounting", href: "/servicios/contabilidad-corporativa" },
+    { key: "tax_advisory", href: "/servicios/asesoria-fiscal" },
+    { key: "business_consulting", href: "/servicios/consultoria-empresarial" },
+    { key: "payroll_management", href: "/servicios/gestion-nomina" },
+    { key: "financial_audit", href: "/servicios/auditoria-financiera" },
+    { key: "accounting_tech", href: "/servicios/tecnologia-contable" }
   ];
 
   const handleSubscribe = async (e: React.FormEvent) => {
@@ -106,13 +105,19 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">{t("nav.services")}</h3>
             <ul className="space-y-3">
-              {footerServices.map((service, index) => (
-                <li key={index}>
-                  <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
-                    {t(service.key)}
-                  </Link>
-                </li>
-              ))}
+              {footerServices.map((service, index) => {
+                // Obtenemos la traducción para verificar que está funcionando
+                const translatedText = t(`services.${service.key}`);
+                console.log(`Servicio ${index}: clave=${service.key}, traducción=${translatedText}`);
+                
+                return (
+                  <li key={index}>
+                    <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
+                      {translatedText}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
