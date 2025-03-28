@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/layout/footer";
+import Footer, { CONTACT_LINK } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Calculator, ClipboardCheck, Scale, Briefcase, FileText, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -58,7 +58,7 @@ export default function AsesoriaFiscal() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                  <a href="#contacto">
+                  <a href={CONTACT_LINK}>
                     {t('service_pages.common.request_service', 'Solicitar asesoría')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
@@ -493,7 +493,7 @@ export default function AsesoriaFiscal() {
               {t("service_pages.tax_advisory.cta.description", "Our experts will help you implement the most appropriate tax strategy for your business. Request a no-obligation consultation.")}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-              <a href="#contacto">
+              <a href={CONTACT_LINK}>
                 {t("service_pages.tax_advisory.cta.button", "Request Tax Consultation")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>

@@ -3,6 +3,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Check, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { CONTACT_LINK } from "@/components/layout/footer";
 
 export default function AboutUs() {
   const { t } = useTranslation();
@@ -117,7 +118,7 @@ export default function AboutUs() {
               asChild
               className="inline-flex items-center bg-primary text-white hover:bg-secondary transition-colors duration-300"
             >
-              <a href="/#contacto">{t("about.contact_button")}</a>
+              <a href={CONTACT_LINK}>{t("about.contact_button")}</a>
             </Button>
           </motion.div>
         </div>

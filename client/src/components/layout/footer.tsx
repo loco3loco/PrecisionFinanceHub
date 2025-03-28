@@ -8,11 +8,24 @@ import { apiRequest } from "@/lib/queryClient";
 import Logo from "@/components/ui/logo";
 import { useTranslation } from "react-i18next";
 
+// Constante para los enlaces de contacto - centralizada para facilitar cambios futuros
+export const CONTACT_LINK = "/#contacto";
+
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const { t } = useTranslation();
+  
+  // Estructura de servicios para el footer
+  const footerServices = [
+    { key: "services.corporate_accounting", href: "/servicios/contabilidad-corporativa" },
+    { key: "services.tax_advisory", href: "/servicios/asesoria-fiscal" },
+    { key: "services.business_consulting", href: "/servicios/consultoria-empresarial" },
+    { key: "services.payroll_management", href: "/servicios/gestion-nomina" },
+    { key: "services.financial_audit", href: "/servicios/auditoria-financiera" },
+    { key: "services.accounting_tech", href: "/servicios/tecnologia-contable" }
+  ];
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -92,36 +105,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">{t("nav.services")}</h3>
             <ul className="space-y-3">
-              <li>
-                <Link href="/servicios/contabilidad-corporativa" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.corporate_accounting")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicios/asesoria-fiscal" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.tax_advisory")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicios/consultoria-empresarial" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.business_consulting")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicios/gestion-nomina" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.payroll_management")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicios/auditoria-financiera" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.financial_audit")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicios/tecnologia-contable" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.accounting_tech")}
-                </Link>
-              </li>
+              {footerServices.map((service, index) => (
+                <li key={index}>
+                  <Link href={service.href} className="text-white/80 hover:text-white transition-colors">
+                    {t(service.key)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
