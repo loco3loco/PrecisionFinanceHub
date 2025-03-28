@@ -516,12 +516,12 @@
       "meta_description": "Servicios de auditoría financiera de Solutumsa. Verificamos la integridad y precisión de sus estados financieros para generar confianza y transparencia.",
       "meta_keywords": "auditoría financiera, revisión contable, estados financieros, cumplimiento normativo, control interno",
       "subtitle": "Servicios de auditoría confiables para garantizar la transparencia y exactitud de su información financiera.",
-      "why_choose_us_items": {
-        "0": "Auditores con amplia experiencia y certificaciones internacionales",
-        "1": "Cumplimiento de normas internacionales de auditoría",
-        "2": "Enfoque riguroso y metodológico",
-        "3": "Independencia y objetividad garantizadas"
-      },
+      "why_choose_us_items": [
+        "Auditores con amplia experiencia y certificaciones internacionales",
+        "Cumplimiento de normas internacionales de auditoría",
+        "Enfoque riguroso y metodológico",
+        "Independencia y objetividad garantizadas"
+      ],
       "main_services_title": "Nuestros Servicios de Auditoría",
       "main_services_description": "Ofrecemos servicios de auditoría financiera completos que generan confianza y transparencia en su información financiera.",
       "approach_title": "Nuestro Enfoque",

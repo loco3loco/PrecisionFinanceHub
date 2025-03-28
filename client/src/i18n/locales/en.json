@@ -482,12 +482,12 @@
       "meta_description": "Solutumsa's financial audit services. We verify the integrity and accuracy of your financial statements to generate trust and transparency.",
       "meta_keywords": "financial audit, accounting review, financial statements, regulatory compliance, internal control",
       "subtitle": "Reliable audit services to ensure the transparency and accuracy of your financial information.",
-      "why_choose_us_items": {
-        "0": "Auditors with extensive experience and international certifications",
-        "1": "Compliance with international auditing standards",
-        "2": "Rigorous and methodical approach",
-        "3": "Guaranteed independence and objectivity"
-      },
+      "why_choose_us_items": [
+        "Auditors with extensive experience and international certifications",
+        "Compliance with international auditing standards",
+        "Rigorous and methodical approach",
+        "Guaranteed independence and objectivity"
+      ],
       "main_services_title": "Our Audit Services",
       "main_services_description": "We offer comprehensive financial audit services that generate trust and transparency in your financial information.",
       "approach_title": "Our Approach",

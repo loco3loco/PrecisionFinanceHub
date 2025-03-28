@@ -7,9 +7,9 @@ import {
   BarChart2, 
   TrendingUp, 
   Users, 
-  BriefcaseBusiness, 
+  Briefcase, 
   Lightbulb, 
-  FileAnalytics
+  FileText
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
@@ -33,17 +33,12 @@ export default function ConsultoriaEmpresarial() {
   }, []);
 
   // Preparar elementos para "Por qué elegirnos" desde traducciones
-  const whyChooseUsItems = [
-    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.0`),
-    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.1`),
-    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.2`),
-    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.3`)
-  ];
+  const whyChooseUsItems = t(`service_pages.${SERVICE_KEY}.why_choose_us_items`, { returnObjects: true }) as string[];
 
   // Configuración de servicios con sus iconos
   const services = [
     {
-      icon: <BriefcaseBusiness className="h-6 w-6 text-primary" />,
+      icon: <Briefcase className="h-6 w-6 text-primary" />,
       serviceKey: "strategic_planning", // Usar las claves existentes en los archivos de traducción
     },
     {
@@ -63,7 +58,7 @@ export default function ConsultoriaEmpresarial() {
       serviceKey: "innovation_management",
     },
     {
-      icon: <FileAnalytics className="h-6 w-6 text-primary" />,
+      icon: <FileText className="h-6 w-6 text-primary" />,
       serviceKey: "digital_transformation",
     },
   ];
@@ -176,7 +171,7 @@ export default function ConsultoriaEmpresarial() {
                     {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.description`)}
                   </p>
                   <ul className="space-y-2 mb-4">
-                    {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true })
+                    {(t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }) as string[])
                       .map((feature: string, featureIndex: number) => (
                       <li key={featureIndex} className="flex items-start text-sm">
                         <span className="text-primary mr-2">•</span>
