@@ -67,9 +67,10 @@
     "employees_managed": "+700 colaboradores en relación de dependencia"
   },
   "cta": {
-    "title": "¿Necesita asesoramiento profesional?",
-    "subtitle": "Contáctenos hoy para una consulta personalizada",
-    "button": "Contactar ahora"
+    "title": "¿Listo para llevar su negocio al siguiente nivel?",
+    "description": "Programe una consulta virtual gratuita de 30 minutos con uno de nuestros expertos y descubra cómo podemos ayudarle a optimizar sus finanzas e impulsar el crecimiento de su empresa.",
+    "button_schedule": "Programar Consulta Gratuita",
+    "button_whatsapp": "Contactar vía WhatsApp"
   },
   "contact": {
     "title": "Contacto",

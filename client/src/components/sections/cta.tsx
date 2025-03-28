@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Button } from "@/components/ui/button";
 import { Calendar, MessageSquare } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function CTA() {
+  const { t } = useTranslation();
   const { ref, isVisible } = useScrollAnimation();
 
   return (
@@ -17,11 +19,10 @@ export default function CTA() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-            Ready to Take Your Business to the Next Level?
+            {t('cta.title')}
           </h2>
           <p className="text-lg opacity-90 mb-10">
-            Schedule a free 30-minute virtual consultation with one of our experts and
-            discover how we can help you optimize your finances and boost your business growth.
+            {t('cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button
@@ -31,7 +32,7 @@ export default function CTA() {
             >
               <a href="#contacto">
                 <Calendar className="mr-2 h-5 w-5" />
-                Schedule Free Consultation
+                {t('cta.button_schedule')}
               </a>
             </Button>
             <Button
@@ -42,7 +43,7 @@ export default function CTA() {
             >
               <a href="https://wa.me/5491112345678">
                 <MessageSquare className="mr-2 h-5 w-5" />
-                Contact via WhatsApp
+                {t('cta.button_whatsapp')}
               </a>
             </Button>
           </div>

@@ -22,10 +22,10 @@ export default function ConsultoriaEmpresarial() {
   }, []);
 
   const whyChooseUsItems = [
-    "Expert consultants with extensive experience",
-    "Customized solutions for your business",
-    "Continuous support during implementation",
-    "Proven results and success stories"
+    t('service_pages.business_consulting.why_choose_us_items.0'),
+    t('service_pages.business_consulting.why_choose_us_items.1'),
+    t('service_pages.business_consulting.why_choose_us_items.2'),
+    t('service_pages.business_consulting.why_choose_us_items.3')
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function ConsultoriaEmpresarial() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                Business Consulting
+                {t('service_pages.business_consulting.title')}
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function ConsultoriaEmpresarial() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                Strategic solutions to optimize your business processes, improve performance and drive sustainable growth.
+                {t('service_pages.business_consulting.subtitle')}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ export default function ConsultoriaEmpresarial() {
               >
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
                   <a href="#contacto">
-                    Request Our Service
+                    {t('service_pages.common.request_service')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -85,7 +85,7 @@ export default function ConsultoriaEmpresarial() {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Why Choose Us</h3>
+                  <h3 className="text-xl font-bold mb-2">{t('service_pages.common.why_choose_us')}</h3>
                   <ul className="space-y-2">
                     {whyChooseUsItems.map((item, index) => (
                       <li key={index} className="flex items-start">

@@ -67,9 +67,10 @@
     "employees_managed": "+700 employees in dependency relationship"
   },
   "cta": {
-    "title": "Need professional advice?",
-    "subtitle": "Contact us today for a personalized consultation",
-    "button": "Contact now"
+    "title": "Ready to Take Your Business to the Next Level?",
+    "description": "Schedule a free 30-minute virtual consultation with one of our experts and discover how we can help you optimize your finances and boost your business growth.",
+    "button_schedule": "Schedule Free Consultation",
+    "button_whatsapp": "Contact via WhatsApp"
   },
   "contact": {
     "title": "Contact",
