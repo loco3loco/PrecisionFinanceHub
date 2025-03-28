@@ -113,9 +113,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.services.title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.services.title', 'Nuestros Servicios de Asesoría Fiscal')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.tax_advisory.services.description')}
+              {t('service_pages.tax_advisory.services.description', 'Ofrecemos un conjunto integral de servicios diseñados para optimizar la gestión fiscal y tributaria de su empresa, cumpliendo con todas las normativas vigentes.')}
             </p>
           </motion.div>
 
@@ -318,9 +318,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.approach.title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.approach.title', 'Nuestro Enfoque')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.tax_advisory.approach.description')}
+              {t('service_pages.tax_advisory.approach.description', 'Aplicamos un enfoque metodológico que combina estrategias preventivas y proactivas para maximizar los resultados fiscales de nuestros clientes.')}
             </p>
           </motion.div>
 
@@ -339,22 +339,22 @@ export default function AsesoriaFiscal() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.approach.preventive.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.approach.preventive.title', 'Enfoque Preventivo')}</h3>
                 <p className="text-gray-600">
-                  {t('service_pages.tax_advisory.approach.preventive.description')}
+                  {t('service_pages.tax_advisory.approach.preventive.description', 'Nos anticipamos a posibles riesgos fiscales identificando oportunidades de mejora antes de que surjan problemas.')}
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>{t('service_pages.tax_advisory.approach.preventive.item1')}</span>
+                    <span>{t('service_pages.tax_advisory.approach.preventive.item1', 'Revisiones fiscales periódicas')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>{t('service_pages.tax_advisory.approach.preventive.item2')}</span>
+                    <span>{t('service_pages.tax_advisory.approach.preventive.item2', 'Monitoreo de cambios normativos')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>{t('service_pages.tax_advisory.approach.preventive.item3')}</span>
+                    <span>{t('service_pages.tax_advisory.approach.preventive.item3', 'Alertas de vencimientos y obligaciones')}</span>
                   </li>
                 </ul>
               </div>
@@ -374,22 +374,22 @@ export default function AsesoriaFiscal() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.approach.strategic.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.approach.strategic.title', 'Enfoque Estratégico')}</h3>
                 <p className="text-gray-600">
-                  {t('service_pages.tax_advisory.approach.strategic.description')}
+                  {t('service_pages.tax_advisory.approach.strategic.description', 'Desarrollamos planes a medida para optimizar la carga fiscal de su empresa y maximizar los resultados financieros.')}
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>{t('service_pages.tax_advisory.approach.strategic.item1')}</span>
+                    <span>{t('service_pages.tax_advisory.approach.strategic.item1', 'Análisis de la estructura empresarial')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>{t('service_pages.tax_advisory.approach.strategic.item2')}</span>
+                    <span>{t('service_pages.tax_advisory.approach.strategic.item2', 'Planificación fiscal a mediano y largo plazo')}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">✓</span>
-                    <span>{t('service_pages.tax_advisory.approach.strategic.item3')}</span>
+                    <span>{t('service_pages.tax_advisory.approach.strategic.item3', 'Optimización de operaciones corporativas')}</span>
                   </li>
                 </ul>
               </div>
@@ -407,9 +407,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.why_choose_us.title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.why_choose_us.title', '¿Por qué elegirnos?')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.tax_advisory.why_choose_us.description')}
+              {t('service_pages.tax_advisory.why_choose_us.description', 'Contamos con un equipo de expertos fiscales comprometidos con ofrecer soluciones efectivas para proteger y optimizar la posición fiscal de su empresa.')}
             </p>
           </motion.div>
 
