@@ -9,7 +9,7 @@ import Logo from "@/components/ui/logo";
 import { useTranslation } from "react-i18next";
 
 // Constante para los enlaces de contacto - centralizada para facilitar cambios futuros
-export const CONTACT_LINK = "/#contacto";
+export const CONTACT_LINK = "/#contacto"; // Dirección relativa que funciona en todas las rutas
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -18,6 +18,7 @@ export default function Footer() {
   const { t } = useTranslation();
   
   // Estructura de servicios para el footer
+  // Usamos las claves que existen en el archivo es.json bajo la clave "services"
   const footerServices = [
     { key: "services.corporate_accounting", href: "/servicios/contabilidad-corporativa" },
     { key: "services.tax_advisory", href: "/servicios/asesoria-fiscal" },
@@ -80,22 +81,22 @@ export default function Footer() {
             <h3 className="text-lg font-heading font-semibold mb-6">{t("nav.quick_links", "Enlaces Rápidos")}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/" className="text-white/80 hover:text-white transition-colors">
                   {t("nav.home")}
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/servicios" className="text-white/80 hover:text-white transition-colors">
                   {t("nav.services")}
                 </Link>
               </li>
               <li>
-                <Link href="/nosotros" className="text-white/80 hover:text-white transition-colors">
+                <Link to="/nosotros" className="text-white/80 hover:text-white transition-colors">
                   {t("nav.about")}
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-white/80 hover:text-white transition-colors">
+                <Link to={CONTACT_LINK} className="text-white/80 hover:text-white transition-colors">
                   {t("nav.contact")}
                 </Link>
               </li>
@@ -107,7 +108,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerServices.map((service, index) => (
                 <li key={index}>
-                  <Link href={service.href} className="text-white/80 hover:text-white transition-colors">
+                  <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
                     {t(service.key)}
                   </Link>
                 </li>
@@ -122,13 +123,13 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Solutumsa. {t("footer.rights")}
             </p>
             <div className="flex flex-wrap justify-center space-x-4">
-              <Link href="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              <Link to="#" className="text-white/70 hover:text-white text-sm transition-colors">
                 {t("footer.terms")}
               </Link>
-              <Link href="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              <Link to="#" className="text-white/70 hover:text-white text-sm transition-colors">
                 {t("footer.privacy")}
               </Link>
-              <Link href="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              <Link to="#" className="text-white/70 hover:text-white text-sm transition-colors">
                 {t("footer.cookies", "Política de Cookies")}
               </Link>
             </div>
