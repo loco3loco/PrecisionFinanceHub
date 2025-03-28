@@ -41,7 +41,7 @@ export default function CTA() {
               variant="outline"
               className="bg-transparent text-white border-white/50 hover:bg-white/10"
             >
-              <a href="https://wa.me/5491112345678">
+              <a href="https://wa.me/59898609965">
                 <MessageSquare className="mr-2 h-5 w-5" />
                 {t('cta.button_whatsapp')}
               </a>

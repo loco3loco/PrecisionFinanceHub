@@ -166,7 +166,7 @@ export default function Navbar() {
               size="sm"
               asChild
             >
-              <a href="https://wa.me/5491112345678">
+              <a href="https://wa.me/59898609965">
                 <MessageCircle className="mr-2 h-4 w-4" />
                 <span className="hidden sm:inline">{t("common.whatsapp")}</span>
               </a>
