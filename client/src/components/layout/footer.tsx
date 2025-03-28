@@ -94,32 +94,32 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/servicios/contabilidad-corporativa" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.corporate_accounting.title", "Corporate Accounting")}
+                  {t("services.corporate_accounting")}
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/asesoria-fiscal" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.tax_advisory.title", "Tax Advisory")}
+                  {t("services.tax_advisory")}
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/consultoria-empresarial" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.business_consulting.title", "Business Consulting")}
+                  {t("services.business_consulting")}
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/gestion-nomina" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.payroll.title", "Payroll Management")}
+                  {t("services.payroll_management")}
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/auditoria-financiera" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.financial_audit.title", "Financial Audit")}
+                  {t("services.financial_audit")}
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/tecnologia-contable" className="text-white/80 hover:text-white transition-colors">
-                  {t("services.tech_account.title", "Accounting Technology")}
+                  {t("services.accounting_tech")}
                 </Link>
               </li>
             </ul>

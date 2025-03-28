@@ -61,7 +61,7 @@ export default function AboutUs() {
             className="md:w-1/2 md:pl-12"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              {t("about.title", "Conoce Nuestra Historia")} <span className="text-primary">{t("about.story", "Discover Our Story")}</span>
+              {t("about.title")} <span className="text-primary">{t("about.story")}</span>
             </h2>
             <div className="w-20 h-1 bg-secondary mb-6"></div>
             <p className="text-gray-600 mb-6">
@@ -117,7 +117,7 @@ export default function AboutUs() {
               asChild
               className="inline-flex items-center bg-primary text-white hover:bg-secondary transition-colors duration-300"
             >
-              <a href="#contacto">{t("about.contact_button", "Contact Us Today")}</a>
+              <a href="/#contacto">{t("about.contact_button")}</a>
             </Button>
           </motion.div>
         </div>
