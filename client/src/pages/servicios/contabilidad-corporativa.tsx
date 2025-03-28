@@ -21,19 +21,51 @@ export default function ContabilidadCorporativa() {
     window.scrollTo(0, 0);
   }, []);
 
+  // Clave del servicio en archivos de traducción
+  const SERVICE_KEY = "corporate_accounting";
+
+  // Preparar elementos para "Por qué elegirnos" desde traducciones
   const whyChooseUsItems = [
-    t('service_pages.corporate_accounting.why_choose_us_items.0'),
-    t('service_pages.corporate_accounting.why_choose_us_items.1'),
-    t('service_pages.corporate_accounting.why_choose_us_items.2'),
-    t('service_pages.corporate_accounting.why_choose_us_items.3')
+    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.0`),
+    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.1`),
+    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.2`),
+    t(`service_pages.${SERVICE_KEY}.why_choose_us_items.3`)
+  ];
+
+  // Configuración de servicios con sus iconos
+  const services = [
+    {
+      icon: <FileDigit className="h-6 w-6 text-primary" />,
+      serviceKey: "financial_accounting",
+    },
+    {
+      icon: <BarChart className="h-6 w-6 text-primary" />,
+      serviceKey: "financial_analysis",
+    },
+    {
+      icon: <DollarSign className="h-6 w-6 text-primary" />,
+      serviceKey: "tax_planning",
+    },
+    {
+      icon: <LineChart className="h-6 w-6 text-primary" />,
+      serviceKey: "cost_control",
+    },
+    {
+      icon: <Landmark className="h-6 w-6 text-primary" />,
+      serviceKey: "regulatory_accounting",
+    },
+    {
+      icon: <ShieldCheck className="h-6 w-6 text-primary" />,
+      serviceKey: "risk_prevention",
+    },
   ];
 
   return (
     <>
       <Helmet>
-        <title>{t('service_pages.corporate_accounting.title')} | Solutumsa</title>
-        <meta name="description" content={t('service_pages.corporate_accounting.meta_description')} />
-        <meta name="keywords" content={t('service_pages.corporate_accounting.meta_keywords')} />
+        <title>{t(`service_pages.${SERVICE_KEY}.title`)} | Solutumsa</title>
+        <meta name="description" content={t(`service_pages.${SERVICE_KEY}.meta_description`)} />
+        <meta name="keywords" content={t(`service_pages.${SERVICE_KEY}.meta_keywords`)} />
       </Helmet>
 
       <Navbar />
@@ -49,7 +81,7 @@ export default function ContabilidadCorporativa() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
               >
-                {t('service_pages.corporate_accounting.title')}
+                {t(`service_pages.${SERVICE_KEY}.title`)}
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +89,7 @@ export default function ContabilidadCorporativa() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-xl text-gray-600 mb-8"
               >
-                {t('service_pages.corporate_accounting.subtitle')}
+                {t(`service_pages.${SERVICE_KEY}.subtitle`)}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -81,7 +113,7 @@ export default function ContabilidadCorporativa() {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" 
-                  alt={t('service_pages.corporate_accounting.title')} 
+                  alt={t(`service_pages.${SERVICE_KEY}.title`)} 
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
@@ -110,198 +142,42 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.main_services_title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t(`service_pages.${SERVICE_KEY}.main_services_title`)}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.corporate_accounting.main_services_description')}
+              {t(`service_pages.${SERVICE_KEY}.main_services_description`)}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection1 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <FileDigit className="h-6 w-6 text-primary" />
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isVisibleSection1 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.1 * (index + 1) }}
+                className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+              >
+                <div className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.title`)}
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.description`)}
+                  </p>
+                  <ul className="space-y-2 mb-4">
+                    {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }).map((feature: string, featureIndex: number) => (
+                      <li key={featureIndex} className="flex items-start text-sm">
+                        <span className="text-primary mr-2">•</span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.financial_accounting.title')}</h3>
-                <p className="text-gray-600 mb-4">
-                  {t('service_pages.corporate_accounting.services.financial_accounting.description')}
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.financial_accounting.features.0')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.financial_accounting.features.1')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.financial_accounting.features.2')}</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection1 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <BarChart className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.financial_analysis.title')}</h3>
-                <p className="text-gray-600 mb-4">
-                  {t('service_pages.corporate_accounting.services.financial_analysis.description')}
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.financial_analysis.features.0')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.financial_analysis.features.1')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.financial_analysis.features.2')}</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection1 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <DollarSign className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.tax_planning.title')}</h3>
-                <p className="text-gray-600 mb-4">
-                  {t('service_pages.corporate_accounting.services.tax_planning.description')}
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.tax_planning.features.0')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.tax_planning.features.1')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.tax_planning.features.2')}</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection1 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <LineChart className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.cost_control.title')}</h3>
-                <p className="text-gray-600 mb-4">
-                  {t('service_pages.corporate_accounting.services.cost_control.description')}
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.cost_control.features.0')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.cost_control.features.1')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.cost_control.features.2')}</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection1 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Landmark className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.regulatory_accounting.title')}</h3>
-                <p className="text-gray-600 mb-4">
-                  {t('service_pages.corporate_accounting.services.regulatory_accounting.description')}
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.regulatory_accounting.features.0')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.regulatory_accounting.features.1')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.regulatory_accounting.features.2')}</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection1 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <ShieldCheck className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.risk_prevention.title')}</h3>
-                <p className="text-gray-600 mb-4">
-                  {t('service_pages.corporate_accounting.services.risk_prevention.description')}
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.risk_prevention.features.0')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.risk_prevention.features.1')}</span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.corporate_accounting.services.risk_prevention.features.2')}</span>
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -315,9 +191,9 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.work_process.title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t(`service_pages.${SERVICE_KEY}.work_process_title`)}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.corporate_accounting.work_process.description')}
+              {t(`service_pages.${SERVICE_KEY}.work_process_description`)}
             </p>
           </motion.div>
 
@@ -328,10 +204,12 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step1.title')}</h3>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-bold mb-3 pt-2">{t(`service_pages.${SERVICE_KEY}.work_process.step1.title`)}</h3>
               <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.work_process.step1.description')}
+                {t(`service_pages.${SERVICE_KEY}.work_process.step1.description`)}
               </p>
             </motion.div>
 
@@ -341,10 +219,12 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step2.title')}</h3>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-bold mb-3 pt-2">{t(`service_pages.${SERVICE_KEY}.work_process.step2.title`)}</h3>
               <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.work_process.step2.description')}
+                {t(`service_pages.${SERVICE_KEY}.work_process.step2.description`)}
               </p>
             </motion.div>
 
@@ -354,10 +234,12 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step3.title')}</h3>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-bold mb-3 pt-2">{t(`service_pages.${SERVICE_KEY}.work_process.step3.title`)}</h3>
               <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.work_process.step3.description')}
+                {t(`service_pages.${SERVICE_KEY}.work_process.step3.description`)}
               </p>
             </motion.div>
 
@@ -367,17 +249,19 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step4.title')}</h3>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                4
+              </div>
+              <h3 className="text-xl font-bold mb-3 pt-2">{t(`service_pages.${SERVICE_KEY}.work_process.step4.title`)}</h3>
               <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.work_process.step4.description')}
+                {t(`service_pages.${SERVICE_KEY}.work_process.step4.description`)}
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Beneficios */}
+      {/* Our Approach */}
       <section ref={refSection3} className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div
@@ -386,83 +270,77 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.benefits.title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t(`service_pages.${SERVICE_KEY}.approach_title`)}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('service_pages.corporate_accounting.benefits.description')}
+              {t(`service_pages.${SERVICE_KEY}.approach_description`)}
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col md:flex-row gap-8">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection3 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="border border-gray-200 rounded-xl p-6"
+              initial={{ opacity: 0, x: -30 }}
+              animate={isVisibleSection3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5 }}
+              className="md:w-1/2 bg-white rounded-xl shadow-md overflow-hidden"
             >
-              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit1.title')}</h3>
-              <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.benefits.benefit1.description')}
-              </p>
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
+                alt="Accounting Services" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3">{t(`service_pages.${SERVICE_KEY}.approach.personalized.title`)}</h3>
+                <p className="text-gray-600 mb-4">
+                  {t(`service_pages.${SERVICE_KEY}.approach.personalized.description`)}
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    <span>{t(`service_pages.${SERVICE_KEY}.approach.personalized.item1`)}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    <span>{t(`service_pages.${SERVICE_KEY}.approach.personalized.item2`)}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    <span>{t(`service_pages.${SERVICE_KEY}.approach.personalized.item3`)}</span>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection3 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="border border-gray-200 rounded-xl p-6"
+              initial={{ opacity: 0, x: 30 }}
+              animate={isVisibleSection3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5 }}
+              className="md:w-1/2 bg-white rounded-xl shadow-md overflow-hidden"
             >
-              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit2.title')}</h3>
-              <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.benefits.benefit2.description')}
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection3 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="border border-gray-200 rounded-xl p-6"
-            >
-              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit3.title')}</h3>
-              <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.benefits.benefit3.description')}
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection3 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="border border-gray-200 rounded-xl p-6"
-            >
-              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit4.title')}</h3>
-              <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.benefits.benefit4.description')}
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection3 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="border border-gray-200 rounded-xl p-6"
-            >
-              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit5.title')}</h3>
-              <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.benefits.benefit5.description')}
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisibleSection3 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="border border-gray-200 rounded-xl p-6"
-            >
-              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit6.title')}</h3>
-              <p className="text-gray-600">
-                {t('service_pages.corporate_accounting.benefits.benefit6.description')}
-              </p>
+              <img
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="Professional Accounting Team" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3">{t(`service_pages.${SERVICE_KEY}.approach.professional.title`)}</h3>
+                <p className="text-gray-600 mb-4">
+                  {t(`service_pages.${SERVICE_KEY}.approach.professional.description`)}
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    <span>{t(`service_pages.${SERVICE_KEY}.approach.professional.item1`)}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    <span>{t(`service_pages.${SERVICE_KEY}.approach.professional.item2`)}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">✓</span>
+                    <span>{t(`service_pages.${SERVICE_KEY}.approach.professional.item3`)}</span>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -478,14 +356,14 @@ export default function ContabilidadCorporativa() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t("service_pages.corporate_accounting.cta.title")}
+              {t(`service_pages.${SERVICE_KEY}.cta_title`)}
             </h2>
             <p className="text-xl mb-8">
-              {t("service_pages.corporate_accounting.cta.description")}
+              {t(`service_pages.${SERVICE_KEY}.cta_description`)}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
               <a href="#contacto">
-                {t("service_pages.corporate_accounting.cta.button")}
+                {t(`service_pages.${SERVICE_KEY}.cta_button`)}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
