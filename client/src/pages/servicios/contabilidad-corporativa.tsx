@@ -127,23 +127,22 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FileDigit className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Financial Accounting</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.financial_accounting.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We keep your accounting books in order, prepare accurate financial statements
-                  and ensure compliance with all regulations.
+                  {t('service_pages.corporate_accounting.services.financial_accounting.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Daily transaction recording</span>
+                    <span>{t('service_pages.corporate_accounting.services.financial_accounting.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Preparation of balance sheets and income statements</span>
+                    <span>{t('service_pages.corporate_accounting.services.financial_accounting.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Bank reconciliations</span>
+                    <span>{t('service_pages.corporate_accounting.services.financial_accounting.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -159,23 +158,22 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Financial Analysis</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.financial_analysis.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We interpret your financial data to provide valuable information
-                  that supports strategic decision-making.
+                  {t('service_pages.corporate_accounting.services.financial_analysis.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Profitability and liquidity analysis</span>
+                    <span>{t('service_pages.corporate_accounting.services.financial_analysis.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Financial projections</span>
+                    <span>{t('service_pages.corporate_accounting.services.financial_analysis.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Customized reports for executives</span>
+                    <span>{t('service_pages.corporate_accounting.services.financial_analysis.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -191,23 +189,22 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <DollarSign className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Tax Planning</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.tax_planning.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We develop legal tax strategies that minimize your tax burden
-                  and ensure regulatory compliance.
+                  {t('service_pages.corporate_accounting.services.tax_planning.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Tax structure optimization</span>
+                    <span>{t('service_pages.corporate_accounting.services.tax_planning.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Preparation and filing of tax returns</span>
+                    <span>{t('service_pages.corporate_accounting.services.tax_planning.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Preventive audits</span>
+                    <span>{t('service_pages.corporate_accounting.services.tax_planning.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -223,23 +220,22 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <LineChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Cost Control</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.cost_control.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We implement efficient systems for cost tracking and control
-                  that help improve your company's profitability.
+                  {t('service_pages.corporate_accounting.services.cost_control.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Department cost analysis</span>
+                    <span>{t('service_pages.corporate_accounting.services.cost_control.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Budgeting and monitoring</span>
+                    <span>{t('service_pages.corporate_accounting.services.cost_control.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Identification of improvement areas</span>
+                    <span>{t('service_pages.corporate_accounting.services.cost_control.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -255,23 +251,22 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Landmark className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Regulatory Accounting</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.regulatory_accounting.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We ensure your company complies with all accounting requirements
-                  specific to your industry and jurisdiction.
+                  {t('service_pages.corporate_accounting.services.regulatory_accounting.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Adaptation to regulatory changes</span>
+                    <span>{t('service_pages.corporate_accounting.services.regulatory_accounting.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Specific reports for regulators</span>
+                    <span>{t('service_pages.corporate_accounting.services.regulatory_accounting.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Advice on accounting regulations</span>
+                    <span>{t('service_pages.corporate_accounting.services.regulatory_accounting.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -287,23 +282,22 @@ export default function ContabilidadCorporativa() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <ShieldCheck className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Risk Prevention</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.services.risk_prevention.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We identify and mitigate potential financial and accounting risks
-                  before they affect your company.
+                  {t('service_pages.corporate_accounting.services.risk_prevention.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Internal controls evaluation</span>
+                    <span>{t('service_pages.corporate_accounting.services.risk_prevention.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Early detection of irregularities</span>
+                    <span>{t('service_pages.corporate_accounting.services.risk_prevention.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Implementation of security systems</span>
+                    <span>{t('service_pages.corporate_accounting.services.risk_prevention.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -321,9 +315,9 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Work Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.work_process.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We follow a proven methodology that ensures the success of our accounting services. Each step is carefully designed to deliver optimal results.
+              {t('service_pages.corporate_accounting.work_process.description')}
             </p>
           </motion.div>
 
@@ -335,9 +329,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Diagnosis</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step1.title')}</h3>
               <p className="text-gray-600">
-                We evaluate your company's current financial and accounting situation to identify areas for improvement.
+                {t('service_pages.corporate_accounting.work_process.step1.description')}
               </p>
             </motion.div>
 
@@ -348,9 +342,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Planning</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step2.title')}</h3>
               <p className="text-gray-600">
-                We design a customized action plan that addresses the specific needs of your business.
+                {t('service_pages.corporate_accounting.work_process.step2.description')}
               </p>
             </motion.div>
 
@@ -361,9 +355,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Implementation</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step3.title')}</h3>
               <p className="text-gray-600">
-                We execute the agreed accounting solutions, optimizing processes and systems.
+                {t('service_pages.corporate_accounting.work_process.step3.description')}
               </p>
             </motion.div>
 
@@ -374,9 +368,9 @@ export default function ContabilidadCorporativa() {
               className="bg-white rounded-xl shadow-md p-6 text-center relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
-              <h3 className="text-xl font-bold mt-4 mb-3">Monitoring</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3">{t('service_pages.corporate_accounting.work_process.step4.title')}</h3>
               <p className="text-gray-600">
-                We continuously monitor results and make adjustments to ensure long-term success.
+                {t('service_pages.corporate_accounting.work_process.step4.description')}
               </p>
             </motion.div>
           </div>
@@ -392,10 +386,9 @@ export default function ContabilidadCorporativa() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefits of Our Service</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.corporate_accounting.benefits.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              By entrusting your corporate accounting to Solutumsa, you will gain competitive advantages
-              that will drive your company's growth.
+              {t('service_pages.corporate_accounting.benefits.description')}
             </p>
           </motion.div>
 
@@ -406,10 +399,9 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Time and Resource Savings</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit1.title')}</h3>
               <p className="text-gray-600">
-                By outsourcing your accounting, your team can focus on the core activities
-                of your business while our experts handle financial management.
+                {t('service_pages.corporate_accounting.benefits.benefit1.description')}
               </p>
             </motion.div>
 
@@ -419,10 +411,9 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Error Reduction</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit2.title')}</h3>
               <p className="text-gray-600">
-                Our meticulous procedures and multiple levels of review
-                minimize the risk of accounting errors that could prove costly.
+                {t('service_pages.corporate_accounting.benefits.benefit2.description')}
               </p>
             </motion.div>
 
@@ -432,10 +423,9 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Access to Specialized Expertise</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit3.title')}</h3>
               <p className="text-gray-600">
-                You'll have a team of professionals with specialized knowledge
-                in various sectors and areas of accounting.
+                {t('service_pages.corporate_accounting.benefits.benefit3.description')}
               </p>
             </motion.div>
 
@@ -445,10 +435,9 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Updated Financial Information</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit4.title')}</h3>
               <p className="text-gray-600">
-                You'll have access to accurate and up-to-date financial reports that
-                will allow you to make strategic decisions with confidence.
+                {t('service_pages.corporate_accounting.benefits.benefit4.description')}
               </p>
             </motion.div>
 
@@ -458,10 +447,9 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Regulatory Compliance</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit5.title')}</h3>
               <p className="text-gray-600">
-                We stay updated on changes in regulations to
-                ensure your company meets all legal obligations.
+                {t('service_pages.corporate_accounting.benefits.benefit5.description')}
               </p>
             </motion.div>
 
@@ -471,10 +459,9 @@ export default function ContabilidadCorporativa() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="border border-gray-200 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-3">Scalability</h3>
+              <h3 className="text-xl font-bold mb-3">{t('service_pages.corporate_accounting.benefits.benefit6.title')}</h3>
               <p className="text-gray-600">
-                Our services adapt to your company's growth,
-                providing the necessary solutions at each stage of your development.
+                {t('service_pages.corporate_accounting.benefits.benefit6.description')}
               </p>
             </motion.div>
           </div>

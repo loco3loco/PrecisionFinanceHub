@@ -113,9 +113,9 @@ export default function AsesoriaFiscal() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Tax Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('service_pages.tax_advisory.services.title')}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We offer comprehensive tax solutions that ensure regulatory compliance and optimize your company's tax burden.
+              {t('service_pages.tax_advisory.services.description')}
             </p>
           </motion.div>
 
@@ -130,23 +130,22 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Calculator className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Tax Planning</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service1.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We develop customized tax strategies to optimize your company's
-                  tax position in both the short and long term.
+                  {t('service_pages.tax_advisory.services.service1.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Current tax situation analysis</span>
+                    <span>{t('service_pages.tax_advisory.services.service1.features.0')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Identification of tax saving opportunities</span>
+                    <span>{t('service_pages.tax_advisory.services.service1.features.1')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Design of efficient tax structures</span>
+                    <span>{t('service_pages.tax_advisory.services.service1.features.2')}</span>
                   </li>
                 </ul>
               </div>
@@ -162,10 +161,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <ClipboardCheck className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Tax Compliance</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service2.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  We ensure your company meets all tax obligations 
-                  accurately and on time.
+                  {t('service_pages.tax_advisory.services.service2.description')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
