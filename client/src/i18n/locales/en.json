@@ -378,12 +378,12 @@
       "meta_description": "Solutumsa's business consulting services. Strategic advice to enhance the growth and profitability of your business.",
       "meta_keywords": "business consulting, strategic advice, process optimization, business management, business transformation",
       "subtitle": "Strategic advice to enhance the performance and growth of your business.",
-      "why_choose_us_items": {
-        "0": "Consultants with extensive experience in various industries",
-        "1": "Customized solutions adapted to your business reality",
-        "2": "Practical and results-oriented approach",
-        "3": "Continuous support throughout the entire process"
-      },
+      "why_choose_us_items": [
+        "Consultants with extensive experience in various industries",
+        "Customized solutions adapted to your business reality",
+        "Practical and results-oriented approach",
+        "Continuous support throughout the entire process"
+      ],
       "main_services_title": "Our Consulting Services",
       "main_services_description": "We offer comprehensive consulting services to help your company reach the next level of development and competitiveness.",
       "approach_title": "Our Approach",
@@ -391,7 +391,91 @@
       "why_choose_us_description": "We have the experience and resources necessary to transform business challenges into growth opportunities.",
       "cta_title": "Take your company to the next level",
       "cta_description": "Our team of consultants is ready to help you overcome obstacles and achieve your business objectives.",
-      "cta_button": "Request business consulting"
+      "cta_button": "Request business consulting",
+      "services": {
+        "strategic_planning": {
+          "title": "Strategic Planning",
+          "description": "We develop strategic plans aligned with your company's vision and objectives, defining the path to achieve your short, medium, and long-term goals.",
+          "features": [
+            "Business environment analysis",
+            "Strategic objectives definition",
+            "Action plan design"
+          ]
+        },
+        "growth_strategy": {
+          "title": "Growth Strategy",
+          "description": "We identify expansion opportunities and design sustainable growth strategies adapted to the characteristics of your business and market.",
+          "features": [
+            "Market opportunity analysis",
+            "Expansion strategies",
+            "Product/service diversification"
+          ]
+        },
+        "processes_optimization": {
+          "title": "Process Optimization",
+          "description": "We analyze and redesign your organization's processes to eliminate inefficiencies, reduce costs, and improve overall productivity.",
+          "features": [
+            "Process mapping and analysis",
+            "Bottleneck identification",
+            "Continuous improvement implementation"
+          ]
+        },
+        "organizational_development": {
+          "title": "Organizational Development",
+          "description": "We work on the structure and culture of your company to maximize the potential of your human capital and create a more efficient work environment.",
+          "features": [
+            "Organizational structure design",
+            "Change management",
+            "Talent development"
+          ]
+        },
+        "innovation_management": {
+          "title": "Innovation Management",
+          "description": "We implement systems and methods to foster continuous innovation in your company, keeping it competitive in a changing environment.",
+          "features": [
+            "Innovation culture",
+            "New product/service development",
+            "Disruptive business models"
+          ]
+        },
+        "digital_transformation": {
+          "title": "Digital Transformation",
+          "description": "We design and implement strategies to incorporate digital technologies that transform your business model and improve your competitiveness.",
+          "features": [
+            "Digital maturity assessment",
+            "New technology implementation",
+            "Training for the digital era"
+          ]
+        }
+      },
+      "methodology": {
+        "diagnostic": {
+          "title": "Diagnosis and Analysis",
+          "description": "We conduct a comprehensive analysis of your company to identify challenges, opportunities, and areas for improvement, establishing a solid foundation for the development of customized solutions."
+        },
+        "implementation": {
+          "title": "Implementation and Monitoring",
+          "description": "We work closely with your team to implement the designed solutions, providing continuous support and making necessary adjustments to ensure optimal results."
+        }
+      },
+      "stats": {
+        "experience": {
+          "title": "Years of experience",
+          "description": "In specialized business consulting"
+        },
+        "projects": {
+          "title": "Successful projects",
+          "description": "Companies positively transformed"
+        },
+        "satisfaction": {
+          "title": "Client satisfaction",
+          "description": "Would recommend our services"
+        },
+        "industries": {
+          "title": "Industries served",
+          "description": "Experience across diverse sectors"
+        }
+      }
     },
     "financial_audit": {
       "title": "Financial Audit",

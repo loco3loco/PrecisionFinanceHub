@@ -412,12 +412,12 @@
       "meta_description": "Servicios de consultoría empresarial de Solutumsa. Asesoramiento estratégico para potenciar el crecimiento y rentabilidad de su negocio.",
       "meta_keywords": "consultoría empresarial, asesoría estratégica, optimización de procesos, gestión empresarial, transformación de negocios",
       "subtitle": "Asesoramiento estratégico para potenciar el rendimiento y crecimiento de su negocio.",
-      "why_choose_us_items": {
-        "0": "Consultores con amplia experiencia en diversas industrias",
-        "1": "Soluciones personalizadas adaptadas a su realidad empresarial",
-        "2": "Enfoque práctico y orientado a resultados",
-        "3": "Acompañamiento continuo durante todo el proceso"
-      },
+      "why_choose_us_items": [
+        "Consultores con amplia experiencia en diversas industrias",
+        "Soluciones personalizadas adaptadas a su realidad empresarial",
+        "Enfoque práctico y orientado a resultados",
+        "Acompañamiento continuo durante todo el proceso"
+      ],
       "main_services_title": "Nuestros Servicios de Consultoría",
       "main_services_description": "Ofrecemos servicios de consultoría integral para ayudar a su empresa a alcanzar el siguiente nivel de desarrollo y competitividad.",
       "approach_title": "Nuestro Enfoque",
@@ -425,7 +425,91 @@
       "why_choose_us_description": "Contamos con la experiencia y los recursos necesarios para transformar los desafíos empresariales en oportunidades de crecimiento.",
       "cta_title": "Lleve su empresa al siguiente nivel",
       "cta_description": "Nuestro equipo de consultores está listo para ayudarle a superar obstáculos y alcanzar sus objetivos empresariales.",
-      "cta_button": "Solicitar consultoría empresarial"
+      "cta_button": "Solicitar consultoría empresarial",
+      "services": {
+        "strategic_planning": {
+          "title": "Planificación Estratégica",
+          "description": "Desarrollamos planes estratégicos alineados con la visión y objetivos de su empresa, definiendo el camino para alcanzar sus metas a corto, mediano y largo plazo.",
+          "features": [
+            "Análisis del entorno empresarial",
+            "Definición de objetivos estratégicos",
+            "Diseño de planes de acción"
+          ]
+        },
+        "growth_strategy": {
+          "title": "Estrategia de Crecimiento",
+          "description": "Identificamos oportunidades de expansión y diseñamos estrategias de crecimiento sostenible adaptadas a las características de su negocio y mercado.",
+          "features": [
+            "Análisis de oportunidades de mercado",
+            "Estrategias de expansión",
+            "Diversificación de productos/servicios"
+          ]
+        },
+        "processes_optimization": {
+          "title": "Optimización de Procesos",
+          "description": "Analizamos y rediseñamos los procesos de su organización para eliminar ineficiencias, reducir costos y mejorar la productividad general.",
+          "features": [
+            "Mapeo y análisis de procesos",
+            "Identificación de cuellos de botella",
+            "Implementación de mejoras continuas"
+          ]
+        },
+        "organizational_development": {
+          "title": "Desarrollo Organizacional",
+          "description": "Trabajamos en la estructura y cultura de su empresa para maximizar el potencial de su capital humano y crear un ambiente de trabajo más eficiente.",
+          "features": [
+            "Diseño de estructura organizacional",
+            "Gestión del cambio",
+            "Desarrollo de talento"
+          ]
+        },
+        "innovation_management": {
+          "title": "Gestión de la Innovación",
+          "description": "Implementamos sistemas y métodos para fomentar la innovación continua en su empresa, manteniéndola competitiva en un entorno cambiante.",
+          "features": [
+            "Cultura de innovación",
+            "Desarrollo de nuevos productos/servicios",
+            "Modelos de negocio disruptivos"
+          ]
+        },
+        "digital_transformation": {
+          "title": "Transformación Digital",
+          "description": "Diseñamos e implementamos estrategias para incorporar tecnologías digitales que transformen su modelo de negocio y mejoren su competitividad.",
+          "features": [
+            "Diagnóstico de madurez digital",
+            "Implementación de nuevas tecnologías",
+            "Capacitación para la era digital"
+          ]
+        }
+      },
+      "methodology": {
+        "diagnostic": {
+          "title": "Diagnóstico y Análisis",
+          "description": "Realizamos un análisis exhaustivo de su empresa para identificar desafíos, oportunidades y áreas de mejora, estableciendo una base sólida para el desarrollo de soluciones personalizadas."
+        },
+        "implementation": {
+          "title": "Implementación y Seguimiento",
+          "description": "Trabajamos de cerca con su equipo para implementar las soluciones diseñadas, proporcionando acompañamiento continuo y realizando ajustes necesarios para garantizar resultados óptimos."
+        }
+      },
+      "stats": {
+        "experience": {
+          "title": "Años de experiencia",
+          "description": "En consultoría empresarial especializada"
+        },
+        "projects": {
+          "title": "Proyectos exitosos",
+          "description": "Empresas transformadas positivamente"
+        },
+        "satisfaction": {
+          "title": "Satisfacción del cliente",
+          "description": "Recomendarían nuestros servicios"
+        },
+        "industries": {
+          "title": "Sectores atendidos",
+          "description": "Experiencia en diversas industrias"
+        }
+      }
     },
     "financial_audit": {
       "title": "Auditoría Financiera",
