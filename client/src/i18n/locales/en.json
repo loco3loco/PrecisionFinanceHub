@@ -906,6 +906,107 @@
         "Constant updates on regulatory changes",
         "Legal tax strategies that maximize benefits"
       ],
+      "services": {
+        "title": "Our Tax Advisory Services",
+        "description": "We offer a comprehensive set of services designed to optimize your company's tax management, ensuring compliance with all current regulations.",
+        "planning": {
+          "title": "Tax Planning",
+          "description": "We develop tailored tax strategies to optimize your company's tax position in the short and long term.",
+          "features": [
+            "Analysis of current tax situation",
+            "Identification of tax saving opportunities",
+            "Design of efficient tax structures"
+          ]
+        },
+        "compliance": {
+          "title": "Tax Compliance",
+          "description": "We ensure that your company meets all tax obligations in a timely manner.",
+          "features": [
+            "Preparation and filing of tax returns",
+            "Management of tax calendars",
+            "Response to tax authority requirements"
+          ]
+        },
+        "defense": {
+          "title": "Tax Defense",
+          "description": "We represent and defend your company's interests before tax authorities in case of audits or controversies.",
+          "features": [
+            "Response to tax audits",
+            "Administrative resources and tax litigation",
+            "Conclusive agreements with authorities"
+          ]
+        },
+        "international": {
+          "title": "International Taxation",
+          "description": "We advise on the optimal tax structure for companies with international operations.",
+          "features": [
+            "International tax planning",
+            "Transfer pricing",
+            "Application of treaties to avoid double taxation"
+          ]
+        },
+        "due_diligence": {
+          "title": "Tax Due Diligence",
+          "description": "We assess tax risks in company purchase, sale, or merger operations.",
+          "features": [
+            "Review of tax contingencies",
+            "Assessment of tax liabilities",
+            "Tax advice on corporate operations"
+          ]
+        },
+        "consulting": {
+          "title": "Tax Consulting",
+          "description": "We offer specialized advice to resolve specific tax questions and situations.",
+          "features": [
+            "Consultations on tax regulations",
+            "Analysis of complex tax situations",
+            "Substantiated tax opinions"
+          ]
+        }
+      },
+      "approach": {
+        "title": "Our Approach",
+        "description": "We apply a methodological approach that combines preventive and proactive strategies to maximize our clients' tax results.",
+        "preventive": {
+          "title": "Preventive Approach",
+          "description": "We anticipate potential tax risks by identifying improvement opportunities before problems arise.",
+          "item1": "Periodic tax reviews",
+          "item2": "Monitoring of regulatory changes",
+          "item3": "Due dates and obligations alerts"
+        },
+        "strategic": {
+          "title": "Strategic Approach",
+          "description": "We develop tailored plans to optimize your company's tax burden and maximize financial results.",
+          "item1": "Analysis of business structure",
+          "item2": "Medium and long-term tax planning",
+          "item3": "Optimization of corporate operations"
+        }
+      },
+      "why_choose_us": {
+        "title": "Why Choose Us?",
+        "description": "We have a team of tax experts committed to offering effective solutions to protect and optimize your company's tax position.",
+        "stat1": {
+          "title": "Years of experience",
+          "description": "Our tax advisors have decades of experience in the sector"
+        },
+        "stat2": {
+          "title": "Satisfaction",
+          "description": "Our clients trust our tax advisory services"
+        },
+        "stat3": {
+          "title": "Availability",
+          "description": "Continuous support to address tax emergencies"
+        },
+        "stat4": {
+          "title": "Success cases",
+          "description": "Companies have optimized their tax burden with our strategies"
+        }
+      },
+      "cta": {
+        "title": "Optimize Your Company's Tax Strategy",
+        "description": "Our experts will help you implement the most appropriate tax strategy for your business. Request a no-obligation consultation.",
+        "button": "Request Tax Consultation"
+      },
       "main_services_title": "Our Tax Services",
       "main_services_description": "We offer comprehensive tax solutions that ensure regulatory compliance and optimize your company's tax burden.",
       "approach_title": "Our Approach",
@@ -949,63 +1050,7 @@
       "why_choose_us_description": "We have the qualities and experience necessary to turn tax management into a competitive advantage for your company.",
       "cta_title": "Optimize your company's taxation",
       "cta_description": "Our experts will help you implement the most appropriate tax strategy for your company. Request a consultation with no obligation.",
-      "cta_button": "Request tax consultation",
-      "services": {
-        "planning": {
-          "title": "Tax Planning",
-          "description": "We develop tailored tax strategies to optimize your company's tax position in the short and long term.",
-          "features": [
-            "Analysis of current tax situation",
-            "Identification of tax saving opportunities",
-            "Design of efficient tax structures"
-          ]
-        },
-        "compliance": {
-          "title": "Tax Compliance",
-          "description": "We ensure that your company complies with all tax obligations in a timely and proper manner.",
-          "features": [
-            "Preparation and filing of declarations",
-            "Management of tax calendars",
-            "Response to tax authority requirements"
-          ]
-        },
-        "defense": {
-          "title": "Tax Defense",
-          "description": "We represent and defend your company's interests before tax authorities in the event of audits or disputes.",
-          "features": [
-            "Response to tax audits",
-            "Administrative appeals and tax litigation",
-            "Settlement agreements with authorities"
-          ]
-        },
-        "international": {
-          "title": "International Taxation",
-          "description": "We advise on the optimal tax structure for companies with international operations.",
-          "features": [
-            "International tax planning",
-            "Transfer pricing",
-            "Application of treaties to avoid double taxation"
-          ]
-        },
-        "due_diligence": {
-          "title": "Tax Due Diligence",
-          "description": "We evaluate tax risks in company purchase, sale, or merger operations.",
-          "features": [
-            "Review of tax contingencies",
-            "Evaluation of tax liabilities",
-            "Tax advice on corporate operations"
-          ]
-        },
-        "consulting": {
-          "title": "Tax Consulting",
-          "description": "We offer specialized advice to resolve specific tax questions and situations.",
-          "features": [
-            "Consultations on tax regulations",
-            "Analysis of complex tax situations",
-            "Well-founded tax opinions"
-          ]
-        }
-      }
+      "cta_button": "Request tax consultation"
     }
   }
 }

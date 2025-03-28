@@ -939,51 +939,9 @@
         "Actualización constante ante cambios normativos",
         "Estrategias fiscales legales que maximizan beneficios"
       ],
-      "main_services_title": "Nuestros Servicios Fiscales",
-      "main_services_description": "Ofrecemos soluciones fiscales integrales que aseguran el cumplimiento normativo y optimizan la carga tributaria de su empresa.",
-      "approach_title": "Nuestro Enfoque",
-      "approach_description": "Adoptamos un enfoque preventivo y estratégico para la gestión fiscal de su empresa, anticipándonos a los cambios y optimizando resultados.",
-      "approach": {
-        "preventive": {
-          "title": "Enfoque Preventivo",
-          "description": "Trabajamos de manera proactiva para anticiparnos a problemas fiscales futuros.",
-          "item1": "Revisiones periódicas de cumplimiento",
-          "item2": "Identificación anticipada de riesgos fiscales",
-          "item3": "Planificación preventiva de obligaciones futuras"
-        },
-        "strategic": {
-          "title": "Enfoque Estratégico",
-          "description": "Convertimos la gestión fiscal en una ventaja competitiva para su empresa.",
-          "item1": "Optimización de la estructura fiscal",
-          "item2": "Aprovechamiento de beneficios fiscales",
-          "item3": "Planificación fiscal integrada con objetivos empresariales"
-        }
-      },
-      "why_choose_us": {
-        "title": "¿Por Qué Elegirnos?",
-        "description": "Nuestra experiencia y trayectoria nos convierten en el socio ideal para la gestión fiscal de su empresa.",
-        "stat1": {
-          "title": "50+ Años de Experiencia",
-          "description": "Décadas de experiencia en asesoría fiscal"
-        },
-        "stat2": {
-          "title": "100% Cumplimiento",
-          "description": "Garantía de cumplimiento normativo"
-        },
-        "stat3": {
-          "title": "Servicio 24/7",
-          "description": "Disponibilidad permanente para su empresa"
-        },
-        "stat4": {
-          "title": "500+ Clientes",
-          "description": "Empresas satisfechas con nuestros servicios"
-        }
-      },
-      "why_choose_us_description": "Contamos con las cualidades y la experiencia necesarias para convertir la gestión fiscal en una ventaja competitiva para su empresa.",
-      "cta_title": "Optimice la fiscalidad de su empresa",
-      "cta_description": "Nuestros expertos le ayudarán a implementar la estrategia fiscal más adecuada para su empresa. Solicite una consulta sin compromiso.",
-      "cta_button": "Solicitar consulta fiscal",
       "services": {
+        "title": "Nuestros Servicios de Asesoría Fiscal",
+        "description": "Ofrecemos un conjunto integral de servicios diseñados para optimizar la gestión fiscal y tributaria de su empresa, cumpliendo con todas las normativas vigentes.",
         "planning": {
           "title": "Planificación Fiscal",
           "description": "Desarrollamos estrategias fiscales a medida para optimizar la posición tributaria de su empresa en el corto y largo plazo.",
@@ -1038,7 +996,52 @@
             "Opiniones fiscales fundamentadas"
           ]
         }
-      }
+      },
+      "approach": {
+        "title": "Nuestro Enfoque",
+        "description": "Aplicamos un enfoque metodológico que combina estrategias preventivas y proactivas para maximizar los resultados fiscales de nuestros clientes.",
+        "preventive": {
+          "title": "Enfoque Preventivo",
+          "description": "Nos anticipamos a posibles riesgos fiscales identificando oportunidades de mejora antes de que surjan problemas.",
+          "item1": "Revisiones fiscales periódicas",
+          "item2": "Monitoreo de cambios normativos",
+          "item3": "Alertas de vencimientos y obligaciones"
+        },
+        "strategic": {
+          "title": "Enfoque Estratégico",
+          "description": "Desarrollamos planes a medida para optimizar la carga fiscal de su empresa y maximizar los resultados financieros.",
+          "item1": "Análisis de la estructura empresarial",
+          "item2": "Planificación fiscal a mediano y largo plazo",
+          "item3": "Optimización de operaciones corporativas"
+        }
+      },
+      "why_choose_us": {
+        "title": "¿Por qué elegirnos?",
+        "description": "Contamos con un equipo de expertos fiscales comprometidos con ofrecer soluciones efectivas para proteger y optimizar la posición fiscal de su empresa.",
+        "stat1": {
+          "title": "Años de experiencia",
+          "description": "Nuestros asesores fiscales cuentan con décadas de experiencia en el sector"
+        },
+        "stat2": {
+          "title": "Satisfacción",
+          "description": "Nuestros clientes confían en nuestros servicios de asesoría fiscal"
+        },
+        "stat3": {
+          "title": "Disponibilidad",
+          "description": "Soporte continuo para atender emergencias fiscales"
+        },
+        "stat4": {
+          "title": "Casos de éxito",
+          "description": "Empresas han optimizado su carga fiscal con nuestras estrategias"
+        }
+      },
+      "cta": {
+        "title": "Optimice la Estrategia Fiscal de su Empresa",
+        "description": "Nuestros expertos le ayudarán a implementar la estrategia fiscal más adecuada para su negocio. Solicite una consulta sin compromiso.",
+        "button": "Solicitar Consulta Fiscal"
+      },
+      "main_services_title": "Nuestros Servicios Fiscales",
+      "main_services_description": "Ofrecemos soluciones fiscales integrales que aseguran el cumplimiento normativo y optimizan la carga tributaria de su empresa."
     }
   }
 }
