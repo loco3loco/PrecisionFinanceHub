@@ -388,6 +388,35 @@
       "main_services_description": "We offer comprehensive consulting services to help your company reach the next level of development and competitiveness.",
       "approach_title": "Our Approach",
       "approach_description": "We use a methodology focused on the specific needs of each client, combining strategic analysis with practical actions.",
+      "approach_steps": {
+        "diagnosis": {
+          "title": "Diagnosis",
+          "description": "We analyze your company in depth to identify strengths, weaknesses, and opportunities for improvement.",
+          "items": [
+            "Analysis of current situation",
+            "Interviews with key stakeholders",
+            "Sectorial benchmarking"
+          ]
+        },
+        "solution": {
+          "title": "Solution Design",
+          "description": "We develop customized strategies and action plans to address the identified challenges.",
+          "items": [
+            "Definition of objectives",
+            "Strategy development",
+            "Detailed planning"
+          ]
+        },
+        "implementation": {
+          "title": "Implementation and Monitoring",
+          "description": "We accompany your company in the execution of solutions and monitor the results to ensure success.",
+          "items": [
+            "Execution of actions",
+            "Results measurement",
+            "Adjustments and continuous improvement"
+          ]
+        }
+      },
       "why_choose_us_description": "We have the experience and resources necessary to transform business challenges into growth opportunities.",
       "cta_title": "Take your company to the next level",
       "cta_description": "Our team of consultants is ready to help you overcome obstacles and achieve your business objectives.",

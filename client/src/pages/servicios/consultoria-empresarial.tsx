@@ -289,24 +289,17 @@ export default function ConsultoriaEmpresarial() {
               className="bg-white rounded-xl shadow-md p-6 relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-              <h3 className="text-xl font-bold mt-4 mb-3 text-center">Diagnosis</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3 text-center">{t('service_pages.business_consulting.approach_steps.diagnosis.title')}</h3>
               <p className="text-gray-600">
-                We analyze your company in depth to identify strengths,
-                weaknesses, and opportunities for improvement.
+                {t('service_pages.business_consulting.approach_steps.diagnosis.description')}
               </p>
               <ul className="mt-4 space-y-2">
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Analysis of current situation</span>
-                </li>
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Interviews with key stakeholders</span>
-                </li>
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Sectorial benchmarking</span>
-                </li>
+                {(t('service_pages.business_consulting.approach_steps.diagnosis.items', { returnObjects: true }) as string[]).map((item, index) => (
+                  <li key={index} className="flex items-start text-sm">
+                    <span className="text-primary mr-2">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </motion.div>
 
@@ -317,24 +310,17 @@ export default function ConsultoriaEmpresarial() {
               className="bg-white rounded-xl shadow-md p-6 relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
-              <h3 className="text-xl font-bold mt-4 mb-3 text-center">Solution Design</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3 text-center">{t('service_pages.business_consulting.approach_steps.solution.title')}</h3>
               <p className="text-gray-600">
-                We develop customized strategies and action plans
-                to address the identified challenges.
+                {t('service_pages.business_consulting.approach_steps.solution.description')}
               </p>
               <ul className="mt-4 space-y-2">
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Definition of objectives</span>
-                </li>
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Strategy development</span>
-                </li>
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Detailed planning</span>
-                </li>
+                {(t('service_pages.business_consulting.approach_steps.solution.items', { returnObjects: true }) as string[]).map((item, index) => (
+                  <li key={index} className="flex items-start text-sm">
+                    <span className="text-primary mr-2">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </motion.div>
 
@@ -345,24 +331,17 @@ export default function ConsultoriaEmpresarial() {
               className="bg-white rounded-xl shadow-md p-6 relative"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
-              <h3 className="text-xl font-bold mt-4 mb-3 text-center">Implementation and Monitoring</h3>
+              <h3 className="text-xl font-bold mt-4 mb-3 text-center">{t('service_pages.business_consulting.approach_steps.implementation.title')}</h3>
               <p className="text-gray-600">
-                We accompany your company in the execution of solutions and
-                monitor the results to ensure success.
+                {t('service_pages.business_consulting.approach_steps.implementation.description')}
               </p>
               <ul className="mt-4 space-y-2">
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Execution of actions</span>
-                </li>
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Results measurement</span>
-                </li>
-                <li className="flex items-start text-sm">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Adjustments and continuous improvement</span>
-                </li>
+                {(t('service_pages.business_consulting.approach_steps.implementation.items', { returnObjects: true }) as string[]).map((item, index) => (
+                  <li key={index} className="flex items-start text-sm">
+                    <span className="text-primary mr-2">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </motion.div>
           </div>

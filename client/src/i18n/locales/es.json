@@ -422,6 +422,35 @@
       "main_services_description": "Ofrecemos servicios de consultoría integral para ayudar a su empresa a alcanzar el siguiente nivel de desarrollo y competitividad.",
       "approach_title": "Nuestro Enfoque",
       "approach_description": "Utilizamos una metodología centrada en las necesidades específicas de cada cliente, combinando análisis estratégico con acciones prácticas.",
+      "approach_steps": {
+        "diagnosis": {
+          "title": "Diagnóstico",
+          "description": "Analizamos su empresa en profundidad para identificar fortalezas, debilidades y oportunidades de mejora.",
+          "items": [
+            "Análisis de situación actual",
+            "Entrevistas con actores clave",
+            "Benchmarking sectorial"
+          ]
+        },
+        "solution": {
+          "title": "Diseño de Soluciones",
+          "description": "Desarrollamos estrategias personalizadas y planes de acción para abordar los desafíos identificados.",
+          "items": [
+            "Definición de objetivos",
+            "Desarrollo de estrategias",
+            "Planificación detallada"
+          ]
+        },
+        "implementation": {
+          "title": "Implementación y Seguimiento",
+          "description": "Acompañamos a su empresa en la ejecución de soluciones y monitoreamos los resultados para garantizar el éxito.",
+          "items": [
+            "Ejecución de acciones",
+            "Medición de resultados",
+            "Ajustes y mejora continua"
+          ]
+        }
+      },
       "why_choose_us_description": "Contamos con la experiencia y los recursos necesarios para transformar los desafíos empresariales en oportunidades de crecimiento.",
       "cta_title": "Lleve su empresa al siguiente nivel",
       "cta_description": "Nuestro equipo de consultores está listo para ayudarle a superar obstáculos y alcanzar sus objetivos empresariales.",
