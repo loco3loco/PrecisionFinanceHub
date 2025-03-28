@@ -943,6 +943,42 @@
       "main_services_description": "Ofrecemos soluciones fiscales integrales que aseguran el cumplimiento normativo y optimizan la carga tributaria de su empresa.",
       "approach_title": "Nuestro Enfoque",
       "approach_description": "Adoptamos un enfoque preventivo y estratégico para la gestión fiscal de su empresa, anticipándonos a los cambios y optimizando resultados.",
+      "approach": {
+        "preventive": {
+          "title": "Enfoque Preventivo",
+          "description": "Trabajamos de manera proactiva para anticiparnos a problemas fiscales futuros.",
+          "item1": "Revisiones periódicas de cumplimiento",
+          "item2": "Identificación anticipada de riesgos fiscales",
+          "item3": "Planificación preventiva de obligaciones futuras"
+        },
+        "strategic": {
+          "title": "Enfoque Estratégico",
+          "description": "Convertimos la gestión fiscal en una ventaja competitiva para su empresa.",
+          "item1": "Optimización de la estructura fiscal",
+          "item2": "Aprovechamiento de beneficios fiscales",
+          "item3": "Planificación fiscal integrada con objetivos empresariales"
+        }
+      },
+      "why_choose_us": {
+        "title": "¿Por Qué Elegirnos?",
+        "description": "Nuestra experiencia y trayectoria nos convierten en el socio ideal para la gestión fiscal de su empresa.",
+        "stat1": {
+          "title": "50+ Años de Experiencia",
+          "description": "Décadas de experiencia en asesoría fiscal"
+        },
+        "stat2": {
+          "title": "100% Cumplimiento",
+          "description": "Garantía de cumplimiento normativo"
+        },
+        "stat3": {
+          "title": "Servicio 24/7",
+          "description": "Disponibilidad permanente para su empresa"
+        },
+        "stat4": {
+          "title": "500+ Clientes",
+          "description": "Empresas satisfechas con nuestros servicios"
+        }
+      },
       "why_choose_us_description": "Contamos con las cualidades y la experiencia necesarias para convertir la gestión fiscal en una ventaja competitiva para su empresa.",
       "cta_title": "Optimice la fiscalidad de su empresa",
       "cta_description": "Nuestros expertos le ayudarán a implementar la estrategia fiscal más adecuada para su empresa. Solicite una consulta sin compromiso.",

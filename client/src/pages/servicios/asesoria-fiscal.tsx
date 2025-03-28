@@ -130,22 +130,22 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Calculator className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service1.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.planning.title', 'Planificación Fiscal')}</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.tax_advisory.services.service1.description')}
+                  {t('service_pages.tax_advisory.services.planning.description', 'Desarrollamos estrategias fiscales a medida para optimizar la posición tributaria de su empresa en el corto y largo plazo.')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.tax_advisory.services.service1.features.0')}</span>
+                    <span>{t('service_pages.tax_advisory.services.planning.features.0', 'Análisis de la situación fiscal actual')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.tax_advisory.services.service1.features.1')}</span>
+                    <span>{t('service_pages.tax_advisory.services.planning.features.1', 'Identificación de oportunidades de ahorro fiscal')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>{t('service_pages.tax_advisory.services.service1.features.2')}</span>
+                    <span>{t('service_pages.tax_advisory.services.planning.features.2', 'Diseño de estructuras fiscales eficientes')}</span>
                   </li>
                 </ul>
               </div>
@@ -161,9 +161,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <ClipboardCheck className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service2.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.compliance.title', 'Cumplimiento Tributario')}</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.tax_advisory.services.service2.description')}
+                  {t('service_pages.tax_advisory.services.compliance.description', 'Garantizamos que su empresa cumpla con todas las obligaciones fiscales en tiempo y forma.')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -192,9 +192,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Scale className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service3.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.defense.title', 'Defensa Fiscal')}</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.tax_advisory.services.service3.description')}
+                  {t('service_pages.tax_advisory.services.defense.description', 'Representamos y defendemos los intereses de su empresa ante autoridades fiscales en caso de auditorías o controversias.')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -223,9 +223,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service4.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.international.title', 'Fiscalidad Internacional')}</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.tax_advisory.services.service4.description')}
+                  {t('service_pages.tax_advisory.services.international.description', 'Asesoramos sobre la estructura fiscal óptima para empresas con operaciones internacionales.')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -254,9 +254,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FileText className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service5.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.due_diligence.title', 'Due Diligence Fiscal')}</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.tax_advisory.services.service5.description')}
+                  {t('service_pages.tax_advisory.services.due_diligence.description', 'Evaluamos los riesgos fiscales en operaciones de compra, venta o fusión de empresas.')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
@@ -285,9 +285,9 @@ export default function AsesoriaFiscal() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <HelpCircle className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.service6.title')}</h3>
+                <h3 className="text-xl font-bold mb-3">{t('service_pages.tax_advisory.services.consulting.title', 'Consultoría Fiscal')}</h3>
                 <p className="text-gray-600 mb-4">
-                  {t('service_pages.tax_advisory.services.service6.description')}
+                  {t('service_pages.tax_advisory.services.consulting.description', 'Ofrecemos asesoramiento especializado para resolver dudas y situaciones fiscales específicas.')}
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">

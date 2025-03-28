@@ -168,14 +168,7 @@ export default function ContabilidadCorporativa() {
                     {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.description`)}
                   </p>
                   <ul className="space-y-2 mb-4">
-                    {/* Esto es para verificar el tipo de las características en la consola */}
-                    {console.log("Features:", 
-                      t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }),
-                      "Type:", 
-                      typeof t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }),
-                      "Is array:", 
-                      Array.isArray(t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }))
-                    )}
+                    {/* Eliminamos la línea de console.log para corregir el error LSP */}
                     
                     {/* Se utiliza una función inmediatamente invocada para procesar las características de forma segura */}
                     {(() => {
@@ -184,10 +177,10 @@ export default function ContabilidadCorporativa() {
                       
                       // Si es un array, hacemos map; si no, mostramos un mensaje genérico
                       if (Array.isArray(featuresObj)) {
-                        return featuresObj.map((feature: string, featureIndex: number) => (
+                        return featuresObj.map((feature: any, featureIndex: number) => (
                           <li key={featureIndex} className="flex items-start text-sm">
                             <span className="text-primary mr-2">•</span>
-                            <span>{feature}</span>
+                            <span>{typeof feature === 'string' ? feature : 'Característica'}</span>
                           </li>
                         ));
                       } else {

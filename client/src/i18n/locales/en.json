@@ -910,6 +910,42 @@
       "main_services_description": "We offer comprehensive tax solutions that ensure regulatory compliance and optimize your company's tax burden.",
       "approach_title": "Our Approach",
       "approach_description": "We adopt a preventive and strategic approach to your company's tax management, anticipating changes and optimizing results.",
+      "approach": {
+        "preventive": {
+          "title": "Preventive Approach",
+          "description": "We work proactively to anticipate future tax issues.",
+          "item1": "Periodic compliance reviews",
+          "item2": "Early identification of tax risks",
+          "item3": "Preventive planning of future obligations"
+        },
+        "strategic": {
+          "title": "Strategic Approach",
+          "description": "We turn tax management into a competitive advantage for your company.",
+          "item1": "Optimization of tax structure",
+          "item2": "Utilization of tax benefits",
+          "item3": "Tax planning integrated with business objectives"
+        }
+      },
+      "why_choose_us": {
+        "title": "Why Choose Us?",
+        "description": "Our experience and track record make us the ideal partner for your company's tax management.",
+        "stat1": {
+          "title": "50+ Years of Experience",
+          "description": "Decades of experience in tax advisory"
+        },
+        "stat2": {
+          "title": "100% Compliance",
+          "description": "Guaranteed regulatory compliance"
+        },
+        "stat3": {
+          "title": "24/7 Service",
+          "description": "Permanent availability for your company"
+        },
+        "stat4": {
+          "title": "500+ Clients",
+          "description": "Companies satisfied with our services"
+        }
+      },
       "why_choose_us_description": "We have the qualities and experience necessary to turn tax management into a competitive advantage for your company.",
       "cta_title": "Optimize your company's taxation",
       "cta_description": "Our experts will help you implement the most appropriate tax strategy for your company. Request a consultation with no obligation.",

@@ -1,0 +1,98 @@
+service_pages.tax_advisory.services.title
+service_pages.tax_advisory.services.description
+
+service_pages.tax_advisory.services.service1.title
+service_pages.tax_advisory.services.service1.description
+
+•
+service_pages.tax_advisory.services.service1.features.0
+•
+service_pages.tax_advisory.services.service1.features.1
+•
+service_pages.tax_advisory.services.service1.features.2
+service_pages.tax_advisory.services.service2.title
+service_pages.tax_advisory.services.service2.description
+
+•
+Preparación y presentación de declaraciones
+•
+Gestión de calendarios fiscales
+•
+Atención a requerimientos de autoridades fiscales
+service_pages.tax_advisory.services.service3.title
+service_pages.tax_advisory.services.service3.description
+
+•
+Respuesta a auditorías fiscales
+•
+Recursos administrativos y litigios fiscales
+•
+Acuerdos conclusivos con autoridades
+service_pages.tax_advisory.services.service4.title
+service_pages.tax_advisory.services.service4.description
+
+•
+Planificación fiscal internacional
+•
+Precios de transferencia
+•
+Aplicación de convenios para evitar doble imposición
+service_pages.tax_advisory.services.service5.title
+service_pages.tax_advisory.services.service5.description
+
+•
+Revisión de contingencias fiscales
+•
+Evaluación de pasivos fiscales
+•
+Asesoría fiscal en operaciones corporativas
+service_pages.tax_advisory.services.service6.title
+service_pages.tax_advisory.services.service6.description
+
+•
+Consultas sobre normativa fiscal
+•
+Análisis de situaciones fiscales complejas
+•
+Opiniones fiscales fundamentadas
+service_pages.tax_advisory.approach.title
+service_pages.tax_advisory.approach.description
+
+Preventive Approach
+service_pages.tax_advisory.approach.preventive.title
+service_pages.tax_advisory.approach.preventive.description
+
+✓
+service_pages.tax_advisory.approach.preventive.item1
+✓
+service_pages.tax_advisory.approach.preventive.item2
+✓
+service_pages.tax_advisory.approach.preventive.item3
+Strategic Approach
+service_pages.tax_advisory.approach.strategic.title
+service_pages.tax_advisory.approach.strategic.description
+
+✓
+service_pages.tax_advisory.approach.strategic.item1
+✓
+service_pages.tax_advisory.approach.strategic.item2
+✓
+service_pages.tax_advisory.approach.strategic.item3
+service_pages.tax_advisory.why_choose_us.title
+service_pages.tax_advisory.why_choose_us.description
+
+50+
+service_pages.tax_advisory.why_choose_us.stat1.title
+service_pages.tax_advisory.why_choose_us.stat1.description
+
+100%
+service_pages.tax_advisory.why_choose_us.stat2.title
+service_pages.tax_advisory.why_choose_us.stat2.description
+
+24/7
+service_pages.tax_advisory.why_choose_us.stat3.title
+service_pages.tax_advisory.why_choose_us.stat3.description
+
+500+
+service_pages.tax_advisory.why_choose_us.stat4.title
+service_pages.tax_advisory.why_choose_us.stat4.description
