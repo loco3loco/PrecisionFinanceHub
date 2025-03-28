@@ -37,6 +37,30 @@
   },
   "about": {
     "title": "Sobre Nosotros",
+    "story": "Historia",
+    "badge_title": "Experiencia Certificada",
+    "badge_text": "+50 años sirviendo al sector empresarial",
+    "paragraph1": "En Solutumsa, nos enorgullecemos de nuestra trayectoria de más de 50 años brindando excelentes soluciones contables y fiscales. Desde nuestros inicios, nos hemos comprometido a ofrecer un servicio personalizado y de calidad, adaptándonos constantemente a los cambios en el entorno empresarial.",
+    "paragraph2": "Nuestro equipo está formado por profesionales altamente calificados con amplia experiencia en diferentes sectores y profundo conocimiento de las normativas fiscales y contables vigentes.",
+    "values": {
+      "professionalism": {
+        "title": "Profesionalismo",
+        "description": "Equipo altamente calificado"
+      },
+      "trust": {
+        "title": "Confianza",
+        "description": "Relaciones sólidas y duraderas"
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Soluciones a prueba de futuro"
+      },
+      "commitment": {
+        "title": "Compromiso",
+        "description": "Siempre a su servicio"
+      }
+    },
+    "contact_button": "Contáctenos Hoy",
     "subtitle": "Expertos en contabilidad y consultoría con más de 50 años de experiencia",
     "experience_years": "50 años de experiencia",
     "client_companies": "+100 empresas confían en nosotros",
@@ -228,6 +252,32 @@
     "title": "Página No Encontrada",
     "description": "La página que estás buscando no existe o ha sido movida.",
     "button": "Volver a la Página Principal"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Respondemos las preguntas más comunes sobre nuestros servicios y cómo podemos ayudar a su empresa.",
+    "items": {
+      "1": {
+        "question": "¿Qué servicios contables ofrecen para pequeñas empresas?",
+        "answer": "Ofrecemos una amplia gama de servicios contables adaptados a las necesidades de las pequeñas empresas, que incluyen teneduría de libros, preparación de estados financieros, conciliaciones bancarias, gestión de nómina, declaraciones de impuestos y asesoría fiscal. Nuestro enfoque es personalizado, brindando soluciones que se ajusten al tamaño y sector de su negocio."
+      },
+      "2": {
+        "question": "¿Cómo me ayuda Solutumsa a optimizar mi carga tributaria?",
+        "answer": "Nuestro equipo de expertos fiscales analiza en detalle la situación de su empresa para identificar oportunidades legítimas de optimización fiscal. Desarrollamos estrategias personalizadas que aprovechan los incentivos y deducciones disponibles, garantizando siempre el cumplimiento de la normativa vigente. Nuestro objetivo es minimizar su carga tributaria manteniendo a su empresa en pleno cumplimiento de las leyes fiscales."
+      },
+      "3": {
+        "question": "¿Con qué frecuencia recibiré informes financieros?",
+        "answer": "La frecuencia de los informes financieros se establece de acuerdo a las necesidades específicas de cada cliente. Por defecto, proporcionamos informes mensuales que incluyen estados financieros básicos, análisis de flujo de efectivo y comparativas con períodos anteriores. También ofrecemos informes trimestrales más detallados y un análisis anual completo. Podemos personalizar tanto la frecuencia como el contenido de los informes según los requerimientos de su empresa."
+      },
+      "4": {
+        "question": "¿Cómo garantizan la confidencialidad de mi información?",
+        "answer": "La confidencialidad es una prioridad absoluta en Solutumsa. Implementamos estrictos protocolos de seguridad y utilizamos sistemas con encriptación avanzada para proteger toda la información de nuestros clientes. Todo nuestro personal firma acuerdos de confidencialidad, y limitamos el acceso a la información sensible únicamente al personal que trabaja directamente con su cuenta. Además, cumplimos con todas las regulaciones aplicables de protección de datos."
+      },
+      "5": {
+        "question": "¿Qué hace diferente a Solutumsa de otras firmas contables?",
+        "answer": "Lo que distingue a Solutumsa es nuestro enfoque integral y personalizado. Con más de 50 años de experiencia, combinamos un conocimiento profundo con un servicio cercano y accesible. No nos limitamos solo a cumplir con las obligaciones contables y fiscales; nos convertimos en verdaderos socios estratégicos para su negocio, identificando oportunidades de mejora y apoyándole en la toma de decisiones. Nuestro equipo multidisciplinario ofrece soluciones completas adaptadas a las necesidades específicas de cada cliente."
+      }
+    }
   },
   "service_pages": {
     "common": {
