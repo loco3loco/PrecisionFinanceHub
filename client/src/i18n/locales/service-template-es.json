@@ -1,0 +1,120 @@
+{
+  "service_pages": {
+    "service_key": {
+      "title": "Título del Servicio",
+      "meta_description": "Descripción meta del servicio para SEO y redes sociales.",
+      "meta_keywords": "palabras clave, servicio, ejemplo, SEO",
+      "subtitle": "Subtítulo descriptivo del servicio que explica brevemente el valor que ofrece.",
+      "why_choose_us_items": {
+        "0": "Primer punto sobre por qué elegirnos",
+        "1": "Segundo punto sobre nuestra experiencia",
+        "2": "Tercer punto sobre nuestra metodología",
+        "3": "Cuarto punto sobre nuestros resultados"
+      },
+      "main_services_title": "Nuestros Servicios Principales",
+      "main_services_description": "Descripción general de los servicios que ofrecemos en esta categoría.",
+      "approach_title": "Nuestro Enfoque",
+      "approach_description": "Descripción de la metodología y enfoque que utilizamos para este servicio.",
+      "why_choose_us_description": "Razones por las que somos la mejor opción para este servicio específico.",
+      "cta_title": "Título del llamado a la acción",
+      "cta_description": "Descripción que motiva al usuario a contactarnos.",
+      "cta_button": "Solicitar este servicio",
+      "why_choose_us": {
+        "title": "¿Por qué elegirnos?",
+        "stat1": {
+          "title": "Años de Experiencia",
+          "description": "Más de 50 años brindando servicios de calidad"
+        },
+        "stat2": {
+          "title": "Satisfacción",
+          "description": "100% de clientes satisfechos con nuestros servicios"
+        },
+        "stat3": {
+          "title": "Disponibilidad",
+          "description": "Atención continua para resolver sus dudas"
+        },
+        "stat4": {
+          "title": "Clientes",
+          "description": "Más de 500 empresas confían en nosotros"
+        }
+      },
+      "approach": {
+        "preventive": {
+          "title": "Enfoque Preventivo",
+          "description": "Descripción del enfoque preventivo que utilizamos.",
+          "item1": "Primer punto del enfoque preventivo",
+          "item2": "Segundo punto del enfoque preventivo",
+          "item3": "Tercer punto del enfoque preventivo"
+        },
+        "strategic": {
+          "title": "Enfoque Estratégico",
+          "description": "Descripción del enfoque estratégico que aplicamos.",
+          "item1": "Primer punto del enfoque estratégico",
+          "item2": "Segundo punto del enfoque estratégico",
+          "item3": "Tercer punto del enfoque estratégico"
+        }
+      },
+      "cta": {
+        "title": "Impulse su negocio con nuestros servicios",
+        "description": "Estamos listos para ayudarle a alcanzar sus objetivos financieros y empresariales.",
+        "button": "Contáctenos hoy mismo"
+      },
+      "services": {
+        "service1": {
+          "title": "Servicio 1",
+          "description": "Descripción detallada del primer servicio que ofrecemos.",
+          "features": [
+            "Primera característica del servicio 1",
+            "Segunda característica del servicio 1",
+            "Tercera característica del servicio 1"
+          ]
+        },
+        "service2": {
+          "title": "Servicio 2",
+          "description": "Descripción detallada del segundo servicio que ofrecemos.",
+          "features": [
+            "Primera característica del servicio 2",
+            "Segunda característica del servicio 2",
+            "Tercera característica del servicio 2"
+          ]
+        },
+        "service3": {
+          "title": "Servicio 3",
+          "description": "Descripción detallada del tercer servicio que ofrecemos.",
+          "features": [
+            "Primera característica del servicio 3",
+            "Segunda característica del servicio 3",
+            "Tercera característica del servicio 3"
+          ]
+        },
+        "service4": {
+          "title": "Servicio 4",
+          "description": "Descripción detallada del cuarto servicio que ofrecemos.",
+          "features": [
+            "Primera característica del servicio 4",
+            "Segunda característica del servicio 4",
+            "Tercera característica del servicio 4"
+          ]
+        },
+        "service5": {
+          "title": "Servicio 5",
+          "description": "Descripción detallada del quinto servicio que ofrecemos.",
+          "features": [
+            "Primera característica del servicio 5",
+            "Segunda característica del servicio 5",
+            "Tercera característica del servicio 5"
+          ]
+        },
+        "service6": {
+          "title": "Servicio 6",
+          "description": "Descripción detallada del sexto servicio que ofrecemos.",
+          "features": [
+            "Primera característica del servicio 6",
+            "Segunda característica del servicio 6",
+            "Tercera característica del servicio 6"
+          ]
+        }
+      }
+    }
+  }
+}

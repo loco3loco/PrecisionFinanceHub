@@ -1,0 +1,120 @@
+{
+  "service_pages": {
+    "service_key": {
+      "title": "Service Title",
+      "meta_description": "Service meta description for SEO and social media.",
+      "meta_keywords": "keywords, service, example, SEO",
+      "subtitle": "Descriptive subtitle of the service that briefly explains the value it offers.",
+      "why_choose_us_items": {
+        "0": "First point about why choose us",
+        "1": "Second point about our experience",
+        "2": "Third point about our methodology",
+        "3": "Fourth point about our results"
+      },
+      "main_services_title": "Our Main Services",
+      "main_services_description": "General description of the services we offer in this category.",
+      "approach_title": "Our Approach",
+      "approach_description": "Description of the methodology and approach we use for this service.",
+      "why_choose_us_description": "Reasons why we are the best option for this specific service.",
+      "cta_title": "Call to action title",
+      "cta_description": "Description that motivates the user to contact us.",
+      "cta_button": "Request this service",
+      "why_choose_us": {
+        "title": "Why Choose Us?",
+        "stat1": {
+          "title": "Years of Experience",
+          "description": "Over 50 years providing quality services"
+        },
+        "stat2": {
+          "title": "Satisfaction",
+          "description": "100% of clients satisfied with our services"
+        },
+        "stat3": {
+          "title": "Availability",
+          "description": "Continuous support to resolve your queries"
+        },
+        "stat4": {
+          "title": "Clients",
+          "description": "More than 500 companies trust us"
+        }
+      },
+      "approach": {
+        "preventive": {
+          "title": "Preventive Approach",
+          "description": "Description of the preventive approach we use.",
+          "item1": "First point of the preventive approach",
+          "item2": "Second point of the preventive approach",
+          "item3": "Third point of the preventive approach"
+        },
+        "strategic": {
+          "title": "Strategic Approach",
+          "description": "Description of the strategic approach we apply.",
+          "item1": "First point of the strategic approach",
+          "item2": "Second point of the strategic approach",
+          "item3": "Third point of the strategic approach"
+        }
+      },
+      "cta": {
+        "title": "Boost your business with our services",
+        "description": "We are ready to help you achieve your financial and business goals.",
+        "button": "Contact us today"
+      },
+      "services": {
+        "service1": {
+          "title": "Service 1",
+          "description": "Detailed description of the first service we offer.",
+          "features": [
+            "First feature of service 1",
+            "Second feature of service 1",
+            "Third feature of service 1"
+          ]
+        },
+        "service2": {
+          "title": "Service 2",
+          "description": "Detailed description of the second service we offer.",
+          "features": [
+            "First feature of service 2",
+            "Second feature of service 2",
+            "Third feature of service 2"
+          ]
+        },
+        "service3": {
+          "title": "Service 3",
+          "description": "Detailed description of the third service we offer.",
+          "features": [
+            "First feature of service 3",
+            "Second feature of service 3",
+            "Third feature of service 3"
+          ]
+        },
+        "service4": {
+          "title": "Service 4",
+          "description": "Detailed description of the fourth service we offer.",
+          "features": [
+            "First feature of service 4",
+            "Second feature of service 4",
+            "Third feature of service 4"
+          ]
+        },
+        "service5": {
+          "title": "Service 5",
+          "description": "Detailed description of the fifth service we offer.",
+          "features": [
+            "First feature of service 5",
+            "Second feature of service 5",
+            "Third feature of service 5"
+          ]
+        },
+        "service6": {
+          "title": "Service 6",
+          "description": "Detailed description of the sixth service we offer.",
+          "features": [
+            "First feature of service 6",
+            "Second feature of service 6",
+            "Third feature of service 6"
+          ]
+        }
+      }
+    }
+  }
+}
