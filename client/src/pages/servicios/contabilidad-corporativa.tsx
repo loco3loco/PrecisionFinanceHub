@@ -168,12 +168,38 @@ export default function ContabilidadCorporativa() {
                     {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.description`)}
                   </p>
                   <ul className="space-y-2 mb-4">
-                    {t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }).map((feature: string, featureIndex: number) => (
-                      <li key={featureIndex} className="flex items-start text-sm">
-                        <span className="text-primary mr-2">•</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
+                    {/* Esto es para verificar el tipo de las características en la consola */}
+                    {console.log("Features:", 
+                      t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }),
+                      "Type:", 
+                      typeof t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }),
+                      "Is array:", 
+                      Array.isArray(t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true }))
+                    )}
+                    
+                    {/* Se utiliza una función inmediatamente invocada para procesar las características de forma segura */}
+                    {(() => {
+                      // Obtener las características como un objeto
+                      const featuresObj = t(`service_pages.${SERVICE_KEY}.services.${service.serviceKey}.features`, { returnObjects: true });
+                      
+                      // Si es un array, hacemos map; si no, mostramos un mensaje genérico
+                      if (Array.isArray(featuresObj)) {
+                        return featuresObj.map((feature: string, featureIndex: number) => (
+                          <li key={featureIndex} className="flex items-start text-sm">
+                            <span className="text-primary mr-2">•</span>
+                            <span>{feature}</span>
+                          </li>
+                        ));
+                      } else {
+                        // Alternativa si no es un array
+                        return (
+                          <li className="flex items-start text-sm">
+                            <span className="text-primary mr-2">•</span>
+                            <span>Características no disponibles</span>
+                          </li>
+                        );
+                      }
+                    })()}
                   </ul>
                 </div>
               </motion.div>

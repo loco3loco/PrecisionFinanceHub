@@ -310,12 +310,46 @@
       "main_services_description": "Ofrecemos soluciones contables completas que cubren todas las necesidades de su empresa, permitiéndole enfocarse en el crecimiento del negocio.",
       "approach_title": "Nuestro Enfoque",
       "approach_description": "Combinamos experiencia profesional con tecnología avanzada para ofrecer servicios contables de máxima calidad y precisión.",
+      "approach": {
+        "personalized": {
+          "title": "Enfoque Personalizado",
+          "description": "Adaptamos nuestros servicios a las necesidades específicas de su empresa y sector.",
+          "item1": "Soluciones a medida para su industria",
+          "item2": "Atención dedicada y comunicación fluida",
+          "item3": "Adaptación a cambios en su negocio"
+        },
+        "professional": {
+          "title": "Equipo Profesional",
+          "description": "Contamos con profesionales altamente calificados con amplia experiencia en contabilidad corporativa.",
+          "item1": "Expertos certificados en contabilidad",
+          "item2": "Actualización constante en normativas",
+          "item3": "Formación continua en nuevas tecnologías"
+        }
+      },
       "why_choose_us_description": "Nuestro equipo de profesionales le brinda las soluciones contables que su empresa necesita para alcanzar sus objetivos financieros.",
       "cta_title": "Simplifique la gestión contable de su empresa",
       "cta_description": "Nuestros expertos contables están listos para ayudarle. Solicite una consulta personalizada sin compromiso.",
       "cta_button": "Solicitar consulta contable",
       "work_process_title": "Nuestro Proceso de Trabajo",
       "work_process_description": "Seguimos un enfoque estructurado y transparente para garantizar la máxima calidad en todos nuestros servicios contables.",
+      "work_process": {
+        "step1": {
+          "title": "Evaluación Inicial",
+          "description": "Analizamos sus necesidades específicas y la situación actual de su empresa."
+        },
+        "step2": {
+          "title": "Planificación",
+          "description": "Diseñamos una estrategia contable personalizada adaptada a sus objetivos."
+        },
+        "step3": {
+          "title": "Implementación",
+          "description": "Ejecutamos los procesos contables con máxima precisión y eficiencia."
+        },
+        "step4": {
+          "title": "Seguimiento",
+          "description": "Monitorizamos continuamente y ajustamos según las necesidades de su empresa."
+        }
+      },
       "services": {
         "financial_accounting": {
           "title": "Contabilidad Financiera",
