@@ -168,15 +168,15 @@ export default function AsesoriaFiscal() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Preparation and filing of tax returns</span>
+                    <span>{t('service_pages.tax_advisory.services.compliance.features.0', 'Preparación y presentación de declaraciones')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Management of tax calendars</span>
+                    <span>{t('service_pages.tax_advisory.services.compliance.features.1', 'Gestión de calendarios fiscales')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Response to tax authority inquiries</span>
+                    <span>{t('service_pages.tax_advisory.services.compliance.features.2', 'Atención a requerimientos de autoridades fiscales')}</span>
                   </li>
                 </ul>
               </div>
@@ -199,15 +199,15 @@ export default function AsesoriaFiscal() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Response to tax audits</span>
+                    <span>{t('service_pages.tax_advisory.services.defense.features.0', 'Respuesta a auditorías fiscales')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Administrative appeals and tax litigation</span>
+                    <span>{t('service_pages.tax_advisory.services.defense.features.1', 'Recursos administrativos y litigios fiscales')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Settlement agreements with authorities</span>
+                    <span>{t('service_pages.tax_advisory.services.defense.features.2', 'Acuerdos conclusivos con autoridades')}</span>
                   </li>
                 </ul>
               </div>
@@ -230,15 +230,15 @@ export default function AsesoriaFiscal() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>International tax planning</span>
+                    <span>{t('service_pages.tax_advisory.services.international.features.0', 'Planificación fiscal internacional')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Transfer pricing</span>
+                    <span>{t('service_pages.tax_advisory.services.international.features.1', 'Precios de transferencia')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Application of double taxation treaties</span>
+                    <span>{t('service_pages.tax_advisory.services.international.features.2', 'Aplicación de convenios para evitar doble imposición')}</span>
                   </li>
                 </ul>
               </div>
@@ -261,15 +261,15 @@ export default function AsesoriaFiscal() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Review of tax contingencies</span>
+                    <span>{t('service_pages.tax_advisory.services.due_diligence.features.0', 'Revisión de contingencias fiscales')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Evaluation of tax liabilities</span>
+                    <span>{t('service_pages.tax_advisory.services.due_diligence.features.1', 'Evaluación de pasivos fiscales')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Tax advice on corporate operations</span>
+                    <span>{t('service_pages.tax_advisory.services.due_diligence.features.2', 'Asesoría fiscal en operaciones corporativas')}</span>
                   </li>
                 </ul>
               </div>
@@ -292,15 +292,15 @@ export default function AsesoriaFiscal() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Guidance on tax regulations</span>
+                    <span>{t('service_pages.tax_advisory.services.consulting.features.0', 'Consultas sobre normativa fiscal')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Analysis of complex tax situations</span>
+                    <span>{t('service_pages.tax_advisory.services.consulting.features.1', 'Análisis de situaciones fiscales complejas')}</span>
                   </li>
                   <li className="flex items-start text-sm">
                     <span className="text-primary mr-2">•</span>
-                    <span>Well-founded tax opinions</span>
+                    <span>{t('service_pages.tax_advisory.services.consulting.features.2', 'Opiniones fiscales fundamentadas')}</span>
                   </li>
                 </ul>
               </div>
