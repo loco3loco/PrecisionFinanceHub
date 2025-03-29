@@ -205,12 +205,12 @@ export default function Contact() {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="ninguno">{t("contact.form.servicePlaceholder")}</SelectItem>
-                            <SelectItem value="corporate_accounting">{t("services.corporate_accounting")}</SelectItem>
-                            <SelectItem value="tax_advisory">{t("services.tax_advisory")}</SelectItem>
-                            <SelectItem value="business_consulting">{t("services.business_consulting")}</SelectItem>
-                            <SelectItem value="payroll_management">{t("services.payroll_management")}</SelectItem>
-                            <SelectItem value="financial_audit">{t("services.financial_audit")}</SelectItem>
-                            <SelectItem value="accounting_tech">{t("services.accounting_tech")}</SelectItem>
+                            <SelectItem value="corporate_accounting">{t("services.corporate_accounting", { defaultValue: "Contabilidad Corporativa" })}</SelectItem>
+                            <SelectItem value="tax_advisory">{t("services.tax_advisory", { defaultValue: "Asesoría Fiscal" })}</SelectItem>
+                            <SelectItem value="business_consulting">{t("services.business_consulting", { defaultValue: "Consultoría Empresarial" })}</SelectItem>
+                            <SelectItem value="payroll_management">{t("services.payroll_management", { defaultValue: "Gestión de Nómina" })}</SelectItem>
+                            <SelectItem value="financial_audit">{t("services.financial_audit", { defaultValue: "Auditoría Financiera" })}</SelectItem>
+                            <SelectItem value="accounting_tech">{t("services.accounting_tech", { defaultValue: "Tecnología Contable" })}</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />

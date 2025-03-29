@@ -106,13 +106,25 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">{t("nav.services")}</h3>
             <ul className="space-y-3">
-              {footerServices.map((service, index) => (
-                <li key={index}>
-                  <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
-                    {t(`services.${service.key}`)}
-                  </Link>
-                </li>
-              ))}
+              {footerServices.map((service, index) => {
+                // Definimos textos por defecto según el servicio en caso de que falle la traducción
+                const defaultText = {
+                  corporate_accounting: "Contabilidad Corporativa",
+                  tax_advisory: "Asesoría Fiscal",
+                  business_consulting: "Consultoría Empresarial",
+                  payroll_management: "Gestión de Nómina",
+                  financial_audit: "Auditoría Financiera",
+                  accounting_tech: "Tecnología Contable"
+                }[service.key];
+                
+                return (
+                  <li key={index}>
+                    <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
+                      {t(`services.${service.key}`, { defaultValue: defaultText })}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -130,7 +142,7 @@ export default function Footer() {
                 {t("footer.privacy")}
               </Link>
               <Link to="#" className="text-white/70 hover:text-white text-sm transition-colors">
-                {t("footer.cookies", "Política de Cookies")}
+                {t("footer.cookies", { defaultValue: "Política de Cookies" })}
               </Link>
             </div>
           </div>
