@@ -106,19 +106,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">{t("nav.services")}</h3>
             <ul className="space-y-3">
-              {footerServices.map((service, index) => {
-                // Obtenemos la traducción para verificar que está funcionando
-                const translatedText = t(`services.${service.key}`);
-                console.log(`Servicio ${index}: clave=${service.key}, traducción=${translatedText}`);
-                
-                return (
-                  <li key={index}>
-                    <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
-                      {translatedText}
-                    </Link>
-                  </li>
-                );
-              })}
+              {footerServices.map((service, index) => (
+                <li key={index}>
+                  <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
+                    {t(`services.${service.key}`)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

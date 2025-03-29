@@ -205,12 +205,12 @@ export default function Contact() {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="ninguno">{t("contact.form.servicePlaceholder")}</SelectItem>
-                            <SelectItem value="contable">{t("services.accounting.title")}</SelectItem>
-                            <SelectItem value="fiscal">{t("services.tax.title")}</SelectItem>
-                            <SelectItem value="consultoria">{t("services.consulting.title")}</SelectItem>
-                            <SelectItem value="nomina">{t("services.payroll.title")}</SelectItem>
-                            <SelectItem value="auditoria">{t("services.audit.title")}</SelectItem>
-                            <SelectItem value="financiera">{t("services.financial.title")}</SelectItem>
+                            <SelectItem value="corporate_accounting">{t("services.corporate_accounting")}</SelectItem>
+                            <SelectItem value="tax_advisory">{t("services.tax_advisory")}</SelectItem>
+                            <SelectItem value="business_consulting">{t("services.business_consulting")}</SelectItem>
+                            <SelectItem value="payroll_management">{t("services.payroll_management")}</SelectItem>
+                            <SelectItem value="financial_audit">{t("services.financial_audit")}</SelectItem>
+                            <SelectItem value="accounting_tech">{t("services.accounting_tech")}</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />
