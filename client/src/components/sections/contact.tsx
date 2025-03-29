@@ -45,7 +45,7 @@ const getFormSchema = (t: any) => z.object({
 type ContactFormValues = z.infer<ReturnType<typeof getFormSchema>>;
 
 export default function Contact() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
   const { ref: infoRef, isVisible: infoVisible } = useScrollAnimation();
   const { ref: formRef, isVisible: formVisible } = useScrollAnimation();
@@ -205,12 +205,12 @@ export default function Contact() {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="ninguno">{t("contact.form.servicePlaceholder")}</SelectItem>
-                            <SelectItem value="corporate_accounting">{t("services.corporate_accounting", { defaultValue: "Contabilidad Corporativa" })}</SelectItem>
-                            <SelectItem value="tax_advisory">{t("services.tax_advisory", { defaultValue: "Asesoría Fiscal" })}</SelectItem>
-                            <SelectItem value="business_consulting">{t("services.business_consulting", { defaultValue: "Consultoría Empresarial" })}</SelectItem>
-                            <SelectItem value="payroll_management">{t("services.payroll_management", { defaultValue: "Gestión de Nómina" })}</SelectItem>
-                            <SelectItem value="financial_audit">{t("services.financial_audit", { defaultValue: "Auditoría Financiera" })}</SelectItem>
-                            <SelectItem value="accounting_tech">{t("services.accounting_tech", { defaultValue: "Tecnología Contable" })}</SelectItem>
+                            <SelectItem value="corporate_accounting">{i18n.language === 'es' ? "Contabilidad Corporativa" : "Corporate Accounting"}</SelectItem>
+                            <SelectItem value="tax_advisory">{i18n.language === 'es' ? "Asesoría Fiscal" : "Tax Advisory"}</SelectItem>
+                            <SelectItem value="business_consulting">{i18n.language === 'es' ? "Consultoría Empresarial" : "Business Consulting"}</SelectItem>
+                            <SelectItem value="payroll_management">{i18n.language === 'es' ? "Gestión de Nómina" : "Payroll Management"}</SelectItem>
+                            <SelectItem value="financial_audit">{i18n.language === 'es' ? "Auditoría Financiera" : "Financial Audit"}</SelectItem>
+                            <SelectItem value="accounting_tech">{i18n.language === 'es' ? "Tecnología Contable" : "Accounting Technology"}</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />

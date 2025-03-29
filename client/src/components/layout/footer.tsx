@@ -18,14 +18,35 @@ export default function Footer() {
   const { toast } = useToast();
   const { t } = useTranslation();
   
-  // Servicios para el footer
+  // Servicios para el footer con traducción directa
+  const { i18n } = useTranslation();
+  const isSpanish = i18n.language === 'es';
+  
   const footerServices = [
-    { key: "corporate_accounting", href: "/servicios/contabilidad-corporativa" },
-    { key: "tax_advisory", href: "/servicios/asesoria-fiscal" },
-    { key: "business_consulting", href: "/servicios/consultoria-empresarial" },
-    { key: "payroll_management", href: "/servicios/gestion-nomina" },
-    { key: "financial_audit", href: "/servicios/auditoria-financiera" },
-    { key: "accounting_tech", href: "/servicios/tecnologia-contable" }
+    { 
+      name: isSpanish ? "Contabilidad Corporativa" : "Corporate Accounting", 
+      href: "/servicios/contabilidad-corporativa" 
+    },
+    { 
+      name: isSpanish ? "Asesoría Fiscal" : "Tax Advisory", 
+      href: "/servicios/asesoria-fiscal" 
+    },
+    { 
+      name: isSpanish ? "Consultoría Empresarial" : "Business Consulting", 
+      href: "/servicios/consultoria-empresarial" 
+    },
+    { 
+      name: isSpanish ? "Gestión de Nómina" : "Payroll Management", 
+      href: "/servicios/gestion-nomina" 
+    },
+    { 
+      name: isSpanish ? "Auditoría Financiera" : "Financial Audit", 
+      href: "/servicios/auditoria-financiera" 
+    },
+    { 
+      name: isSpanish ? "Tecnología Contable" : "Accounting Technology", 
+      href: "/servicios/tecnologia-contable" 
+    }
   ];
 
   const handleSubscribe = async (e: React.FormEvent) => {
@@ -106,25 +127,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">{t("nav.services")}</h3>
             <ul className="space-y-3">
-              {footerServices.map((service, index) => {
-                // Definimos textos por defecto según el servicio en caso de que falle la traducción
-                const defaultText = {
-                  corporate_accounting: "Contabilidad Corporativa",
-                  tax_advisory: "Asesoría Fiscal",
-                  business_consulting: "Consultoría Empresarial",
-                  payroll_management: "Gestión de Nómina",
-                  financial_audit: "Auditoría Financiera",
-                  accounting_tech: "Tecnología Contable"
-                }[service.key];
-                
-                return (
-                  <li key={index}>
-                    <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
-                      {t(`services.${service.key}`, { defaultValue: defaultText })}
-                    </Link>
-                  </li>
-                );
-              })}
+              {footerServices.map((service, index) => (
+                <li key={index}>
+                  <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
