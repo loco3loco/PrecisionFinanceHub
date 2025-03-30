@@ -14,8 +14,8 @@ export default function Map() {
       title: "Solutum Estudio Contable - Oficina Montevideo"
     },
     atlantida: {
-      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.7069456444283!2d-55.758974!3d-34.7742232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a02ad7e67f90ff%3A0xf48c8af7b7937d2e!2sCalle%2026%20%26%20Calle%203%2C%2015200%20Atlantida%2C%20Departamento%20de%20Canelones!5e0!3m2!1ses!2suy!4v1687458922376!5m2!1ses!2suy",
-      title: "Oficina Atlántida"
+      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.379846770152!2d-55.76862591166866!3d-34.7712116964624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959ff5bf0f86611f%3A0x6eccc23c77c9451!2sSolutum%20Estudio%20Contable!5e0!3m2!1ses!2suy!4v1743286029061!5m2!1ses!2suy",
+      title: "Solutum Estudio Contable - Oficina Atlantida"
     }
   };
 
