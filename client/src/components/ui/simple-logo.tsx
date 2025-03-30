@@ -14,19 +14,26 @@ export default function SimpleLogo({
   height = 70 
 }: SimpleLogoProps) {
   // Color para el logo basado en la variante
-  const color = variant === "white" ? "#FFFFFF" : "#004C97";
+  const primaryColor = variant === "white" ? "#FFFFFF" : "#004C97";
   const secondaryColor = variant === "white" ? "#EEEEEE" : "#666666";
   
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 300 100"
+      viewBox="0 0 300 80"
       width={width}
       height={height}
       className={className}
     >
-      <text x="10" y="50" fontFamily="Arial" fontSize="30" fontWeight="bold" fill={color}>SOLUTUM S.A.</text>
-      <text x="10" y="80" fontFamily="Arial" fontSize="20" fill={secondaryColor}>Soluciones Contables</text>
+      {/* Círculo estilo logo */}
+      <g transform="translate(10, 40) scale(0.25)">
+        <circle cx="60" cy="0" r="50" fill={primaryColor} />
+        <circle cx="60" cy="0" r="30" fill="white" />
+      </g>
+      
+      {/* Texto del logo */}
+      <text x="35" y="43" fontFamily="Arial" fontSize="30" fontWeight="bold" fill={primaryColor}>SOLUTUM S.A.</text>
+      <text x="35" y="65" fontFamily="Arial" fontSize="16" fill={secondaryColor}>Soluciones Contables</text>
     </svg>
   );
 }
