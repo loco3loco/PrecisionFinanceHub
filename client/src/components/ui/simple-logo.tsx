@@ -13,20 +13,19 @@ export default function SimpleLogo({
   width = 180, 
   height = 70 
 }: SimpleLogoProps) {
-  // Color para el logo basado en la variante
-  const color = variant === "white" ? "#FFFFFF" : "#004C97";
-  const secondaryColor = variant === "white" ? "#EEEEEE" : "#666666";
+  // Usar la imagen apropiada según la variante
+  const logoSrc = variant === "white" 
+    ? "/assets/new-logo-solutumsa-white.png" 
+    : "/assets/new-logo-solutumsa.png";
   
   return (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 300 100"
+    <img
+      src={logoSrc}
+      alt="Solutum S.A."
       width={width}
       height={height}
       className={className}
-    >
-      <text x="10" y="50" fontFamily="Arial" fontSize="30" fontWeight="bold" fill={color}>SOLUTUM S.A.</text>
-      <text x="10" y="80" fontFamily="Arial" fontSize="20" fill={secondaryColor}>Soluciones Contables</text>
-    </svg>
+      style={{ objectFit: "contain" }}
+    />
   );
 }
