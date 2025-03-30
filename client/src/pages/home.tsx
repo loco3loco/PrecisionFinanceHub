@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/sections/why-choose-us";
 import Services from "@/components/sections/services";
 import AboutUs from "@/components/sections/about-us";
 import { useTranslation } from "react-i18next";
+import useAnchorScroll from "@/hooks/use-anchor-scroll";
 
 import FAQ from "@/components/sections/faq";
 import CTA from "@/components/sections/cta";
@@ -15,6 +16,10 @@ import BackToTop from "@/components/ui/back-to-top";
 
 export default function Home() {
   const { t } = useTranslation();
+  
+  // Activar el hook de desplazamiento a anclajes
+  useAnchorScroll();
+  
   return (
     <>
       <Helmet>
@@ -26,14 +31,26 @@ export default function Home() {
       </Helmet>
       <Navbar />
       <main>
-        <HeroSection />
-        <WhyChooseUs />
-        <Services />
-        <AboutUs />
-        <FAQ />
+        <section id="inicio">
+          <HeroSection />
+        </section>
+        <section id="por-que-elegirnos">
+          <WhyChooseUs />
+        </section>
+        <section id="servicios">
+          <Services />
+        </section>
+        <section id="nosotros">
+          <AboutUs />
+        </section>
+        <section id="faq">
+          <FAQ />
+        </section>
         <CTA />
-        <Contact />
-        <Map />
+        <section id="contacto">
+          <Contact />
+          <Map />
+        </section>
       </main>
       <Footer />
       <BackToTop />

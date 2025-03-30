@@ -88,7 +88,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <Link href="/">
             <div className="hover:opacity-90 transition-opacity">
-              <Logo width={180} height={70} />
+              <Logo width={90} height={35} />
             </div>
           </Link>
 
@@ -137,15 +137,24 @@ export default function Navbar() {
               return (
                 <a
                   key={item.name}
-                  href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+                  href={item.href.startsWith('#') ? item.href : item.href}
                   onClick={(e) => {
                     if (item.href.startsWith('#')) {
                       e.preventDefault();
                       const isHome = window.location.pathname === '/';
+                      
                       if (!isHome) {
+                        // Redireccionar a la página de inicio con el hash
                         window.location.href = `/${item.href}`;
                       } else {
-                        document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                        // En la página de inicio, desplazar suavemente
+                        const targetId = item.href.substring(1); // Eliminar el # del inicio
+                        const element = document.getElementById(targetId);
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                          // Actualizar la URL con el hash sin recargar la página
+                          window.history.pushState(null, '', item.href);
+                        }
                       }
                     }
                   }}
@@ -241,9 +250,33 @@ export default function Navbar() {
                 return (
                   <a
                     key={item.name}
-                    href={item.href}
+                    href={item.href.startsWith('#') ? item.href : item.href}
                     className="font-heading font-medium py-3 hover:text-primary transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      if (item.href.startsWith('#')) {
+                        e.preventDefault();
+                        const isHome = window.location.pathname === '/';
+                        
+                        if (!isHome) {
+                          // Redireccionar a la página de inicio con el hash
+                          window.location.href = `/${item.href}`;
+                        } else {
+                          setIsMenuOpen(false);
+                          // En la página de inicio, desplazar suavemente
+                          const targetId = item.href.substring(1);
+                          setTimeout(() => {
+                            const element = document.getElementById(targetId);
+                            if (element) {
+                              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                              // Actualizar la URL con el hash sin recargar la página
+                              window.history.pushState(null, '', item.href);
+                            }
+                          }, 100);
+                        }
+                      } else {
+                        setIsMenuOpen(false);
+                      }
+                    }}
                   >
                     {item.name}
                   </a>

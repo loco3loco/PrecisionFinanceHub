@@ -91,7 +91,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               <Link to="/" className="mb-3 hover:opacity-90 transition-opacity">
-                <Logo variant="white" width={180} height={70} />
+                <Logo variant="white" width={90} height={35} />
               </Link>
             </div>
             <p className="text-white/80 mb-6">
@@ -103,24 +103,86 @@ export default function Footer() {
             <h3 className="text-lg font-heading font-semibold mb-6">{t("nav.quick_links", "Enlaces Rápidos")}</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/" className="text-white/80 hover:text-white transition-colors">
+                <a 
+                  href="/" 
+                  className="text-white/80 hover:text-white transition-colors"
+                  onClick={(e) => {
+                    const isHome = window.location.pathname === '/';
+                    if (isHome) {
+                      e.preventDefault();
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                      window.history.pushState(null, '', '/');
+                    }
+                  }}
+                >
                   {t("nav.home")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/#servicios" className="text-white/80 hover:text-white transition-colors">
+                <a 
+                  href="#servicios"
+                  className="text-white/80 hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const isHome = window.location.pathname === '/';
+                    
+                    if (!isHome) {
+                      window.location.href = '/#servicios';
+                    } else {
+                      const element = document.getElementById('servicios');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        window.history.pushState(null, '', '#servicios');
+                      }
+                    }
+                  }}
+                >
                   {t("nav.services")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/#nosotros" className="text-white/80 hover:text-white transition-colors">
+                <a 
+                  href="#nosotros"
+                  className="text-white/80 hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const isHome = window.location.pathname === '/';
+                    
+                    if (!isHome) {
+                      window.location.href = '/#nosotros';
+                    } else {
+                      const element = document.getElementById('nosotros');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        window.history.pushState(null, '', '#nosotros');
+                      }
+                    }
+                  }}
+                >
                   {t("nav.about")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/#contacto" className="text-white/80 hover:text-white transition-colors">
+                <a 
+                  href="#contacto"
+                  className="text-white/80 hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const isHome = window.location.pathname === '/';
+                    
+                    if (!isHome) {
+                      window.location.href = '/#contacto';
+                    } else {
+                      const element = document.getElementById('contacto');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        window.history.pushState(null, '', '#contacto');
+                      }
+                    }
+                  }}
+                >
                   {t("nav.contact")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -130,9 +192,30 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerServices.map((service, index) => (
                 <li key={index}>
-                  <Link to={service.href} className="text-white/80 hover:text-white transition-colors">
+                  <a 
+                    href={service.href} 
+                    className="text-white/80 hover:text-white transition-colors"
+                    onClick={(e) => {
+                      // Solo aplicar comportamiento personalizado si es un enlace de anclaje
+                      if (service.href.startsWith('#')) {
+                        e.preventDefault();
+                        const isHome = window.location.pathname === '/';
+                        
+                        if (!isHome) {
+                          window.location.href = `/${service.href}`;
+                        } else {
+                          const targetId = service.href.substring(1);
+                          const element = document.getElementById(targetId);
+                          if (element) {
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            window.history.pushState(null, '', service.href);
+                          }
+                        }
+                      }
+                    }}
+                  >
                     {service.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -145,15 +228,15 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Solutumsa. {t("footer.rights")}
             </p>
             <div className="flex flex-wrap justify-center space-x-4">
-              <Link to="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              <a href="/terminos" className="text-white/70 hover:text-white text-sm transition-colors">
                 {t("footer.terms")}
-              </Link>
-              <Link to="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              </a>
+              <a href="/privacidad" className="text-white/70 hover:text-white text-sm transition-colors">
                 {t("footer.privacy")}
-              </Link>
-              <Link to="#" className="text-white/70 hover:text-white text-sm transition-colors">
+              </a>
+              <a href="/cookies" className="text-white/70 hover:text-white text-sm transition-colors">
                 {t("footer.cookies", { defaultValue: "Política de Cookies" })}
-              </Link>
+              </a>
             </div>
           </div>
         </div>
