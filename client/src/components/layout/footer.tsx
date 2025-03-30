@@ -22,31 +22,31 @@ export default function Footer() {
   const { i18n } = useTranslation();
   const isSpanish = i18n.language === 'es';
   
-  // Centraliza las rutas de servicios para que todas redirijan a la sección de servicios en la página principal
+  // Enlaces a las páginas de servicios específicas
   const footerServices = [
     { 
       name: isSpanish ? "Contabilidad Corporativa" : "Corporate Accounting", 
-      href: "/#servicios" 
+      href: "/servicios/contabilidad-corporativa" 
     },
     { 
       name: isSpanish ? "Asesoría Fiscal" : "Tax Advisory", 
-      href: "/#servicios" 
+      href: "/servicios/asesoria-fiscal" 
     },
     { 
       name: isSpanish ? "Consultoría Empresarial" : "Business Consulting", 
-      href: "/#servicios" 
+      href: "/servicios/consultoria-empresarial" 
     },
     { 
       name: isSpanish ? "Gestión de Nómina" : "Payroll Management", 
-      href: "/#servicios" 
+      href: "/servicios/gestion-nomina" 
     },
     { 
       name: isSpanish ? "Auditoría Financiera" : "Financial Audit", 
-      href: "/#servicios" 
+      href: "/servicios/auditoria-financiera" 
     },
     { 
       name: isSpanish ? "Tecnología Contable" : "Accounting Technology", 
-      href: "/#servicios" 
+      href: "/servicios/tecnologia-contable" 
     }
   ];
 
