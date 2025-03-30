@@ -381,7 +381,13 @@ export default function ContabilidadCorporativa() {
               {t(`service_pages.${SERVICE_KEY}.cta_description`)}
             </p>
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-              <a href={CONTACT_LINK}>
+              <a 
+                href="/#contacto" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "/#contacto";
+                }}
+              >
                 {t(`service_pages.${SERVICE_KEY}.cta_button`)}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
